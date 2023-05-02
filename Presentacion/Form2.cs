@@ -22,5 +22,10 @@ namespace Presentacion
             Form3 form = new Form3();
             form.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

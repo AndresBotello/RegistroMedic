@@ -40,7 +40,7 @@ namespace Presentacion
             Form4 form4 = new Form4();
             form4.comboEstrato.Text = comboEstrato.Text;
             form4.comboRegimen.Text = comboRegimen.Text;
-            form4.dateTimeFecha.Text = dateTimeFecha.Text;
+            form4.textFecha.Text = dateTimeFecha.Text;
             form4.textProcedimiento.Text = textProcedimiento.Text;
             form4.textFinalidad.Text = textFinalidad.Text;
             form4.textTipoTratamiento.Text = textTipoTratamiento.Text;

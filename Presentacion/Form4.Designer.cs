@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBuscar = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
@@ -51,15 +52,16 @@
             this.textProcedimiento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.comboRegimen = new System.Windows.Forms.ComboBox();
+            this.textFecha = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox1.Controls.Add(this.textFecha);
             this.groupBox1.Controls.Add(this.textBuscar);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
@@ -82,7 +84,6 @@
             this.groupBox1.Controls.Add(this.textProcedimiento);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dateTimeFecha);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.comboRegimen);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -286,15 +287,6 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "FECHA DE ATENCION";
             // 
-            // dateTimeFecha
-            // 
-            this.dateTimeFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeFecha.Location = new System.Drawing.Point(832, 16);
-            this.dateTimeFecha.Name = "dateTimeFecha";
-            this.dateTimeFecha.Size = new System.Drawing.Size(100, 20);
-            this.dateTimeFecha.TabIndex = 2;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -315,12 +307,22 @@
             this.comboRegimen.Size = new System.Drawing.Size(121, 21);
             this.comboRegimen.TabIndex = 0;
             // 
+            // textFecha
+            // 
+            this.textFecha.Location = new System.Drawing.Point(817, 14);
+            this.textFecha.Multiline = true;
+            this.textFecha.Name = "textFecha";
+            this.textFecha.Size = new System.Drawing.Size(124, 21);
+            this.textFecha.TabIndex = 26;
+            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(995, 642);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form4";
@@ -355,8 +357,8 @@
         public System.Windows.Forms.TextBox textProcedimiento;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        public System.Windows.Forms.DateTimePicker dateTimeFecha;
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.ComboBox comboRegimen;
+        public System.Windows.Forms.TextBox textFecha;
     }
 }
