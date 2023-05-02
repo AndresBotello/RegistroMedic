@@ -38,16 +38,16 @@ namespace Presentacion
         private void button1_Click(object sender, EventArgs e)
         {
             Form4 form4 = new Form4();
-            form4.AgregarElemento(comboEstrato.Text);
-            form4.AgregarElemento(comboRegimen.Text);
-            form4.AgregarElemento(dateTimeFecha.Text);
-            form4.AgregarElemento(textProcedimiento.Text);
-            form4.AgregarElemento(textFinalidad.Text);
-            form4.AgregarElemento(textTipoTratamiento.Text);
-            form4.AgregarElemento(textFormaRealizacion.Text);
-            form4.AgregarElemento(textDiagnostico.Text);
-            form4.AgregarElemento(textMedicoCargo.Text);
-            form4.AgregarElemento(textObservaciones.Text);
+            form4.comboEstrato.Text = comboEstrato.Text;
+            form4.comboRegimen.Text = comboRegimen.Text;
+            form4.dateTimeFecha.Text = dateTimeFecha.Text;
+            form4.textProcedimiento.Text = textProcedimiento.Text;
+            form4.textFinalidad.Text = textFinalidad.Text;
+            form4.textTipoTratamiento.Text = textTipoTratamiento.Text;
+            form4.textFormaRealizacion.Text = textFormaRealizacion.Text;
+            form4.textDiagnostico.Text = textDiagnostico.Text;
+            form4.textMedicoCargo.Text = textMedicoCargo.Text;
+            form4.textObservaciones.Text = textObservaciones.Text;
 
 
             form4.Show();

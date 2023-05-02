@@ -20,13 +20,6 @@ namespace Presentacion
         }
         
 
-        public void AgregarElemento(string texto)
-        {
-            listHistoria.Items.Add(texto);
-
-        }
-
-
 
     }
 }
