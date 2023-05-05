@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Entidades;
 
 namespace Datos
 {
@@ -11,11 +12,11 @@ namespace Datos
     {
         private readonly string rutaArchivo = "Registro medico.txt";
 
-        public void AgregarRegistro(Registro registro) 
+        public void AgregarPaciente(Paciente paciente) 
         {
             using (StreamWriter writer = new StreamWriter(rutaArchivo, true)) 
             {
-                writer.WriteLine($"{}");
+                writer.WriteLine($"{paciente.Cedula},{paciente.Nombre},{paciente.Telefono},{paciente.Edad},{paciente.Direccion},{paciente.Sexo}");
             }
         }
 

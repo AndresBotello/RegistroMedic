@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Logica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,6 +20,17 @@ namespace Presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Registro logica = new Registro();
+
+            if (logica.AgregarPaciente(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, comboBox1.Text))
+            {
+                MessageBox.Show("El cliente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("Debe ingresar todos los datos del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             Form3 form = new Form3();
             form.Show();
         }
