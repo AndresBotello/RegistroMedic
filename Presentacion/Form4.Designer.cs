@@ -30,11 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form4));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textFecha = new System.Windows.Forms.TextBox();
             this.textBuscar = new System.Windows.Forms.TextBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.comboEstrato = new System.Windows.Forms.ComboBox();
             this.textMedicoCargo = new System.Windows.Forms.TextBox();
@@ -54,7 +52,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.comboRegimen = new System.Windows.Forms.ComboBox();
-            this.textFecha = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,9 +61,6 @@
             this.groupBox1.Controls.Add(this.textFecha);
             this.groupBox1.Controls.Add(this.textBuscar);
             this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.btnActualizar);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.comboEstrato);
             this.groupBox1.Controls.Add(this.textMedicoCargo);
@@ -93,6 +87,14 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
+            // textFecha
+            // 
+            this.textFecha.Location = new System.Drawing.Point(817, 14);
+            this.textFecha.Multiline = true;
+            this.textFecha.Name = "textFecha";
+            this.textFecha.Size = new System.Drawing.Size(124, 21);
+            this.textFecha.TabIndex = 26;
+            // 
             // textBuscar
             // 
             this.textBuscar.Location = new System.Drawing.Point(99, 22);
@@ -109,33 +111,6 @@
             this.button4.TabIndex = 24;
             this.button4.Text = "BUSCAR";
             this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(256, 534);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(172, 23);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "VER DIAGNOSTICO";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(141, 534);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 23);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "ELIMINAR";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.Location = new System.Drawing.Point(38, 534);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(84, 23);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "ACTUALIZAR";
-            this.btnActualizar.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -307,14 +282,6 @@
             this.comboRegimen.Size = new System.Drawing.Size(121, 21);
             this.comboRegimen.TabIndex = 0;
             // 
-            // textFecha
-            // 
-            this.textFecha.Location = new System.Drawing.Point(817, 14);
-            this.textFecha.Multiline = true;
-            this.textFecha.Name = "textFecha";
-            this.textFecha.Size = new System.Drawing.Size(124, 21);
-            this.textFecha.TabIndex = 26;
-            // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -337,9 +304,6 @@
         private System.Windows.Forms.GroupBox groupBox1;
         public System.Windows.Forms.TextBox textBuscar;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.Label label10;
         public System.Windows.Forms.ComboBox comboEstrato;
         public System.Windows.Forms.TextBox textMedicoCargo;
