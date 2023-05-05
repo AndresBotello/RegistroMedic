@@ -1,6 +1,6 @@
 ﻿namespace Presentacion
 {
-    partial class Form3
+    partial class FrmHistoriaClinica
     {
         /// <summary>
         /// Required designer variable.
@@ -28,11 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form3));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHistoriaClinica));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
+            this.textFecha = new System.Windows.Forms.TextBox();
+            this.textBuscar = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.comboEstrato = new System.Windows.Forms.ComboBox();
             this.textMedicoCargo = new System.Windows.Forms.TextBox();
@@ -50,22 +50,17 @@
             this.textProcedimiento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.comboRegimen = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBuscar = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox1.Controls.Add(this.textFecha);
             this.groupBox1.Controls.Add(this.textBuscar);
             this.groupBox1.Controls.Add(this.button4);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.btnActualizar);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.comboEstrato);
             this.groupBox1.Controls.Add(this.textMedicoCargo);
@@ -83,43 +78,39 @@
             this.groupBox1.Controls.Add(this.textProcedimiento);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.dateTimeFecha);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.comboRegimen);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(27, 12);
+            this.groupBox1.Location = new System.Drawing.Point(24, 26);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(947, 586);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // button3
+            // textFecha
             // 
-            this.button3.Location = new System.Drawing.Point(256, 534);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(172, 23);
-            this.button3.TabIndex = 23;
-            this.button3.Text = "VER DIAGNOSTICO";
-            this.button3.UseVisualStyleBackColor = true;
+            this.textFecha.Location = new System.Drawing.Point(817, 14);
+            this.textFecha.Multiline = true;
+            this.textFecha.Name = "textFecha";
+            this.textFecha.Size = new System.Drawing.Size(124, 21);
+            this.textFecha.TabIndex = 26;
             // 
-            // button2
+            // textBuscar
             // 
-            this.button2.Location = new System.Drawing.Point(141, 534);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(84, 23);
-            this.button2.TabIndex = 22;
-            this.button2.Text = "ELIMINAR";
-            this.button2.UseVisualStyleBackColor = true;
+            this.textBuscar.Location = new System.Drawing.Point(99, 22);
+            this.textBuscar.Multiline = true;
+            this.textBuscar.Name = "textBuscar";
+            this.textBuscar.Size = new System.Drawing.Size(178, 19);
+            this.textBuscar.TabIndex = 25;
             // 
-            // btnActualizar
+            // button4
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(38, 534);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(84, 23);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "ACTUALIZAR";
-            this.btnActualizar.UseVisualStyleBackColor = true;
-            this.btnActualizar.Click += new System.EventHandler(this.button1_Click);
+            this.button4.Location = new System.Drawing.Point(6, 20);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(84, 23);
+            this.button4.TabIndex = 24;
+            this.button4.Text = "BUSCAR";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -270,16 +261,6 @@
             this.label2.Size = new System.Drawing.Size(118, 13);
             this.label2.TabIndex = 3;
             this.label2.Text = "FECHA DE ATENCION";
-            this.label2.Click += new System.EventHandler(this.label2_Click_1);
-            // 
-            // dateTimeFecha
-            // 
-            this.dateTimeFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeFecha.Location = new System.Drawing.Point(832, 16);
-            this.dateTimeFecha.Name = "dateTimeFecha";
-            this.dateTimeFecha.Size = new System.Drawing.Size(100, 20);
-            this.dateTimeFecha.TabIndex = 2;
             // 
             // label1
             // 
@@ -301,34 +282,17 @@
             this.comboRegimen.Size = new System.Drawing.Size(121, 21);
             this.comboRegimen.TabIndex = 0;
             // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(6, 20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 23);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "BUSCAR";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // textBuscar
-            // 
-            this.textBuscar.Location = new System.Drawing.Point(99, 22);
-            this.textBuscar.Multiline = true;
-            this.textBuscar.Name = "textBuscar";
-            this.textBuscar.Size = new System.Drawing.Size(178, 19);
-            this.textBuscar.TabIndex = 25;
-            // 
-            // Form3
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1000, 623);
+            this.ClientSize = new System.Drawing.Size(995, 642);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form3";
+            this.Name = "Form4";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form3";
+            this.Text = "Form4";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -338,30 +302,27 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboRegimen;
-        private System.Windows.Forms.DateTimePicker dateTimeFecha;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        public System.Windows.Forms.TextBox textBuscar;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label10;
+        public System.Windows.Forms.ComboBox comboEstrato;
+        public System.Windows.Forms.TextBox textMedicoCargo;
+        private System.Windows.Forms.Label label9;
+        public System.Windows.Forms.TextBox textObservaciones;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox textDiagnostico;
+        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textFormaRealizacion;
-        private System.Windows.Forms.TextBox textTipoTratamiento;
+        public System.Windows.Forms.TextBox textFormaRealizacion;
+        public System.Windows.Forms.TextBox textTipoTratamiento;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textFinalidad;
-        private System.Windows.Forms.TextBox textProcedimiento;
-        private System.Windows.Forms.TextBox textDiagnostico;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textObservaciones;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textMedicoCargo;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboEstrato;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.TextBox textBuscar;
-        private System.Windows.Forms.Button button4;
+        public System.Windows.Forms.TextBox textFinalidad;
+        public System.Windows.Forms.TextBox textProcedimiento;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.ComboBox comboRegimen;
+        public System.Windows.Forms.TextBox textFecha;
     }
 }

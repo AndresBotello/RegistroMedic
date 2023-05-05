@@ -11,9 +11,9 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Presentacion
 {
-    public partial class Form3 : Form
+    public partial class FrmHistoria : Form
     {
-        public Form3()
+        public FrmHistoria()
         {
             InitializeComponent();
         }
@@ -37,7 +37,7 @@ namespace Presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form4 form4 = new Form4();
+            FrmHistoriaClinica form4 = new FrmHistoriaClinica();
             form4.comboEstrato.Text = comboEstrato.Text;
             form4.comboRegimen.Text = comboRegimen.Text;
             form4.textFecha.Text = dateTimeFecha.Text;

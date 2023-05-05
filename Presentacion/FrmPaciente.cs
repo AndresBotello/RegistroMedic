@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace Presentacion
 {
-    public partial class Form2 : Form
+    public partial class FrmPaciente : Form
     {
-        public Form2()
+        public FrmPaciente()
         {
             InitializeComponent();
         }
