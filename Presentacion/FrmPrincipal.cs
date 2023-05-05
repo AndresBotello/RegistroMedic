@@ -31,7 +31,7 @@ namespace Presentacion
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form3 form = new Form3();
+            FrmHistoria form = new FrmHistoria();
             form.Show();
         }
     }

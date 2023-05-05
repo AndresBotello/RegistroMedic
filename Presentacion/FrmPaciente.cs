@@ -31,7 +31,7 @@ namespace Presentacion
                 MessageBox.Show("Debe ingresar todos los datos del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            Form3 form = new Form3();
+            FrmHistoria form = new FrmHistoria();
             form.Show();
         }
 
