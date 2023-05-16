@@ -19,20 +19,35 @@ namespace Presentacion
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Cerrar();
+        }
+
+        void Cerrar()
+        {
             this.Close();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FrmPaciente form = new FrmPaciente();
-            form.Show();
+            AbrirFormularioPaciente(new FrmPaciente());
             
+        }
+
+        void AbrirFormularioPaciente(FrmPaciente f)
+        {
+            this.Hide();
+            f.ShowDialog(this);
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            FrmHistoria form = new FrmHistoria();
-            form.Show();
+            AbrirFormularioHistoria(new FrmHistoria());
+        }
+
+        void AbrirFormularioHistoria(FrmHistoria f)
+        {
+            this.Hide();
+            f.ShowDialog(this);
         }
     }
 }

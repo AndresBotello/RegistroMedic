@@ -20,23 +20,29 @@ namespace Presentacion
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Registro logica = new Registro();
+            //Registro logica = new Registro();
 
-            if (logica.AgregarPaciente(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, comboBox1.Text))
-            {
-                MessageBox.Show("El cliente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                MessageBox.Show("Debe ingresar todos los datos del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            //if (logica.AgregarPaciente(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, comboBox1.Text))
+            //{
+            //    MessageBox.Show("El cliente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Debe ingresar todos los datos del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            //}
 
-            FrmHistoria form = new FrmHistoria();
-            form.Show();
+            //FrmHistoria form = new FrmHistoria();
+            //form.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Salir();
+        }
+
+        void Salir()
+        {
+            this.Owner.Show();
             this.Close();
         }
     }

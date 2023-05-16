@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHistoria));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBuscar = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
@@ -53,14 +55,14 @@
             this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.comboRegimen = new System.Windows.Forms.ComboBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.textBuscar = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.textBuscar);
             this.groupBox1.Controls.Add(this.button4);
             this.groupBox1.Controls.Add(this.button3);
@@ -92,6 +94,23 @@
             this.groupBox1.Size = new System.Drawing.Size(947, 586);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
+            // 
+            // textBuscar
+            // 
+            this.textBuscar.Location = new System.Drawing.Point(99, 22);
+            this.textBuscar.Multiline = true;
+            this.textBuscar.Name = "textBuscar";
+            this.textBuscar.Size = new System.Drawing.Size(178, 19);
+            this.textBuscar.TabIndex = 25;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(6, 20);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(84, 23);
+            this.button4.TabIndex = 24;
+            this.button4.Text = "BUSCAR";
+            this.button4.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
@@ -301,24 +320,17 @@
             this.comboRegimen.Size = new System.Drawing.Size(121, 21);
             this.comboRegimen.TabIndex = 0;
             // 
-            // button4
+            // button1
             // 
-            this.button4.Location = new System.Drawing.Point(6, 20);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(84, 23);
-            this.button4.TabIndex = 24;
-            this.button4.Text = "BUSCAR";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button1.Location = new System.Drawing.Point(746, 534);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(84, 23);
+            this.button1.TabIndex = 26;
+            this.button1.Text = "SALIR";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
-            // textBuscar
-            // 
-            this.textBuscar.Location = new System.Drawing.Point(99, 22);
-            this.textBuscar.Multiline = true;
-            this.textBuscar.Name = "textBuscar";
-            this.textBuscar.Size = new System.Drawing.Size(178, 19);
-            this.textBuscar.TabIndex = 25;
-            // 
-            // Form3
+            // FrmHistoria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -326,7 +338,7 @@
             this.ClientSize = new System.Drawing.Size(1000, 623);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form3";
+            this.Name = "FrmHistoria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form3";
             this.groupBox1.ResumeLayout(false);
@@ -363,5 +375,6 @@
         private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.TextBox textBuscar;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button1;
     }
 }

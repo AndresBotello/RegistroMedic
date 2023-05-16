@@ -52,5 +52,16 @@ namespace Presentacion
 
             form4.Show();
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            Salir();
+        }
+
+        void Salir()
+        {
+            this.Owner.Show();
+            this.Close();
+        }
     }
 }
