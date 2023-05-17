@@ -41,13 +41,13 @@ namespace Presentacion
 
         private void button3_Click(object sender, EventArgs e)
         {
-            AbrirFormularioHistoria(new FrmHistoria());
+            //AbrirFormularioHistoria(new FrmHistoria());
         }
 
-        void AbrirFormularioHistoria(FrmHistoria f)
-        {
-            this.Hide();
-            f.ShowDialog(this);
-        }
+        //void AbrirFormularioHistoria(FrmHistoria f)
+        //{
+        //    this.Hide();
+        //    f.ShowDialog(this);
+        //}
     }
 }
