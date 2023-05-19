@@ -153,10 +153,10 @@
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(35, 23);
+            this.tabControl2.Location = new System.Drawing.Point(23, 12);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1121, 714);
+            this.tabControl2.Size = new System.Drawing.Size(1121, 674);
             this.tabControl2.TabIndex = 3;
             // 
             // tabPage3
@@ -187,7 +187,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1113, 688);
+            this.tabPage3.Size = new System.Drawing.Size(1113, 648);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Paciente";
             // 
@@ -197,7 +197,7 @@
             this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnActualizar.Location = new System.Drawing.Point(291, 634);
+            this.btnActualizar.Location = new System.Drawing.Point(342, 595);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(96, 23);
             this.btnActualizar.TabIndex = 49;
@@ -227,7 +227,7 @@
             // 
             this.button5.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(498, 634);
+            this.button5.Location = new System.Drawing.Point(549, 595);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(172, 23);
             this.button5.TabIndex = 23;
@@ -248,7 +248,7 @@
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(408, 634);
+            this.button6.Location = new System.Drawing.Point(459, 595);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(84, 23);
             this.button6.TabIndex = 22;
@@ -435,7 +435,7 @@
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(31, 156);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(1062, 448);
+            this.groupBox1.Size = new System.Drawing.Size(1062, 422);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             // 
@@ -490,7 +490,7 @@
             // 
             // txtMedicoCargo
             // 
-            this.txtMedicoCargo.Location = new System.Drawing.Point(144, 408);
+            this.txtMedicoCargo.Location = new System.Drawing.Point(179, 389);
             this.txtMedicoCargo.Multiline = true;
             this.txtMedicoCargo.Name = "txtMedicoCargo";
             this.txtMedicoCargo.Size = new System.Drawing.Size(299, 19);
@@ -500,7 +500,7 @@
             // 
             this.lbMedico.AutoSize = true;
             this.lbMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMedico.Location = new System.Drawing.Point(23, 411);
+            this.lbMedico.Location = new System.Drawing.Point(58, 392);
             this.lbMedico.Name = "lbMedico";
             this.lbMedico.Size = new System.Drawing.Size(101, 16);
             this.lbMedico.TabIndex = 17;
@@ -508,7 +508,7 @@
             // 
             // textObservaciones
             // 
-            this.textObservaciones.Location = new System.Drawing.Point(636, 381);
+            this.textObservaciones.Location = new System.Drawing.Point(671, 362);
             this.textObservaciones.Multiline = true;
             this.textObservaciones.Name = "textObservaciones";
             this.textObservaciones.Size = new System.Drawing.Size(236, 57);
@@ -518,7 +518,7 @@
             // 
             this.lbObservaciones.AutoSize = true;
             this.lbObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbObservaciones.Location = new System.Drawing.Point(540, 382);
+            this.lbObservaciones.Location = new System.Drawing.Point(575, 363);
             this.lbObservaciones.Name = "lbObservaciones";
             this.lbObservaciones.Size = new System.Drawing.Size(99, 16);
             this.lbObservaciones.TabIndex = 15;
@@ -648,7 +648,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.ClientSize = new System.Drawing.Size(1191, 749);
+            this.ClientSize = new System.Drawing.Size(1191, 690);
             this.Controls.Add(this.tabControl2);
             this.Controls.Add(this.groupBox2);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
