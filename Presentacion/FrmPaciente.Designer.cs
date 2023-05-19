@@ -29,14 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPaciente));
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnSalir2 = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
@@ -80,85 +76,19 @@
             this.txtMotivoIngreso = new System.Windows.Forms.TextBox();
             this.lbProcedimiento = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnSalir2 = new System.Windows.Forms.Button();
-            this.groupBox2.SuspendLayout();
-            this.tabControl1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnSalir
-            // 
-            this.btnSalir.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(308, 30);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(96, 23);
-            this.btnSalir.TabIndex = 29;
-            this.btnSalir.Text = "SALIR";
-            this.btnSalir.UseVisualStyleBackColor = true;
-            this.btnSalir.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnRegistrar.Location = new System.Drawing.Point(16, 30);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(96, 23);
-            this.btnRegistrar.TabIndex = 28;
-            this.btnRegistrar.Text = "REGISTRAR";
-            this.btnRegistrar.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.tabControl1);
-            this.groupBox2.Controls.Add(this.btnSalir);
-            this.groupBox2.Controls.Add(this.btnRegistrar);
-            this.groupBox2.Location = new System.Drawing.Point(302, 842);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(437, 67);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            // 
-            // tabControl1
-            // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(3, 16);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(200, 100);
-            this.tabControl1.TabIndex = 30;
-            // 
-            // tabPage1
-            // 
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(192, 74);
-            this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
-            // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(192, 74);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
             this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(23, 12);
+            this.tabControl2.Location = new System.Drawing.Point(12, 12);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
-            this.tabControl2.Size = new System.Drawing.Size(1121, 674);
+            this.tabControl2.Size = new System.Drawing.Size(1121, 691);
             this.tabControl2.TabIndex = 3;
             // 
             // tabPage3
@@ -191,9 +121,36 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(1113, 648);
+            this.tabPage3.Size = new System.Drawing.Size(1113, 665);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Paciente";
+            // 
+            // btnSalir2
+            // 
+            this.btnSalir2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSalir2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSalir2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSalir2.Location = new System.Drawing.Point(842, 595);
+            this.btnSalir2.Name = "btnSalir2";
+            this.btnSalir2.Size = new System.Drawing.Size(96, 23);
+            this.btnSalir2.TabIndex = 51;
+            this.btnSalir2.Text = "SALIR";
+            this.btnSalir2.UseVisualStyleBackColor = false;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAgregar.Location = new System.Drawing.Point(216, 595);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(96, 23);
+            this.btnAgregar.TabIndex = 50;
+            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnActualizar
             // 
@@ -642,54 +599,24 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1113, 648);
+            this.tabPage4.Size = new System.Drawing.Size(1113, 630);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Datos Historia Clinica";
             this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAgregar.Location = new System.Drawing.Point(216, 595);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(96, 23);
-            this.btnAgregar.TabIndex = 50;
-            this.btnAgregar.Text = "AGREGAR";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // btnSalir2
-            // 
-            this.btnSalir2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSalir2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnSalir2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalir2.Location = new System.Drawing.Point(842, 595);
-            this.btnSalir2.Name = "btnSalir2";
-            this.btnSalir2.Size = new System.Drawing.Size(96, 23);
-            this.btnSalir2.TabIndex = 51;
-            this.btnSalir2.Text = "SALIR";
-            this.btnSalir2.UseVisualStyleBackColor = false;
             // 
             // FrmPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1191, 690);
+            this.AutoScroll = true;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.ClientSize = new System.Drawing.Size(1162, 666);
             this.Controls.Add(this.tabControl2);
-            this.Controls.Add(this.groupBox2);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paciente";
-            this.groupBox2.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
@@ -700,12 +627,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnSalir;
-        private System.Windows.Forms.Button btnRegistrar;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TabControl tabControl1;
-        private System.Windows.Forms.TabPage tabPage1;
-        private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ComboBox cbSexo;
