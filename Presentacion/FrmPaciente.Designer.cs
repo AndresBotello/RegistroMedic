@@ -33,42 +33,42 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboRegimen = new System.Windows.Forms.ComboBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
-            this.label15 = new System.Windows.Forms.Label();
-            this.lbProcedimiento = new System.Windows.Forms.Label();
-            this.txtProcedimiento = new System.Windows.Forms.TextBox();
-            this.txtFinalidad = new System.Windows.Forms.TextBox();
-            this.lbFinalidadProcedimiento = new System.Windows.Forms.Label();
-            this.lbTratamiento = new System.Windows.Forms.Label();
-            this.txtTipoTratamiento = new System.Windows.Forms.TextBox();
-            this.txtFormaRealizacion = new System.Windows.Forms.TextBox();
-            this.lbRealizacion = new System.Windows.Forms.Label();
-            this.lbDiagnostico = new System.Windows.Forms.Label();
-            this.txtDiagnostico = new System.Windows.Forms.TextBox();
-            this.lbObservaciones = new System.Windows.Forms.Label();
-            this.textObservaciones = new System.Windows.Forms.TextBox();
-            this.lbMedico = new System.Windows.Forms.Label();
-            this.txtMedicoCargo = new System.Windows.Forms.TextBox();
-            this.comboEstrato = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.btnActualizar = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.comboEstrato = new System.Windows.Forms.ComboBox();
+            this.txtMedicoCargo = new System.Windows.Forms.TextBox();
+            this.lbMedico = new System.Windows.Forms.Label();
+            this.textObservaciones = new System.Windows.Forms.TextBox();
+            this.lbObservaciones = new System.Windows.Forms.Label();
+            this.txtDiagnostico = new System.Windows.Forms.TextBox();
+            this.lbDiagnostico = new System.Windows.Forms.Label();
+            this.lbRealizacion = new System.Windows.Forms.Label();
+            this.txtFormaRealizacion = new System.Windows.Forms.TextBox();
+            this.txtTipoTratamiento = new System.Windows.Forms.TextBox();
+            this.lbTratamiento = new System.Windows.Forms.Label();
+            this.lbFinalidadProcedimiento = new System.Windows.Forms.Label();
+            this.txtFinalidad = new System.Windows.Forms.TextBox();
+            this.txtProcedimiento = new System.Windows.Forms.TextBox();
+            this.lbProcedimiento = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
+            this.label16 = new System.Windows.Forms.Label();
+            this.comboRegimen = new System.Windows.Forms.ComboBox();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.textBox6 = new System.Windows.Forms.TextBox();
@@ -113,6 +113,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.Gainsboro;
             this.tabPage2.Controls.Add(this.comboBox1);
             this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.textBox5);
@@ -132,11 +133,128 @@
             this.tabPage2.Size = new System.Drawing.Size(1079, 785);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Registro";
-            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "F",
+            "M"});
+            this.comboBox1.Location = new System.Drawing.Point(784, 101);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(100, 21);
+            this.comboBox1.TabIndex = 33;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(692, 101);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(42, 16);
+            this.label7.TabIndex = 32;
+            this.label7.Text = "Sexo";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(459, 97);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(167, 20);
+            this.textBox5.TabIndex = 31;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(145, 106);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(74, 20);
+            this.textBox4.TabIndex = 29;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(784, 62);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(167, 20);
+            this.textBox3.TabIndex = 27;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(459, 58);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(167, 20);
+            this.textBox2.TabIndex = 25;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(139, 57);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(167, 20);
+            this.textBox1.TabIndex = 23;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label6.Location = new System.Drawing.Point(367, 110);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 16);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "Dirección";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label5.Location = new System.Drawing.Point(53, 110);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 16);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Edad";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label4.Location = new System.Drawing.Point(692, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(69, 16);
+            this.label4.TabIndex = 26;
+            this.label4.Text = "Telefono";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label3.Location = new System.Drawing.Point(367, 58);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(62, 16);
+            this.label3.TabIndex = 24;
+            this.label3.Text = "Nombre";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label2.Location = new System.Drawing.Point(47, 57);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(56, 16);
+            this.label2.TabIndex = 22;
+            this.label2.Text = "Cédula";
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackColor = System.Drawing.Color.Silver;
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.button6);
             this.groupBox1.Controls.Add(this.btnActualizar);
@@ -161,168 +279,47 @@
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.comboRegimen);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(50, 153);
+            this.groupBox1.Location = new System.Drawing.Point(36, 149);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(948, 586);
+            this.groupBox1.Size = new System.Drawing.Size(989, 520);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             // 
-            // comboRegimen
+            // button5
             // 
-            this.comboRegimen.FormattingEnabled = true;
-            this.comboRegimen.Items.AddRange(new object[] {
-            "Subsidiado",
-            "Contributivo"});
-            this.comboRegimen.Location = new System.Drawing.Point(380, 25);
-            this.comboRegimen.Name = "comboRegimen";
-            this.comboRegimen.Size = new System.Drawing.Size(121, 21);
-            this.comboRegimen.TabIndex = 0;
+            this.button5.Location = new System.Drawing.Point(282, 458);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(172, 23);
+            this.button5.TabIndex = 23;
+            this.button5.Text = "VER DIAGNOSTICO";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // button6
             // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(317, 31);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(57, 13);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "REGIMEN";
+            this.button6.Location = new System.Drawing.Point(182, 458);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(84, 23);
+            this.button6.TabIndex = 22;
+            this.button6.Text = "ELIMINAR";
+            this.button6.UseVisualStyleBackColor = true;
             // 
-            // dateTimeFecha
+            // btnActualizar
             // 
-            this.dateTimeFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeFecha.Location = new System.Drawing.Point(660, 27);
-            this.dateTimeFecha.Name = "dateTimeFecha";
-            this.dateTimeFecha.Size = new System.Drawing.Size(100, 20);
-            this.dateTimeFecha.TabIndex = 2;
+            this.btnActualizar.Location = new System.Drawing.Point(65, 458);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(84, 23);
+            this.btnActualizar.TabIndex = 1;
+            this.btnActualizar.Text = "ACTUALIZAR";
+            this.btnActualizar.UseVisualStyleBackColor = true;
             // 
-            // label15
+            // label1
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(526, 33);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(118, 13);
-            this.label15.TabIndex = 3;
-            this.label15.Text = "FECHA DE ATENCION";
-            // 
-            // lbProcedimiento
-            // 
-            this.lbProcedimiento.AutoSize = true;
-            this.lbProcedimiento.Location = new System.Drawing.Point(6, 106);
-            this.lbProcedimiento.Name = "lbProcedimiento";
-            this.lbProcedimiento.Size = new System.Drawing.Size(97, 13);
-            this.lbProcedimiento.TabIndex = 4;
-            this.lbProcedimiento.Text = "PROCEDIMIENTO";
-            // 
-            // txtProcedimiento
-            // 
-            this.txtProcedimiento.Location = new System.Drawing.Point(155, 93);
-            this.txtProcedimiento.Multiline = true;
-            this.txtProcedimiento.Name = "txtProcedimiento";
-            this.txtProcedimiento.Size = new System.Drawing.Size(722, 38);
-            this.txtProcedimiento.TabIndex = 5;
-            // 
-            // txtFinalidad
-            // 
-            this.txtFinalidad.Location = new System.Drawing.Point(155, 148);
-            this.txtFinalidad.Multiline = true;
-            this.txtFinalidad.Name = "txtFinalidad";
-            this.txtFinalidad.Size = new System.Drawing.Size(722, 35);
-            this.txtFinalidad.TabIndex = 6;
-            // 
-            // lbFinalidadProcedimiento
-            // 
-            this.lbFinalidadProcedimiento.AutoSize = true;
-            this.lbFinalidadProcedimiento.Location = new System.Drawing.Point(9, 157);
-            this.lbFinalidadProcedimiento.Name = "lbFinalidadProcedimiento";
-            this.lbFinalidadProcedimiento.Size = new System.Drawing.Size(97, 26);
-            this.lbFinalidadProcedimiento.TabIndex = 7;
-            this.lbFinalidadProcedimiento.Text = "FINALIDAD\r\nPROCEDIMIENTO";
-            // 
-            // lbTratamiento
-            // 
-            this.lbTratamiento.AutoSize = true;
-            this.lbTratamiento.Location = new System.Drawing.Point(6, 212);
-            this.lbTratamiento.Name = "lbTratamiento";
-            this.lbTratamiento.Size = new System.Drawing.Size(131, 13);
-            this.lbTratamiento.TabIndex = 8;
-            this.lbTratamiento.Text = "TIPO DE TRATAMIENTO";
-            // 
-            // txtTipoTratamiento
-            // 
-            this.txtTipoTratamiento.Location = new System.Drawing.Point(155, 200);
-            this.txtTipoTratamiento.Multiline = true;
-            this.txtTipoTratamiento.Name = "txtTipoTratamiento";
-            this.txtTipoTratamiento.Size = new System.Drawing.Size(722, 34);
-            this.txtTipoTratamiento.TabIndex = 9;
-            // 
-            // txtFormaRealizacion
-            // 
-            this.txtFormaRealizacion.Location = new System.Drawing.Point(155, 253);
-            this.txtFormaRealizacion.Multiline = true;
-            this.txtFormaRealizacion.Name = "txtFormaRealizacion";
-            this.txtFormaRealizacion.Size = new System.Drawing.Size(722, 36);
-            this.txtFormaRealizacion.TabIndex = 10;
-            // 
-            // lbRealizacion
-            // 
-            this.lbRealizacion.AutoSize = true;
-            this.lbRealizacion.Location = new System.Drawing.Point(9, 263);
-            this.lbRealizacion.Name = "lbRealizacion";
-            this.lbRealizacion.Size = new System.Drawing.Size(96, 26);
-            this.lbRealizacion.TabIndex = 11;
-            this.lbRealizacion.Text = "FORMA \r\nDE REALIZACION";
-            // 
-            // lbDiagnostico
-            // 
-            this.lbDiagnostico.AutoSize = true;
-            this.lbDiagnostico.Location = new System.Drawing.Point(9, 326);
-            this.lbDiagnostico.Name = "lbDiagnostico";
-            this.lbDiagnostico.Size = new System.Drawing.Size(140, 13);
-            this.lbDiagnostico.TabIndex = 12;
-            this.lbDiagnostico.Text = "DIAGNOSTICO PRINCIPAL";
-            // 
-            // txtDiagnostico
-            // 
-            this.txtDiagnostico.Location = new System.Drawing.Point(155, 312);
-            this.txtDiagnostico.Multiline = true;
-            this.txtDiagnostico.Name = "txtDiagnostico";
-            this.txtDiagnostico.Size = new System.Drawing.Size(722, 47);
-            this.txtDiagnostico.TabIndex = 13;
-            // 
-            // lbObservaciones
-            // 
-            this.lbObservaciones.AutoSize = true;
-            this.lbObservaciones.Location = new System.Drawing.Point(566, 394);
-            this.lbObservaciones.Name = "lbObservaciones";
-            this.lbObservaciones.Size = new System.Drawing.Size(98, 13);
-            this.lbObservaciones.TabIndex = 15;
-            this.lbObservaciones.Text = "OBSERVACIONES";
-            // 
-            // textObservaciones
-            // 
-            this.textObservaciones.Location = new System.Drawing.Point(692, 394);
-            this.textObservaciones.Multiline = true;
-            this.textObservaciones.Name = "textObservaciones";
-            this.textObservaciones.Size = new System.Drawing.Size(185, 107);
-            this.textObservaciones.TabIndex = 16;
-            // 
-            // lbMedico
-            // 
-            this.lbMedico.AutoSize = true;
-            this.lbMedico.Location = new System.Drawing.Point(35, 403);
-            this.lbMedico.Name = "lbMedico";
-            this.lbMedico.Size = new System.Drawing.Size(100, 13);
-            this.lbMedico.TabIndex = 17;
-            this.lbMedico.Text = "MEDICO A CARGO";
-            // 
-            // txtMedicoCargo
-            // 
-            this.txtMedicoCargo.Location = new System.Drawing.Point(155, 400);
-            this.txtMedicoCargo.Multiline = true;
-            this.txtMedicoCargo.Name = "txtMedicoCargo";
-            this.txtMedicoCargo.Size = new System.Drawing.Size(299, 19);
-            this.txtMedicoCargo.TabIndex = 19;
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(121, 33);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 13);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "ESTRATO";
             // 
             // comboEstrato
             // 
@@ -337,159 +334,162 @@
             this.comboEstrato.Size = new System.Drawing.Size(73, 21);
             this.comboEstrato.TabIndex = 20;
             // 
-            // label1
+            // txtMedicoCargo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(121, 33);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(58, 13);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "ESTRATO";
+            this.txtMedicoCargo.Location = new System.Drawing.Point(155, 400);
+            this.txtMedicoCargo.Multiline = true;
+            this.txtMedicoCargo.Name = "txtMedicoCargo";
+            this.txtMedicoCargo.Size = new System.Drawing.Size(299, 19);
+            this.txtMedicoCargo.TabIndex = 19;
             // 
-            // btnActualizar
+            // lbMedico
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(38, 534);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(84, 23);
-            this.btnActualizar.TabIndex = 1;
-            this.btnActualizar.Text = "ACTUALIZAR";
-            this.btnActualizar.UseVisualStyleBackColor = true;
+            this.lbMedico.AutoSize = true;
+            this.lbMedico.Location = new System.Drawing.Point(35, 403);
+            this.lbMedico.Name = "lbMedico";
+            this.lbMedico.Size = new System.Drawing.Size(100, 13);
+            this.lbMedico.TabIndex = 17;
+            this.lbMedico.Text = "MEDICO A CARGO";
             // 
-            // button6
+            // textObservaciones
             // 
-            this.button6.Location = new System.Drawing.Point(141, 534);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(84, 23);
-            this.button6.TabIndex = 22;
-            this.button6.Text = "ELIMINAR";
-            this.button6.UseVisualStyleBackColor = true;
+            this.textObservaciones.Location = new System.Drawing.Point(692, 394);
+            this.textObservaciones.Multiline = true;
+            this.textObservaciones.Name = "textObservaciones";
+            this.textObservaciones.Size = new System.Drawing.Size(185, 107);
+            this.textObservaciones.TabIndex = 16;
             // 
-            // button5
+            // lbObservaciones
             // 
-            this.button5.Location = new System.Drawing.Point(256, 534);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(172, 23);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "VER DIAGNOSTICO";
-            this.button5.UseVisualStyleBackColor = true;
+            this.lbObservaciones.AutoSize = true;
+            this.lbObservaciones.Location = new System.Drawing.Point(566, 394);
+            this.lbObservaciones.Name = "lbObservaciones";
+            this.lbObservaciones.Size = new System.Drawing.Size(98, 13);
+            this.lbObservaciones.TabIndex = 15;
+            this.lbObservaciones.Text = "OBSERVACIONES";
             // 
-            // label2
+            // txtDiagnostico
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(47, 57);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 16);
-            this.label2.TabIndex = 22;
-            this.label2.Text = "Cédula";
+            this.txtDiagnostico.Location = new System.Drawing.Point(155, 312);
+            this.txtDiagnostico.Multiline = true;
+            this.txtDiagnostico.Name = "txtDiagnostico";
+            this.txtDiagnostico.Size = new System.Drawing.Size(722, 47);
+            this.txtDiagnostico.TabIndex = 13;
             // 
-            // textBox1
+            // lbDiagnostico
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 57);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 23;
+            this.lbDiagnostico.AutoSize = true;
+            this.lbDiagnostico.Location = new System.Drawing.Point(9, 326);
+            this.lbDiagnostico.Name = "lbDiagnostico";
+            this.lbDiagnostico.Size = new System.Drawing.Size(140, 13);
+            this.lbDiagnostico.TabIndex = 12;
+            this.lbDiagnostico.Text = "DIAGNOSTICO PRINCIPAL";
             // 
-            // label3
+            // lbRealizacion
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(367, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 16);
-            this.label3.TabIndex = 24;
-            this.label3.Text = "Nombre";
+            this.lbRealizacion.AutoSize = true;
+            this.lbRealizacion.Location = new System.Drawing.Point(9, 263);
+            this.lbRealizacion.Name = "lbRealizacion";
+            this.lbRealizacion.Size = new System.Drawing.Size(96, 26);
+            this.lbRealizacion.TabIndex = 11;
+            this.lbRealizacion.Text = "FORMA \r\nDE REALIZACION";
             // 
-            // textBox2
+            // txtFormaRealizacion
             // 
-            this.textBox2.Location = new System.Drawing.Point(459, 58);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 25;
+            this.txtFormaRealizacion.Location = new System.Drawing.Point(155, 253);
+            this.txtFormaRealizacion.Multiline = true;
+            this.txtFormaRealizacion.Name = "txtFormaRealizacion";
+            this.txtFormaRealizacion.Size = new System.Drawing.Size(722, 36);
+            this.txtFormaRealizacion.TabIndex = 10;
             // 
-            // label4
+            // txtTipoTratamiento
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(692, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(69, 16);
-            this.label4.TabIndex = 26;
-            this.label4.Text = "Telefono";
+            this.txtTipoTratamiento.Location = new System.Drawing.Point(155, 200);
+            this.txtTipoTratamiento.Multiline = true;
+            this.txtTipoTratamiento.Name = "txtTipoTratamiento";
+            this.txtTipoTratamiento.Size = new System.Drawing.Size(722, 34);
+            this.txtTipoTratamiento.TabIndex = 9;
             // 
-            // textBox3
+            // lbTratamiento
             // 
-            this.textBox3.Location = new System.Drawing.Point(784, 62);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 20);
-            this.textBox3.TabIndex = 27;
+            this.lbTratamiento.AutoSize = true;
+            this.lbTratamiento.Location = new System.Drawing.Point(6, 212);
+            this.lbTratamiento.Name = "lbTratamiento";
+            this.lbTratamiento.Size = new System.Drawing.Size(131, 13);
+            this.lbTratamiento.TabIndex = 8;
+            this.lbTratamiento.Text = "TIPO DE TRATAMIENTO";
             // 
-            // label5
+            // lbFinalidadProcedimiento
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(53, 110);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 16);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Edad";
+            this.lbFinalidadProcedimiento.AutoSize = true;
+            this.lbFinalidadProcedimiento.Location = new System.Drawing.Point(9, 157);
+            this.lbFinalidadProcedimiento.Name = "lbFinalidadProcedimiento";
+            this.lbFinalidadProcedimiento.Size = new System.Drawing.Size(97, 26);
+            this.lbFinalidadProcedimiento.TabIndex = 7;
+            this.lbFinalidadProcedimiento.Text = "FINALIDAD\r\nPROCEDIMIENTO";
             // 
-            // textBox4
+            // txtFinalidad
             // 
-            this.textBox4.Location = new System.Drawing.Point(145, 106);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(74, 20);
-            this.textBox4.TabIndex = 29;
+            this.txtFinalidad.Location = new System.Drawing.Point(155, 148);
+            this.txtFinalidad.Multiline = true;
+            this.txtFinalidad.Name = "txtFinalidad";
+            this.txtFinalidad.Size = new System.Drawing.Size(722, 35);
+            this.txtFinalidad.TabIndex = 6;
             // 
-            // label6
+            // txtProcedimiento
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(367, 110);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(73, 16);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Dirección";
+            this.txtProcedimiento.Location = new System.Drawing.Point(155, 93);
+            this.txtProcedimiento.Multiline = true;
+            this.txtProcedimiento.Name = "txtProcedimiento";
+            this.txtProcedimiento.Size = new System.Drawing.Size(722, 38);
+            this.txtProcedimiento.TabIndex = 5;
             // 
-            // textBox5
+            // lbProcedimiento
             // 
-            this.textBox5.Location = new System.Drawing.Point(459, 97);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 20);
-            this.textBox5.TabIndex = 31;
+            this.lbProcedimiento.AutoSize = true;
+            this.lbProcedimiento.Location = new System.Drawing.Point(6, 106);
+            this.lbProcedimiento.Name = "lbProcedimiento";
+            this.lbProcedimiento.Size = new System.Drawing.Size(97, 13);
+            this.lbProcedimiento.TabIndex = 4;
+            this.lbProcedimiento.Text = "PROCEDIMIENTO";
             // 
-            // label7
+            // label15
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(692, 101);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(42, 16);
-            this.label7.TabIndex = 32;
-            this.label7.Text = "Sexo";
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(526, 33);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(118, 13);
+            this.label15.TabIndex = 3;
+            this.label15.Text = "FECHA DE ATENCION";
             // 
-            // comboBox1
+            // dateTimeFecha
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "F",
-            "M"});
-            this.comboBox1.Location = new System.Drawing.Point(784, 101);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 33;
+            this.dateTimeFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimeFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimeFecha.Location = new System.Drawing.Point(660, 27);
+            this.dateTimeFecha.Name = "dateTimeFecha";
+            this.dateTimeFecha.Size = new System.Drawing.Size(100, 20);
+            this.dateTimeFecha.TabIndex = 2;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(317, 31);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(57, 13);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "REGIMEN";
+            // 
+            // comboRegimen
+            // 
+            this.comboRegimen.FormattingEnabled = true;
+            this.comboRegimen.Items.AddRange(new object[] {
+            "Subsidiado",
+            "Contributivo"});
+            this.comboRegimen.Location = new System.Drawing.Point(380, 25);
+            this.comboRegimen.Name = "comboRegimen";
+            this.comboRegimen.Size = new System.Drawing.Size(121, 21);
+            this.comboRegimen.TabIndex = 0;
             // 
             // tabControl1
             // 
@@ -534,7 +534,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(1120, 987);
+            this.ClientSize = new System.Drawing.Size(1120, 749);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.tabControl1);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
