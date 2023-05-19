@@ -8,35 +8,27 @@ using System.Threading.Tasks;
 
 namespace Logica
 {
-    public class Registro
+    public class Registro : ICRUD<Paciente>
     {
         private Archivo datos;
 
-        //public Registro() 
-        //{
-        //    datos = new Archivo();
-        //}
+        public void AgregarRegistro(Paciente paciente)
+        {
+            datos.AgregarPaciente(paciente);
+        }
+        public string ActualizarRegistro(Paciente paciente)
+        {
+            throw new NotImplementedException();
+        }
 
-        //public bool AgregarPaciente(int cedula, string nombre, int telefono, int edad, string direccion, char sexo)
-        //{
-        //    if (int.IsNullOrEmpty(cedula) || string.IsNullOrEmpty(nombre) || int.IsNullOrEmpty(telefono) || int.IsNullOrEmpty(edad) || string.IsNullOrEmpty(direccion) || char.IsNullOrEmpty(sexo))
-        //    {
-        //        return false;
-        //    }
+        public string EliminarRegistro(Paciente paciente)
+        {
+            throw new NotImplementedException();
+        }
 
-        //    Paciente paciente = new Paciente
-        //    {
-        //        Cedula = cedula,
-        //        Nombre = nombre,
-        //        Telefono = telefono,
-        //        Edad = edad,
-        //        Direccion = direccion,
-        //        Sexo = sexo
-        //    };
-
-        //    datos.AgregarPaciente(paciente);
-
-        //    return true;
-        //}
+        string ICRUD<Paciente>.AgregarRegistro(Paciente paciente)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

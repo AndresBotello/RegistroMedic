@@ -17,7 +17,10 @@ namespace Datos
             using (StreamWriter writer = new StreamWriter(rutaArchivo, true)) 
             {
                 writer.WriteLine($"{paciente.Cedula},{paciente.Nombre},{paciente.Telefono},{paciente.Edad},{paciente.Direccion},{paciente.Sexo}, {paciente.Estrato}" +
-                    $"");
+                    $"{paciente.Regimen},{paciente.FechaNacimiento},{paciente.EPS},{paciente.NroIngreso},{paciente.MotivoIngreso}.{paciente.ResultadoRevision}.{paciente.TipoTratamiento}" +
+                    $"{paciente.FormaRealizacion}.{paciente.Diagnostico}.{paciente.MedicoCargo},{paciente.Observaciones}");
+
+                writer.WriteLine(writer);
             }
         }
 

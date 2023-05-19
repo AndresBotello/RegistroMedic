@@ -14,5 +14,6 @@ namespace Entidades
         public int Edad { get; set; }
         public string Direccion { get; set; }
         public char Sexo { get; set; }
+        public DateTime FechaNacimiento { get; set; }
     }
 }

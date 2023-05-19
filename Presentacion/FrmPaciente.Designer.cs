@@ -38,48 +38,50 @@
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.btnActualizar = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnDiagnostico = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.comboEstrato = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbEstrato = new System.Windows.Forms.ComboBox();
+            this.cbSexo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboRegimen = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.cbRegimen = new System.Windows.Forms.ComboBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCedula = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtNroIngreso = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.txtEps = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtMedicoCargo = new System.Windows.Forms.TextBox();
             this.lbMedico = new System.Windows.Forms.Label();
-            this.textObservaciones = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.lbObservaciones = new System.Windows.Forms.Label();
             this.txtDiagnostico = new System.Windows.Forms.TextBox();
             this.lbDiagnostico = new System.Windows.Forms.Label();
             this.lbRealizacion = new System.Windows.Forms.Label();
             this.txtFormaRealizacion = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.dateTimeFecha = new System.Windows.Forms.DateTimePicker();
+            this.dtpFechaIngreso = new System.Windows.Forms.DateTimePicker();
             this.txtTipoTratamiento = new System.Windows.Forms.TextBox();
             this.lbTratamiento = new System.Windows.Forms.Label();
             this.lbFinalidadProcedimiento = new System.Windows.Forms.Label();
-            this.txtFinalidad = new System.Windows.Forms.TextBox();
-            this.txtProcedimiento = new System.Windows.Forms.TextBox();
+            this.txtResultadoRevision = new System.Windows.Forms.TextBox();
+            this.txtMotivoIngreso = new System.Windows.Forms.TextBox();
             this.lbProcedimiento = new System.Windows.Forms.Label();
             this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.btnSalir2 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -162,22 +164,24 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage3.Controls.Add(this.btnSalir2);
+            this.tabPage3.Controls.Add(this.btnAgregar);
             this.tabPage3.Controls.Add(this.btnActualizar);
-            this.tabPage3.Controls.Add(this.dateTimePicker1);
+            this.tabPage3.Controls.Add(this.dtpFechaNacimiento);
             this.tabPage3.Controls.Add(this.label8);
-            this.tabPage3.Controls.Add(this.button5);
+            this.tabPage3.Controls.Add(this.btnDiagnostico);
             this.tabPage3.Controls.Add(this.label1);
             this.tabPage3.Controls.Add(this.button6);
-            this.tabPage3.Controls.Add(this.comboEstrato);
-            this.tabPage3.Controls.Add(this.comboBox1);
+            this.tabPage3.Controls.Add(this.cbEstrato);
+            this.tabPage3.Controls.Add(this.cbSexo);
             this.tabPage3.Controls.Add(this.label7);
-            this.tabPage3.Controls.Add(this.textBox5);
+            this.tabPage3.Controls.Add(this.txtDireccion);
             this.tabPage3.Controls.Add(this.label16);
-            this.tabPage3.Controls.Add(this.textBox4);
-            this.tabPage3.Controls.Add(this.comboRegimen);
-            this.tabPage3.Controls.Add(this.textBox3);
-            this.tabPage3.Controls.Add(this.textBox2);
-            this.tabPage3.Controls.Add(this.textBox1);
+            this.tabPage3.Controls.Add(this.txtEdad);
+            this.tabPage3.Controls.Add(this.cbRegimen);
+            this.tabPage3.Controls.Add(this.txtTelefono);
+            this.tabPage3.Controls.Add(this.txtNombre);
+            this.tabPage3.Controls.Add(this.txtCedula);
             this.tabPage3.Controls.Add(this.label6);
             this.tabPage3.Controls.Add(this.label5);
             this.tabPage3.Controls.Add(this.label4);
@@ -204,14 +208,14 @@
             this.btnActualizar.Text = "ACTUALIZAR";
             this.btnActualizar.UseVisualStyleBackColor = false;
             // 
-            // dateTimePicker1
+            // dtpFechaNacimiento
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(803, 105);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(100, 20);
-            this.dateTimePicker1.TabIndex = 48;
+            this.dtpFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaNacimiento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaNacimiento.Location = new System.Drawing.Point(803, 105);
+            this.dtpFechaNacimiento.Name = "dtpFechaNacimiento";
+            this.dtpFechaNacimiento.Size = new System.Drawing.Size(100, 20);
+            this.dtpFechaNacimiento.TabIndex = 48;
             // 
             // label8
             // 
@@ -223,16 +227,16 @@
             this.label8.TabIndex = 47;
             this.label8.Text = "Fecha de nacimiento";
             // 
-            // button5
+            // btnDiagnostico
             // 
-            this.button5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(549, 595);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(172, 23);
-            this.button5.TabIndex = 23;
-            this.button5.Text = "VER DIAGNOSTICO";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnDiagnostico.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDiagnostico.Location = new System.Drawing.Point(549, 595);
+            this.btnDiagnostico.Name = "btnDiagnostico";
+            this.btnDiagnostico.Size = new System.Drawing.Size(172, 23);
+            this.btnDiagnostico.TabIndex = 23;
+            this.btnDiagnostico.Text = "VER DIAGNOSTICO";
+            this.btnDiagnostico.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -255,30 +259,30 @@
             this.button6.Text = "ELIMINAR";
             this.button6.UseVisualStyleBackColor = false;
             // 
-            // comboEstrato
+            // cbEstrato
             // 
-            this.comboEstrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboEstrato.FormattingEnabled = true;
-            this.comboEstrato.Items.AddRange(new object[] {
+            this.cbEstrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEstrato.FormattingEnabled = true;
+            this.cbEstrato.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
             "4"});
-            this.comboEstrato.Location = new System.Drawing.Point(140, 113);
-            this.comboEstrato.Name = "comboEstrato";
-            this.comboEstrato.Size = new System.Drawing.Size(73, 21);
-            this.comboEstrato.TabIndex = 28;
+            this.cbEstrato.Location = new System.Drawing.Point(140, 113);
+            this.cbEstrato.Name = "cbEstrato";
+            this.cbEstrato.Size = new System.Drawing.Size(73, 21);
+            this.cbEstrato.TabIndex = 28;
             // 
-            // comboBox1
+            // cbSexo
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbSexo.FormattingEnabled = true;
+            this.cbSexo.Items.AddRange(new object[] {
             "F",
             "M"});
-            this.comboBox1.Location = new System.Drawing.Point(803, 57);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 46;
+            this.cbSexo.Location = new System.Drawing.Point(803, 57);
+            this.cbSexo.Name = "cbSexo";
+            this.cbSexo.Size = new System.Drawing.Size(100, 21);
+            this.cbSexo.TabIndex = 46;
             // 
             // label7
             // 
@@ -292,12 +296,12 @@
             this.label7.TabIndex = 45;
             this.label7.Text = "Sexo";
             // 
-            // textBox5
+            // txtDireccion
             // 
-            this.textBox5.Location = new System.Drawing.Point(459, 64);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(167, 20);
-            this.textBox5.TabIndex = 44;
+            this.txtDireccion.Location = new System.Drawing.Point(459, 64);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(167, 20);
+            this.txtDireccion.TabIndex = 44;
             // 
             // label16
             // 
@@ -309,45 +313,45 @@
             this.label16.TabIndex = 25;
             this.label16.Text = "Regimen";
             // 
-            // textBox4
+            // txtEdad
             // 
-            this.textBox4.Location = new System.Drawing.Point(139, 63);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(74, 20);
-            this.textBox4.TabIndex = 42;
+            this.txtEdad.Location = new System.Drawing.Point(139, 63);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.Size = new System.Drawing.Size(74, 20);
+            this.txtEdad.TabIndex = 42;
             // 
-            // comboRegimen
+            // cbRegimen
             // 
-            this.comboRegimen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboRegimen.FormattingEnabled = true;
-            this.comboRegimen.Items.AddRange(new object[] {
+            this.cbRegimen.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbRegimen.FormattingEnabled = true;
+            this.cbRegimen.Items.AddRange(new object[] {
             "Subsidiado",
             "Contributivo"});
-            this.comboRegimen.Location = new System.Drawing.Point(459, 105);
-            this.comboRegimen.Name = "comboRegimen";
-            this.comboRegimen.Size = new System.Drawing.Size(121, 21);
-            this.comboRegimen.TabIndex = 24;
+            this.cbRegimen.Location = new System.Drawing.Point(459, 105);
+            this.cbRegimen.Name = "cbRegimen";
+            this.cbRegimen.Size = new System.Drawing.Size(121, 21);
+            this.cbRegimen.TabIndex = 24;
             // 
-            // textBox3
+            // txtTelefono
             // 
-            this.textBox3.Location = new System.Drawing.Point(803, 23);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(167, 20);
-            this.textBox3.TabIndex = 40;
+            this.txtTelefono.Location = new System.Drawing.Point(803, 23);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(167, 20);
+            this.txtTelefono.TabIndex = 40;
             // 
-            // textBox2
+            // txtNombre
             // 
-            this.textBox2.Location = new System.Drawing.Point(459, 25);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(167, 20);
-            this.textBox2.TabIndex = 38;
+            this.txtNombre.Location = new System.Drawing.Point(459, 25);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(167, 20);
+            this.txtNombre.TabIndex = 38;
             // 
-            // textBox1
+            // txtCedula
             // 
-            this.textBox1.Location = new System.Drawing.Point(139, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(167, 20);
-            this.textBox1.TabIndex = 36;
+            this.txtCedula.Location = new System.Drawing.Point(139, 24);
+            this.txtCedula.Name = "txtCedula";
+            this.txtCedula.Size = new System.Drawing.Size(167, 20);
+            this.txtCedula.TabIndex = 36;
             // 
             // label6
             // 
@@ -412,25 +416,25 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.textBox6);
+            this.groupBox1.Controls.Add(this.txtNroIngreso);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.comboBox2);
+            this.groupBox1.Controls.Add(this.txtEps);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtMedicoCargo);
             this.groupBox1.Controls.Add(this.lbMedico);
-            this.groupBox1.Controls.Add(this.textObservaciones);
+            this.groupBox1.Controls.Add(this.txtObservaciones);
             this.groupBox1.Controls.Add(this.lbObservaciones);
             this.groupBox1.Controls.Add(this.txtDiagnostico);
             this.groupBox1.Controls.Add(this.lbDiagnostico);
             this.groupBox1.Controls.Add(this.lbRealizacion);
             this.groupBox1.Controls.Add(this.txtFormaRealizacion);
             this.groupBox1.Controls.Add(this.label15);
-            this.groupBox1.Controls.Add(this.dateTimeFecha);
+            this.groupBox1.Controls.Add(this.dtpFechaIngreso);
             this.groupBox1.Controls.Add(this.txtTipoTratamiento);
             this.groupBox1.Controls.Add(this.lbTratamiento);
             this.groupBox1.Controls.Add(this.lbFinalidadProcedimiento);
-            this.groupBox1.Controls.Add(this.txtFinalidad);
-            this.groupBox1.Controls.Add(this.txtProcedimiento);
+            this.groupBox1.Controls.Add(this.txtResultadoRevision);
+            this.groupBox1.Controls.Add(this.txtMotivoIngreso);
             this.groupBox1.Controls.Add(this.lbProcedimiento);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(31, 156);
@@ -439,12 +443,12 @@
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
             // 
-            // textBox6
+            // txtNroIngreso
             // 
-            this.textBox6.Location = new System.Drawing.Point(772, 20);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(74, 20);
-            this.textBox6.TabIndex = 46;
+            this.txtNroIngreso.Location = new System.Drawing.Point(772, 20);
+            this.txtNroIngreso.Name = "txtNroIngreso";
+            this.txtNroIngreso.Size = new System.Drawing.Size(74, 20);
+            this.txtNroIngreso.TabIndex = 46;
             // 
             // label10
             // 
@@ -458,11 +462,11 @@
             this.label10.TabIndex = 45;
             this.label10.Text = "Numero de ingreso";
             // 
-            // comboBox2
+            // txtEps
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.txtEps.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEps.FormattingEnabled = true;
+            this.txtEps.Items.AddRange(new object[] {
             "COMPENSAR E.P.S.",
             "E.P.S. FAMISANAR LTDA.",
             "E.P.S. SANITAS S.A.",
@@ -471,10 +475,10 @@
             "NUEVA EPS S.A.",
             "SALUD TOTAL S.A. E.P.S.",
             "SALUDVIDA S.A. E.P.S."});
-            this.comboBox2.Location = new System.Drawing.Point(377, 15);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(202, 21);
-            this.comboBox2.TabIndex = 44;
+            this.txtEps.Location = new System.Drawing.Point(377, 15);
+            this.txtEps.Name = "txtEps";
+            this.txtEps.Size = new System.Drawing.Size(202, 21);
+            this.txtEps.TabIndex = 44;
             // 
             // label9
             // 
@@ -506,13 +510,13 @@
             this.lbMedico.TabIndex = 17;
             this.lbMedico.Text = "Medico a cargo";
             // 
-            // textObservaciones
+            // txtObservaciones
             // 
-            this.textObservaciones.Location = new System.Drawing.Point(671, 362);
-            this.textObservaciones.Multiline = true;
-            this.textObservaciones.Name = "textObservaciones";
-            this.textObservaciones.Size = new System.Drawing.Size(236, 57);
-            this.textObservaciones.TabIndex = 16;
+            this.txtObservaciones.Location = new System.Drawing.Point(671, 362);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(236, 57);
+            this.txtObservaciones.TabIndex = 16;
             // 
             // lbObservaciones
             // 
@@ -570,14 +574,14 @@
             this.label15.TabIndex = 27;
             this.label15.Text = "Fecha y hora de ingreso";
             // 
-            // dateTimeFecha
+            // dtpFechaIngreso
             // 
-            this.dateTimeFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimeFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimeFecha.Location = new System.Drawing.Point(201, 16);
-            this.dateTimeFecha.Name = "dateTimeFecha";
-            this.dateTimeFecha.Size = new System.Drawing.Size(100, 20);
-            this.dateTimeFecha.TabIndex = 26;
+            this.dtpFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFechaIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaIngreso.Location = new System.Drawing.Point(201, 16);
+            this.dtpFechaIngreso.Name = "dtpFechaIngreso";
+            this.dtpFechaIngreso.Size = new System.Drawing.Size(100, 20);
+            this.dtpFechaIngreso.TabIndex = 26;
             // 
             // txtTipoTratamiento
             // 
@@ -607,21 +611,21 @@
             this.lbFinalidadProcedimiento.TabIndex = 7;
             this.lbFinalidadProcedimiento.Text = "Resultados de \r\nla revision";
             // 
-            // txtFinalidad
+            // txtResultadoRevision
             // 
-            this.txtFinalidad.Location = new System.Drawing.Point(185, 134);
-            this.txtFinalidad.Multiline = true;
-            this.txtFinalidad.Name = "txtFinalidad";
-            this.txtFinalidad.Size = new System.Drawing.Size(722, 35);
-            this.txtFinalidad.TabIndex = 6;
+            this.txtResultadoRevision.Location = new System.Drawing.Point(185, 134);
+            this.txtResultadoRevision.Multiline = true;
+            this.txtResultadoRevision.Name = "txtResultadoRevision";
+            this.txtResultadoRevision.Size = new System.Drawing.Size(722, 35);
+            this.txtResultadoRevision.TabIndex = 6;
             // 
-            // txtProcedimiento
+            // txtMotivoIngreso
             // 
-            this.txtProcedimiento.Location = new System.Drawing.Point(185, 79);
-            this.txtProcedimiento.Multiline = true;
-            this.txtProcedimiento.Name = "txtProcedimiento";
-            this.txtProcedimiento.Size = new System.Drawing.Size(722, 38);
-            this.txtProcedimiento.TabIndex = 5;
+            this.txtMotivoIngreso.Location = new System.Drawing.Point(185, 79);
+            this.txtMotivoIngreso.Multiline = true;
+            this.txtMotivoIngreso.Name = "txtMotivoIngreso";
+            this.txtMotivoIngreso.Size = new System.Drawing.Size(722, 38);
+            this.txtMotivoIngreso.TabIndex = 5;
             // 
             // lbProcedimiento
             // 
@@ -642,6 +646,33 @@
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Datos Historia Clinica";
             this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnAgregar.Location = new System.Drawing.Point(216, 595);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(96, 23);
+            this.btnAgregar.TabIndex = 50;
+            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
+            // btnSalir2
+            // 
+            this.btnSalir2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSalir2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSalir2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSalir2.Location = new System.Drawing.Point(842, 595);
+            this.btnSalir2.Name = "btnSalir2";
+            this.btnSalir2.Size = new System.Drawing.Size(96, 23);
+            this.btnSalir2.TabIndex = 51;
+            this.btnSalir2.Text = "SALIR";
+            this.btnSalir2.UseVisualStyleBackColor = false;
             // 
             // FrmPaciente
             // 
@@ -677,24 +708,24 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabControl tabControl2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbSexo;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDireccion;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.TextBox txtTelefono;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCedula;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnDiagnostico;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.TextBox txtMedicoCargo;
         private System.Windows.Forms.Label lbMedico;
-        private System.Windows.Forms.TextBox textObservaciones;
+        private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Label lbObservaciones;
         private System.Windows.Forms.TextBox txtDiagnostico;
         private System.Windows.Forms.Label lbDiagnostico;
@@ -703,22 +734,24 @@
         private System.Windows.Forms.TextBox txtTipoTratamiento;
         private System.Windows.Forms.Label lbTratamiento;
         private System.Windows.Forms.Label lbFinalidadProcedimiento;
-        private System.Windows.Forms.TextBox txtFinalidad;
-        private System.Windows.Forms.TextBox txtProcedimiento;
+        private System.Windows.Forms.TextBox txtResultadoRevision;
+        private System.Windows.Forms.TextBox txtMotivoIngreso;
         private System.Windows.Forms.Label lbProcedimiento;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboEstrato;
+        private System.Windows.Forms.ComboBox cbEstrato;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.ComboBox comboRegimen;
+        private System.Windows.Forms.ComboBox cbRegimen;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.DateTimePicker dateTimeFecha;
+        private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
         private System.Windows.Forms.Button btnActualizar;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txtNroIngreso;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox txtEps;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btnAgregar;
+        private System.Windows.Forms.Button btnSalir2;
     }
 }

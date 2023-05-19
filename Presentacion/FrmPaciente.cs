@@ -1,4 +1,5 @@
-﻿using Logica;
+﻿using Entidades;
+using Logica;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace Presentacion
 {
     public partial class FrmPaciente : Form
     {
+        private Registro registro;
         public FrmPaciente()
         {
             InitializeComponent();
@@ -54,6 +56,59 @@ namespace Presentacion
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Paciente paciente = new Paciente();
+
+            paciente.Cedula = int.Parse(txtCedula.Text);
+            paciente.Nombre = txtNombre.Text;
+            paciente.Telefono = int.Parse(txtTelefono.Text);
+            paciente.Edad = int.Parse(txtEdad.Text);
+            paciente.Direccion = txtDireccion.Text;
+            paciente.Sexo = char.Parse(cbSexo.Text);
+            paciente.Estrato = int.Parse(cbEstrato.Text);
+            paciente.Regimen = cbRegimen.Text;
+            paciente.FechaNacimiento = System.DateTime.Parse(dtpFechaNacimiento.Text);
+            paciente.FechaIngreso = System.DateTime.Parse(dtpFechaIngreso.Text);
+            paciente.MotivoIngreso = txtMotivoIngreso.Text;
+            paciente.ResultadoRevision = txtResultadoRevision.Text;
+            paciente.TipoTratamiento = txtTipoTratamiento.Text;
+            paciente.FormaRealizacion = txtFormaRealizacion.Text;
+            paciente.Diagnostico = txtDiagnostico.Text;
+            paciente.MedicoCargo = txtMedicoCargo.Text;
+            paciente.Observaciones = txtObservaciones.Text;
+
+            registro.AgregarRegistro(paciente);
+
+            MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            LimpiarCampos();
+        }
+
+        private void LimpiarCampos()
+        {
+            txtCedula.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
+            txtEdad.Text = string.Empty;
+            txtDireccion.Text = string.Empty;
+            cbSexo.Text = string.Empty;
+            cbEstrato.Text = string.Empty;
+            cbRegimen.Text = string.Empty;
+            dtpFechaNacimiento.Text = string.Empty;
+            dtpFechaIngreso.Text = string.Empty;
+            txtMotivoIngreso.Text = string.Empty;
+            txtResultadoRevision.Text = string.Empty;
+            txtTipoTratamiento.Text = string.Empty;
+            txtFormaRealizacion.Text = string.Empty;
+            txtDiagnostico.Text = string.Empty;
+            txtMedicoCargo.Text = string.Empty;
+            txtObservaciones.Text = string.Empty;
+
+
 
         }
     }
