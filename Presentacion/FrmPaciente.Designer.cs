@@ -508,7 +508,7 @@
             // 
             // textObservaciones
             // 
-            this.textObservaciones.Location = new System.Drawing.Point(671, 381);
+            this.textObservaciones.Location = new System.Drawing.Point(636, 381);
             this.textObservaciones.Multiline = true;
             this.textObservaciones.Name = "textObservaciones";
             this.textObservaciones.Size = new System.Drawing.Size(236, 57);
@@ -518,7 +518,7 @@
             // 
             this.lbObservaciones.AutoSize = true;
             this.lbObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbObservaciones.Location = new System.Drawing.Point(566, 382);
+            this.lbObservaciones.Location = new System.Drawing.Point(540, 382);
             this.lbObservaciones.Name = "lbObservaciones";
             this.lbObservaciones.Size = new System.Drawing.Size(99, 16);
             this.lbObservaciones.TabIndex = 15;
