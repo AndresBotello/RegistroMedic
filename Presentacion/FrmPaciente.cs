@@ -51,5 +51,10 @@ namespace Presentacion
             this.Owner.Show();
             this.Close();
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
