@@ -10,101 +10,28 @@ namespace Datos
 {
     public class Archivo
     {
-        string ruta = "Registro medico.txt";
+        string rutaArchivo /*= "Registro medico.txt"*/;
 
-        public string GuardarRegistro(Paciente paciente)
+        public void DatosArchivo(string rutaArchivo)
         {
-            var sw = new StreamWriter(ruta, true);
-            sw.WriteLine(paciente.ToString());
-            sw.Close();
-            return "Ok";
+            this.rutaArchivo = rutaArchivo;
         }
 
-        public List<Paciente> ConsultarTodos()
+        public void GuardarPersona(Paciente paciente)
         {
-            List<Paciente> lista = new List<Paciente>();
-            try
-            {
-                var sr = new StreamReader(ruta);
-                while (true)
-                {
-                    lista.Add(Mapeador(sr.ReadLine()));
-                }
-            }
-            catch (Exception)
-            {
+            // Crea una cadena con el formato deseado para guardar los datos en el archivo
+            string datos = $"{paciente.Cedula},{paciente.Nombre},{paciente.Telefono},{paciente.Edad}" +
+                $"{paciente.Direccion},{paciente.Sexo},{paciente.Estrato},{paciente.Regimen}," +
+                $"{paciente.FechaNacimiento},{paciente.FechaIngreso},{paciente.MotivoIngreso},{paciente.ResultadoRevision}," +
+                $"{paciente.TipoTratamiento},{paciente.FormaRealizacion},{paciente.Diagnostico},{paciente.MedicoCargo}," +
+                $"{paciente.Observaciones},";
 
-                return null;
+            // Escribe los datos en el archivo de texto
+            using (StreamWriter sw = new StreamWriter(rutaArchivo, true))
+            {
+                sw.WriteLine(datos);
             }
         }
 
-        Paciente Mapeador(string linea)
-        {
-            var paciente = new Paciente();
-            paciente.Cedula = int.Parse(linea.Split(' ; ')[0]);
-            paciente.Nombre = linea.Split(' ; ')[1];
-            paciente.Telefono
-        }
-
-        //public void ActualizarPaciente(Paciente paciente)
-        //{
-        //    string tempArchivo = "temp.txt";
-        //    using (StreamReader sr = new StreamReader(rutaArchivo))
-        //    using (StreamWriter sw = new StreamWriter(tempArchivo))
-        //    {
-        //        string linea;
-        //        while ((linea = sr.ReadLine()) != null)
-        //        {
-        //            string[] campos = linea.Split(',');
-        //            string pacienteNombre = campos[0];
-        //            string pacienteApellido = campos[1];
-
-        //            if (pacienteNombre == nombre && pacienteApellido == apellido)
-        //            {
-        //                // Escribir la línea actualizada en el archivo temporal
-        //                sw.WriteLine($"{nombre},{apellido},{edad}");
-        //            }
-        //            else
-        //            {
-        //                // Escribir las líneas que no requieren actualización en el archivo temporal
-        //                sw.WriteLine(linea);
-        //            }
-        //        }
-        //    }
-
-        //    // Reemplazar el archivo original con el archivo temporal
-        //    File.Delete(rutaArchivo);
-        //    File.Move(tempArchivo, rutaArchivo);
-        //}
-
-    }
-
-    //public void EliminarPaciente(string nombre, string apellido)
-    //{
-    //    string tempArchivo = "temp.txt";
-    //    using (StreamReader sr = new StreamReader(rutaArchivo))
-    //    using (StreamWriter sw = new StreamWriter(tempArchivo))
-    //    {
-    //        string linea;
-    //        while ((linea = sr.ReadLine()) != null)
-    //        {
-    //            string[] campos = linea.Split(',');
-    //            string pacienteNombre = campos[0];
-    //            string pacienteApellido = campos[1];
-
-    //            if (pacienteNombre == nombre && pacienteApellido == apellido)
-    //            {
-    //                // Saltar la línea que coincide con el paciente a eliminar
-    //                continue;
-    //            }
-
-    //            // Escribir las líneas que no coinciden en el archivo temporal
-    //            sw.WriteLine(linea);
-    //        }
-    //    }
-
-    //    // Reemplazar el archivo original con el archivo temporal
-    //    File.Delete(rutaArchivo);
-    //    File.Move(tempArchivo, rutaArchivo);
-    //}
+    }   
 }

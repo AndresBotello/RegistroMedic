@@ -14,10 +14,11 @@ namespace Presentacion
 {
     public partial class FrmPaciente : Form
     {
-        private Registro registro;
+        private RegistroPaciente registro;
         public FrmPaciente()
         {
             InitializeComponent();
+            registro = new RegistroPaciente("Registro medico.txt");
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -71,8 +72,8 @@ namespace Presentacion
             paciente.Sexo = char.Parse(cbSexo.Text);
             paciente.Estrato = int.Parse(cbEstrato.Text);
             paciente.Regimen = cbRegimen.Text;
-            paciente.FechaNacimiento = System.DateTime.Parse(dtpFechaNacimiento.Text);
-            paciente.FechaIngreso = System.DateTime.Parse(dtpFechaIngreso.Text);
+            paciente.FechaNacimiento = DateTime.Parse(dtpFechaNacimiento.Text);
+            paciente.FechaIngreso = DateTime.Parse(dtpFechaIngreso.Text);
             paciente.MotivoIngreso = txtMotivoIngreso.Text;
             paciente.ResultadoRevision = txtResultadoRevision.Text;
             paciente.TipoTratamiento = txtTipoTratamiento.Text;
@@ -81,7 +82,7 @@ namespace Presentacion
             paciente.MedicoCargo = txtMedicoCargo.Text;
             paciente.Observaciones = txtObservaciones.Text;
 
-            registro.AgregarRegistro(paciente);
+            registro.GuardarPaciente(paciente);
 
             MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
