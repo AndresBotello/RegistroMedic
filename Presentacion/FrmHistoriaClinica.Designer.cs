@@ -97,7 +97,7 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 38);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(450, 422);
+            this.groupBox1.Size = new System.Drawing.Size(422, 422);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
@@ -197,7 +197,7 @@
             // 
             this.txtNombre.Location = new System.Drawing.Point(154, 96);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(284, 20);
+            this.txtNombre.Size = new System.Drawing.Size(259, 20);
             this.txtNombre.TabIndex = 56;
             // 
             // txtCedula
@@ -289,9 +289,9 @@
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Location = new System.Drawing.Point(468, 38);
+            this.groupBox2.Location = new System.Drawing.Point(451, 38);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(873, 586);
+            this.groupBox2.Size = new System.Drawing.Size(825, 586);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
@@ -315,7 +315,7 @@
             // 
             // txtObservaciones
             // 
-            this.txtObservaciones.Location = new System.Drawing.Point(624, 492);
+            this.txtObservaciones.Location = new System.Drawing.Point(578, 484);
             this.txtObservaciones.Multiline = true;
             this.txtObservaciones.Name = "txtObservaciones";
             this.txtObservaciones.Size = new System.Drawing.Size(236, 73);
@@ -325,7 +325,7 @@
             // 
             this.lbObservaciones.AutoSize = true;
             this.lbObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbObservaciones.Location = new System.Drawing.Point(519, 493);
+            this.lbObservaciones.Location = new System.Drawing.Point(473, 485);
             this.lbObservaciones.Name = "lbObservaciones";
             this.lbObservaciones.Size = new System.Drawing.Size(99, 16);
             this.lbObservaciones.TabIndex = 66;
@@ -336,7 +336,7 @@
             this.textBox7.Location = new System.Drawing.Point(167, 294);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(682, 72);
+            this.textBox7.Size = new System.Drawing.Size(652, 72);
             this.textBox7.TabIndex = 65;
             // 
             // txtDiagnostico
@@ -344,7 +344,7 @@
             this.txtDiagnostico.Location = new System.Drawing.Point(167, 386);
             this.txtDiagnostico.Multiline = true;
             this.txtDiagnostico.Name = "txtDiagnostico";
-            this.txtDiagnostico.Size = new System.Drawing.Size(682, 74);
+            this.txtDiagnostico.Size = new System.Drawing.Size(652, 74);
             this.txtDiagnostico.TabIndex = 64;
             // 
             // lbDiagnostico
@@ -372,7 +372,7 @@
             this.txtTipoTratamiento.Location = new System.Drawing.Point(167, 219);
             this.txtTipoTratamiento.Multiline = true;
             this.txtTipoTratamiento.Name = "txtTipoTratamiento";
-            this.txtTipoTratamiento.Size = new System.Drawing.Size(682, 41);
+            this.txtTipoTratamiento.Size = new System.Drawing.Size(652, 41);
             this.txtTipoTratamiento.TabIndex = 60;
             // 
             // lbTratamiento
@@ -400,7 +400,7 @@
             this.txtResultadoRevision.Location = new System.Drawing.Point(167, 147);
             this.txtResultadoRevision.Multiline = true;
             this.txtResultadoRevision.Name = "txtResultadoRevision";
-            this.txtResultadoRevision.Size = new System.Drawing.Size(682, 39);
+            this.txtResultadoRevision.Size = new System.Drawing.Size(652, 39);
             this.txtResultadoRevision.TabIndex = 57;
             // 
             // txtMotivoIngreso
@@ -408,7 +408,7 @@
             this.txtMotivoIngreso.Location = new System.Drawing.Point(167, 88);
             this.txtMotivoIngreso.Multiline = true;
             this.txtMotivoIngreso.Name = "txtMotivoIngreso";
-            this.txtMotivoIngreso.Size = new System.Drawing.Size(682, 38);
+            this.txtMotivoIngreso.Size = new System.Drawing.Size(652, 38);
             this.txtMotivoIngreso.TabIndex = 56;
             // 
             // lbProcedimiento
@@ -423,7 +423,7 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(422, 30);
+            this.textBox6.Location = new System.Drawing.Point(407, 34);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(183, 20);
             this.textBox6.TabIndex = 54;
@@ -437,9 +437,9 @@
             // 
             // txtNroIngreso
             // 
-            this.txtNroIngreso.Location = new System.Drawing.Point(775, 31);
+            this.txtNroIngreso.Location = new System.Drawing.Point(737, 37);
             this.txtNroIngreso.Name = "txtNroIngreso";
-            this.txtNroIngreso.Size = new System.Drawing.Size(74, 20);
+            this.txtNroIngreso.Size = new System.Drawing.Size(53, 20);
             this.txtNroIngreso.TabIndex = 52;
             // 
             // label10
@@ -448,7 +448,7 @@
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(637, 35);
+            this.label10.Location = new System.Drawing.Point(609, 38);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(122, 16);
             this.label10.TabIndex = 51;
@@ -484,7 +484,7 @@
             this.button1.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button1.Location = new System.Drawing.Point(21, 502);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(90, 64);
+            this.button1.Size = new System.Drawing.Size(82, 50);
             this.button1.TabIndex = 2;
             this.button1.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button1.UseVisualStyleBackColor = false;
@@ -497,7 +497,7 @@
             this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.Location = new System.Drawing.Point(234, 502);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 64);
+            this.button2.Size = new System.Drawing.Size(84, 59);
             this.button2.TabIndex = 52;
             this.button2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.button2.UseVisualStyleBackColor = false;
@@ -507,7 +507,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1370, 582);
+            this.ClientSize = new System.Drawing.Size(1297, 582);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox2);
