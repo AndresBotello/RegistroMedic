@@ -18,8 +18,15 @@ namespace Presentacion
             InitializeComponent();
 
         }
-        
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
 
+        }
+
+        private void FrmHistoriaClinica_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
