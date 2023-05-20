@@ -111,5 +111,11 @@ namespace Presentacion
 
 
         }
+
+        private void btnDiagnostico_Click(object sender, EventArgs e)
+        {
+            FrmHistoriaClinica form = new FrmHistoriaClinica();
+            form.Show();
+        }
     }
 }

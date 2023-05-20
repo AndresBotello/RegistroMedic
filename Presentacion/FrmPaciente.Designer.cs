@@ -194,6 +194,7 @@
             this.btnDiagnostico.TabIndex = 23;
             this.btnDiagnostico.Text = "VER DIAGNOSTICO";
             this.btnDiagnostico.UseVisualStyleBackColor = false;
+            this.btnDiagnostico.Click += new System.EventHandler(this.btnDiagnostico_Click);
             // 
             // label1
             // 
@@ -599,7 +600,7 @@
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1113, 630);
+            this.tabPage4.Size = new System.Drawing.Size(1113, 665);
             this.tabPage4.TabIndex = 1;
             this.tabPage4.Text = "Datos Historia Clinica";
             this.tabPage4.UseVisualStyleBackColor = true;

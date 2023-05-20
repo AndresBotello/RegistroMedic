@@ -30,6 +30,10 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHistoriaClinica));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -44,31 +48,27 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.txtNroIngreso = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txtMedicoCargo = new System.Windows.Forms.TextBox();
+            this.lbMedico = new System.Windows.Forms.Label();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
+            this.lbObservaciones = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.txtDiagnostico = new System.Windows.Forms.TextBox();
             this.lbDiagnostico = new System.Windows.Forms.Label();
             this.lbRealizacion = new System.Windows.Forms.Label();
+            this.txtTipoTratamiento = new System.Windows.Forms.TextBox();
             this.lbTratamiento = new System.Windows.Forms.Label();
             this.lbFinalidadProcedimiento = new System.Windows.Forms.Label();
             this.txtResultadoRevision = new System.Windows.Forms.TextBox();
             this.txtMotivoIngreso = new System.Windows.Forms.TextBox();
             this.lbProcedimiento = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.txtTipoTratamiento = new System.Windows.Forms.TextBox();
-            this.txtMedicoCargo = new System.Windows.Forms.TextBox();
-            this.lbMedico = new System.Windows.Forms.Label();
-            this.txtObservaciones = new System.Windows.Forms.TextBox();
-            this.lbObservaciones = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtNroIngreso = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
@@ -101,6 +101,34 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(154, 344);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(142, 20);
+            this.textBox4.TabIndex = 70;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(154, 302);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(119, 20);
+            this.textBox3.TabIndex = 69;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(154, 256);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(46, 20);
+            this.textBox2.TabIndex = 68;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(154, 216);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(46, 20);
+            this.textBox1.TabIndex = 67;
             // 
             // label8
             // 
@@ -239,34 +267,6 @@
             this.label2.TabIndex = 53;
             this.label2.Text = "Cédula";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(154, 216);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(46, 20);
-            this.textBox1.TabIndex = 67;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(154, 256);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(46, 20);
-            this.textBox2.TabIndex = 68;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(154, 302);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(119, 20);
-            this.textBox3.TabIndex = 69;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(154, 344);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(142, 20);
-            this.textBox4.TabIndex = 70;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.txtMedicoCargo);
@@ -295,60 +295,49 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             // 
-            // txtNroIngreso
+            // txtMedicoCargo
             // 
-            this.txtNroIngreso.Location = new System.Drawing.Point(775, 31);
-            this.txtNroIngreso.Name = "txtNroIngreso";
-            this.txtNroIngreso.Size = new System.Drawing.Size(74, 20);
-            this.txtNroIngreso.TabIndex = 52;
+            this.txtMedicoCargo.Location = new System.Drawing.Point(132, 519);
+            this.txtMedicoCargo.Multiline = true;
+            this.txtMedicoCargo.Name = "txtMedicoCargo";
+            this.txtMedicoCargo.Size = new System.Drawing.Size(299, 19);
+            this.txtMedicoCargo.TabIndex = 69;
             // 
-            // label10
+            // lbMedico
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(637, 35);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(122, 16);
-            this.label10.TabIndex = 51;
-            this.label10.Text = "Numero de ingreso";
+            this.lbMedico.AutoSize = true;
+            this.lbMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbMedico.Location = new System.Drawing.Point(11, 522);
+            this.lbMedico.Name = "lbMedico";
+            this.lbMedico.Size = new System.Drawing.Size(101, 16);
+            this.lbMedico.TabIndex = 68;
+            this.lbMedico.Text = "Medico a cargo";
             // 
-            // label9
+            // txtObservaciones
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(370, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 16);
-            this.label9.TabIndex = 49;
-            this.label9.Text = "Eps";
+            this.txtObservaciones.Location = new System.Drawing.Point(624, 492);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(236, 73);
+            this.txtObservaciones.TabIndex = 67;
             // 
-            // label15
+            // lbObservaciones
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(11, 35);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(152, 16);
-            this.label15.TabIndex = 48;
-            this.label15.Text = "Fecha y hora de ingreso";
+            this.lbObservaciones.AutoSize = true;
+            this.lbObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbObservaciones.Location = new System.Drawing.Point(519, 493);
+            this.lbObservaciones.Name = "lbObservaciones";
+            this.lbObservaciones.Size = new System.Drawing.Size(99, 16);
+            this.lbObservaciones.TabIndex = 66;
+            this.lbObservaciones.Text = "Observaciones";
             // 
-            // textBox5
+            // textBox7
             // 
-            this.textBox5.Location = new System.Drawing.Point(181, 31);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(166, 20);
-            this.textBox5.TabIndex = 53;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(422, 30);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(183, 20);
-            this.textBox6.TabIndex = 54;
+            this.textBox7.Location = new System.Drawing.Point(167, 294);
+            this.textBox7.Multiline = true;
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(682, 72);
+            this.textBox7.TabIndex = 65;
             // 
             // txtDiagnostico
             // 
@@ -377,6 +366,14 @@
             this.lbRealizacion.Size = new System.Drawing.Size(133, 16);
             this.lbRealizacion.TabIndex = 62;
             this.lbRealizacion.Text = "Forma de realizacion";
+            // 
+            // txtTipoTratamiento
+            // 
+            this.txtTipoTratamiento.Location = new System.Drawing.Point(167, 219);
+            this.txtTipoTratamiento.Multiline = true;
+            this.txtTipoTratamiento.Name = "txtTipoTratamiento";
+            this.txtTipoTratamiento.Size = new System.Drawing.Size(682, 41);
+            this.txtTipoTratamiento.TabIndex = 60;
             // 
             // lbTratamiento
             // 
@@ -424,57 +421,60 @@
             this.lbProcedimiento.TabIndex = 55;
             this.lbProcedimiento.Text = "Motivo de Ingreso";
             // 
-            // textBox7
+            // textBox6
             // 
-            this.textBox7.Location = new System.Drawing.Point(167, 294);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(682, 72);
-            this.textBox7.TabIndex = 65;
+            this.textBox6.Location = new System.Drawing.Point(422, 30);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(183, 20);
+            this.textBox6.TabIndex = 54;
             // 
-            // txtTipoTratamiento
+            // textBox5
             // 
-            this.txtTipoTratamiento.Location = new System.Drawing.Point(167, 219);
-            this.txtTipoTratamiento.Multiline = true;
-            this.txtTipoTratamiento.Name = "txtTipoTratamiento";
-            this.txtTipoTratamiento.Size = new System.Drawing.Size(682, 41);
-            this.txtTipoTratamiento.TabIndex = 60;
+            this.textBox5.Location = new System.Drawing.Point(181, 31);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(166, 20);
+            this.textBox5.TabIndex = 53;
             // 
-            // txtMedicoCargo
+            // txtNroIngreso
             // 
-            this.txtMedicoCargo.Location = new System.Drawing.Point(132, 519);
-            this.txtMedicoCargo.Multiline = true;
-            this.txtMedicoCargo.Name = "txtMedicoCargo";
-            this.txtMedicoCargo.Size = new System.Drawing.Size(299, 19);
-            this.txtMedicoCargo.TabIndex = 69;
+            this.txtNroIngreso.Location = new System.Drawing.Point(775, 31);
+            this.txtNroIngreso.Name = "txtNroIngreso";
+            this.txtNroIngreso.Size = new System.Drawing.Size(74, 20);
+            this.txtNroIngreso.TabIndex = 52;
             // 
-            // lbMedico
+            // label10
             // 
-            this.lbMedico.AutoSize = true;
-            this.lbMedico.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbMedico.Location = new System.Drawing.Point(11, 522);
-            this.lbMedico.Name = "lbMedico";
-            this.lbMedico.Size = new System.Drawing.Size(101, 16);
-            this.lbMedico.TabIndex = 68;
-            this.lbMedico.Text = "Medico a cargo";
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Transparent;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label10.Location = new System.Drawing.Point(637, 35);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(122, 16);
+            this.label10.TabIndex = 51;
+            this.label10.Text = "Numero de ingreso";
             // 
-            // txtObservaciones
+            // label9
             // 
-            this.txtObservaciones.Location = new System.Drawing.Point(624, 492);
-            this.txtObservaciones.Multiline = true;
-            this.txtObservaciones.Name = "txtObservaciones";
-            this.txtObservaciones.Size = new System.Drawing.Size(236, 73);
-            this.txtObservaciones.TabIndex = 67;
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label9.Location = new System.Drawing.Point(370, 35);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(31, 16);
+            this.label9.TabIndex = 49;
+            this.label9.Text = "Eps";
             // 
-            // lbObservaciones
+            // label15
             // 
-            this.lbObservaciones.AutoSize = true;
-            this.lbObservaciones.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbObservaciones.Location = new System.Drawing.Point(519, 493);
-            this.lbObservaciones.Name = "lbObservaciones";
-            this.lbObservaciones.Size = new System.Drawing.Size(99, 16);
-            this.lbObservaciones.TabIndex = 66;
-            this.lbObservaciones.Text = "Observaciones";
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(11, 35);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(152, 16);
+            this.label15.TabIndex = 48;
+            this.label15.Text = "Fecha y hora de ingreso";
             // 
             // button1
             // 
