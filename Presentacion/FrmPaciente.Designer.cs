@@ -137,6 +137,7 @@
             this.btnSalir2.TabIndex = 51;
             this.btnSalir2.Text = "SALIR";
             this.btnSalir2.UseVisualStyleBackColor = false;
+            this.btnSalir2.Click += new System.EventHandler(this.btnSalir2_Click);
             // 
             // btnAgregar
             // 

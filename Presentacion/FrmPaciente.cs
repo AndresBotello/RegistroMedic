@@ -117,5 +117,16 @@ namespace Presentacion
             FrmHistoriaClinica form = new FrmHistoriaClinica();
             form.Show();
         }
+
+        private void btnSalir2_Click(object sender, EventArgs e)
+        {
+            Salir2();
+        }
+
+        void Salir2()
+        {
+            this.Owner.Show();
+            this.Close();
+        }
     }
 }

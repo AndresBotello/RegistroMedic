@@ -10,18 +10,40 @@ namespace Datos
 {
     public class Archivo
     {
-        private readonly string rutaArchivo = "Registro medico.txt";
+        string ruta = "Registro medico.txt";
 
-        public void AgregarPaciente(Paciente paciente) 
+        public string GuardarRegistro(Paciente paciente)
         {
-            using (StreamWriter writer = new StreamWriter(rutaArchivo, true)) 
-            {
-                writer.WriteLine($"{paciente.Cedula},{paciente.Nombre},{paciente.Telefono},{paciente.Edad},{paciente.Direccion},{paciente.Sexo}, {paciente.Estrato}" +
-                    $"{paciente.Regimen},{paciente.FechaNacimiento},{paciente.EPS},{paciente.NroIngreso},{paciente.MotivoIngreso}.{paciente.ResultadoRevision}.{paciente.TipoTratamiento}" +
-                    $"{paciente.FormaRealizacion}.{paciente.Diagnostico}.{paciente.MedicoCargo},{paciente.Observaciones}");
+            var sw = new StreamWriter(ruta, true);
+            sw.WriteLine(paciente.ToString());
+            sw.Close();
+            return "Ok";
+        }
 
-                writer.WriteLine(writer);
+        public List<Paciente> ConsultarTodos()
+        {
+            List<Paciente> lista = new List<Paciente>();
+            try
+            {
+                var sr = new StreamReader(ruta);
+                while (true)
+                {
+                    lista.Add(Mapeador(sr.ReadLine()));
+                }
             }
+            catch (Exception)
+            {
+
+                return null;
+            }
+        }
+
+        Paciente Mapeador(string linea)
+        {
+            var paciente = new Paciente();
+            paciente.Cedula = int.Parse(linea.Split(' ; ')[0]);
+            paciente.Nombre = linea.Split(' ; ')[1];
+            paciente.Telefono
         }
 
         //public void ActualizarPaciente(Paciente paciente)
