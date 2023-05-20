@@ -75,7 +75,6 @@
             this.txtResultadoRevision = new System.Windows.Forms.TextBox();
             this.txtMotivoIngreso = new System.Windows.Forms.TextBox();
             this.lbProcedimiento = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -84,8 +83,7 @@
             // tabControl2
             // 
             this.tabControl2.Controls.Add(this.tabPage3);
-            this.tabControl2.Controls.Add(this.tabPage4);
-            this.tabControl2.Location = new System.Drawing.Point(12, 12);
+            this.tabControl2.Location = new System.Drawing.Point(23, 12);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
             this.tabControl2.Size = new System.Drawing.Size(1121, 691);
@@ -128,42 +126,45 @@
             // btnSalir2
             // 
             this.btnSalir2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSalir2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnSalir2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalir2.BackgroundImage")));
+            this.btnSalir2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnSalir2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSalir2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalir2.Location = new System.Drawing.Point(842, 595);
+            this.btnSalir2.Location = new System.Drawing.Point(879, 595);
             this.btnSalir2.Name = "btnSalir2";
-            this.btnSalir2.Size = new System.Drawing.Size(96, 23);
+            this.btnSalir2.Size = new System.Drawing.Size(59, 40);
             this.btnSalir2.TabIndex = 51;
-            this.btnSalir2.Text = "SALIR";
             this.btnSalir2.UseVisualStyleBackColor = false;
             this.btnSalir2.Click += new System.EventHandler(this.btnSalir2_Click);
             // 
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnAgregar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnAgregar.BackgroundImage")));
+            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnAgregar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAgregar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnAgregar.Location = new System.Drawing.Point(216, 595);
+            this.btnAgregar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAgregar.Location = new System.Drawing.Point(232, 595);
             this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(96, 23);
+            this.btnAgregar.Size = new System.Drawing.Size(58, 40);
             this.btnAgregar.TabIndex = 50;
-            this.btnAgregar.Text = "AGREGAR";
+            this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnActualizar
             // 
             this.btnActualizar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
+            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.No;
             this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnActualizar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnActualizar.Location = new System.Drawing.Point(342, 595);
+            this.btnActualizar.Location = new System.Drawing.Point(328, 595);
             this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(96, 23);
+            this.btnActualizar.Size = new System.Drawing.Size(56, 40);
             this.btnActualizar.TabIndex = 49;
-            this.btnActualizar.Text = "ACTUALIZAR";
             this.btnActualizar.UseVisualStyleBackColor = false;
             // 
             // dtpFechaNacimiento
@@ -188,12 +189,13 @@
             // btnDiagnostico
             // 
             this.btnDiagnostico.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnDiagnostico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDiagnostico.BackgroundImage")));
+            this.btnDiagnostico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiagnostico.Location = new System.Drawing.Point(549, 595);
+            this.btnDiagnostico.Location = new System.Drawing.Point(501, 595);
             this.btnDiagnostico.Name = "btnDiagnostico";
-            this.btnDiagnostico.Size = new System.Drawing.Size(172, 23);
+            this.btnDiagnostico.Size = new System.Drawing.Size(57, 40);
             this.btnDiagnostico.TabIndex = 23;
-            this.btnDiagnostico.Text = "VER DIAGNOSTICO";
             this.btnDiagnostico.UseVisualStyleBackColor = false;
             this.btnDiagnostico.Click += new System.EventHandler(this.btnDiagnostico_Click);
             // 
@@ -210,12 +212,13 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
+            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(459, 595);
+            this.button6.Location = new System.Drawing.Point(418, 595);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(84, 23);
+            this.button6.Size = new System.Drawing.Size(56, 40);
             this.button6.TabIndex = 22;
-            this.button6.Text = "ELIMINAR";
             this.button6.UseVisualStyleBackColor = false;
             // 
             // cbEstrato
@@ -596,16 +599,6 @@
             this.lbProcedimiento.TabIndex = 4;
             this.lbProcedimiento.Text = "Motivo de Ingreso";
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Location = new System.Drawing.Point(4, 22);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1113, 665);
-            this.tabPage4.TabIndex = 1;
-            this.tabPage4.Text = "Datos Historia Clinica";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
             // FrmPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -660,7 +653,6 @@
         private System.Windows.Forms.TextBox txtResultadoRevision;
         private System.Windows.Forms.TextBox txtMotivoIngreso;
         private System.Windows.Forms.Label lbProcedimiento;
-        private System.Windows.Forms.TabPage tabPage4;
         private System.Windows.Forms.DateTimePicker dtpFechaNacimiento;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label1;

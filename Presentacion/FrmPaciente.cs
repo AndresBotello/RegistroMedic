@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
+
 namespace Presentacion
 {
     public partial class FrmPaciente : Form
@@ -20,7 +22,7 @@ namespace Presentacion
             InitializeComponent();
             registro = new RegistroPaciente("Registro medico.txt");
         }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
             //Registro logica = new Registro();
@@ -82,7 +84,7 @@ namespace Presentacion
             paciente.MedicoCargo = txtMedicoCargo.Text;
             paciente.Observaciones = txtObservaciones.Text;
 
-            registro.GuardarPaciente(paciente);
+            registro.GuardarPersona(paciente);
 
             MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
