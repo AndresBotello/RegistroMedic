@@ -84,7 +84,7 @@ namespace Presentacion
             paciente.MedicoCargo = txtMedicoCargo.Text;
             paciente.Observaciones = txtObservaciones.Text;
 
-            registro.GuardarPersona(paciente);
+            registro.GuardarPaciente(paciente);
 
             MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 

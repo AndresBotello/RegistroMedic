@@ -11,16 +11,16 @@ namespace Logica
 {
     public class RegistroPaciente 
     {
-        private DatosArchivo datosArchivo;
-        
+        Archivo datosArchivo = new Archivo();
+
         public RegistroPaciente(string rutaArchivo) 
         {
-            datosArchivo = new DatosArchivo(rutaArchivo);
+            datosArchivo.DatosArchivo(rutaArchivo);
         }
 
-        private void GuardarPaciente(Paciente paciente)
+        public void GuardarPaciente(Paciente paciente)
         {
-            datosArchivo.GuardarPaciente(paciente);
+            datosArchivo.GuardarPersona(paciente);
         }
 
         
