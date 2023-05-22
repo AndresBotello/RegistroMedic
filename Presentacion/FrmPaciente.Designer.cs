@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPaciente));
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
@@ -75,9 +76,11 @@
             this.txtResultadoRevision = new System.Windows.Forms.TextBox();
             this.txtMotivoIngreso = new System.Windows.Forms.TextBox();
             this.lbProcedimiento = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl2
@@ -595,6 +598,10 @@
             this.lbProcedimiento.TabIndex = 4;
             this.lbProcedimiento.Text = "Motivo de Ingreso";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FrmPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -614,6 +621,7 @@
             this.tabPage3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -665,5 +673,6 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnSalir2;
         private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

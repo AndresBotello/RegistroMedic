@@ -61,11 +61,16 @@ namespace Presentacion
         {
 
         }
+        private void txtValor_TextChanged(object sender, EventArgs e)
+        {
+            Focus();
+        }
+
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Paciente paciente = new Paciente();
-
+            ValidarCampos();
             paciente.Cedula = int.Parse(txtCedula.Text);
             paciente.Nombre = txtNombre.Text;
             paciente.Telefono = int.Parse(txtTelefono.Text);
@@ -89,6 +94,8 @@ namespace Presentacion
             MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             LimpiarCampos();
+          
+            txtCedula.Focus();
         }
 
         private void LimpiarCampos()
@@ -114,8 +121,89 @@ namespace Presentacion
 
 
         }
+        private bool ValidarCampos()
+        {
+            bool ok = true;
+            if (txtCedula.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtCedula, " ");
+            }
+            if (txtNombre.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtNombre, " ");
+            }
+            if (txtTelefono.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtTelefono, " ");
+            }
+            if (txtEdad.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtEdad, " ");
+            }
+            if (txtDireccion.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtDireccion, " ");
+            }
+            if (cbSexo.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(cbSexo, " ");
+            }
+            if (cbEstrato.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(cbEstrato, " ");
+            }
+            if (cbRegimen.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(cbRegimen, " ");
+            }
+            if (txtMotivoIngreso.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtMotivoIngreso, " ");
+            }
+            if (txtResultadoRevision.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtResultadoRevision, " ");
+            }
+            if (txtTipoTratamiento.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtTipoTratamiento, " ");
+            }
+            if (txtFormaRealizacion.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtFormaRealizacion, " ");
+            }
+            if (txtDiagnostico.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtDiagnostico, " ");
+            }
+            if (txtMedicoCargo.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtMedicoCargo, " ");
+            }
+            if (txtObservaciones.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtObservaciones, " ");
+            }
 
-        private void btnDiagnostico_Click(object sender, EventArgs e)
+            return ok;
+            }
+
+            private void btnDiagnostico_Click(object sender, EventArgs e)
         {
             FrmHistoriaClinica form = new FrmHistoriaClinica();
             form.Show();
