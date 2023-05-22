@@ -121,7 +121,7 @@
   <data name="btnSalir2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAACctJREFUaEO9mXlQU1kWhx9aKoKo3bSNShBRwiZEIMG4gAYFIYrL4NB2CygCEkIS
+        wQAADsEBuJFr7QAACctJREFUaEO9mXlQU1kWhx9aKoKo3bSNShBRwiZEIMG4gAYFIYrL4NB2CygCEkIS
         VgEVF5qoTbuxqYAIgiBLAjz2AGGJIAQUEOzWKaemu6fHqeqqqflv/pzqPnNfFlnyAhEec6q+IlVAzu+7
         Ofe+9wCjoiRHVtjWnViT3RRqJW0N26LBph4haw3bLJPxHWXP031kPZf2ymRCF1lzuI2s4dQGWXOolawt
         0l4m4zmS0n7OoQ+9l6L+xJqC2sAVWzTtqC3JUTP7ljCbf/en+UFP0h7oimeriVPTd+Ug/Pg0Bd5Lr8P4
@@ -166,7 +166,7 @@
         DybGlEszeCxDAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="button2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="btnPdf.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA5gAAAJYCAMAAAAwibmPAAAABGdBTUEAALGPC/xhBQAAADNQTFRF////
         mQcHv76+rK2t7zs7zs3N1iks5ubm9fX129vbyhYYrxMTl5aWbQICgICAaVlZ4YKFwXmjXAAAz5hJREFU

@@ -131,5 +131,15 @@ namespace Presentacion
             this.Owner.Show();
             this.Close();
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FrmPaciente_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

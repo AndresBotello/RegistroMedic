@@ -30,30 +30,32 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHistoriaClinica));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.btnSalir2 = new System.Windows.Forms.Button();
+            this.btnPdf = new System.Windows.Forms.Button();
+            this.txtFechaNacimiento = new System.Windows.Forms.TextBox();
+            this.txtRegimen = new System.Windows.Forms.TextBox();
+            this.txtEstrato = new System.Windows.Forms.TextBox();
+            this.txtSexo = new System.Windows.Forms.TextBox();
+            this.lblFechaNacimiento = new System.Windows.Forms.Label();
+            this.lblEstrato = new System.Windows.Forms.Label();
+            this.lblSexo = new System.Windows.Forms.Label();
             this.txtDireccion = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblRegimen = new System.Windows.Forms.Label();
             this.txtEdad = new System.Windows.Forms.TextBox();
             this.txtTelefono = new System.Windows.Forms.TextBox();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.txtCedula = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lalDireccion = new System.Windows.Forms.Label();
+            this.lblEdad = new System.Windows.Forms.Label();
+            this.lblTelefono = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCedula = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.txtMedicoCargo = new System.Windows.Forms.TextBox();
             this.lbMedico = new System.Windows.Forms.Label();
             this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.lbObservaciones = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtFormaRealizacion = new System.Windows.Forms.TextBox();
             this.txtDiagnostico = new System.Windows.Forms.TextBox();
             this.lbDiagnostico = new System.Windows.Forms.Label();
             this.lbRealizacion = new System.Windows.Forms.Label();
@@ -63,14 +65,14 @@
             this.txtResultadoRevision = new System.Windows.Forms.TextBox();
             this.txtMotivoIngreso = new System.Windows.Forms.TextBox();
             this.lbProcedimiento = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtEps = new System.Windows.Forms.TextBox();
+            this.txtFechaIngreso = new System.Windows.Forms.TextBox();
             this.txtNroIngreso = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.btnSalir2 = new System.Windows.Forms.Button();
+            this.lblNumIngreso = new System.Windows.Forms.Label();
+            this.lblEps = new System.Windows.Forms.Label();
+            this.lblFechaIngreso = new System.Windows.Forms.Label();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.textBuscar = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -78,26 +80,28 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.textBuscar);
+            this.groupBox1.Controls.Add(this.lblBuscar);
             this.groupBox1.Controls.Add(this.btnSalir2);
-            this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.btnPdf);
+            this.groupBox1.Controls.Add(this.txtFechaNacimiento);
+            this.groupBox1.Controls.Add(this.txtRegimen);
+            this.groupBox1.Controls.Add(this.txtEstrato);
+            this.groupBox1.Controls.Add(this.txtSexo);
+            this.groupBox1.Controls.Add(this.lblFechaNacimiento);
+            this.groupBox1.Controls.Add(this.lblEstrato);
+            this.groupBox1.Controls.Add(this.lblSexo);
             this.groupBox1.Controls.Add(this.txtDireccion);
-            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.lblRegimen);
             this.groupBox1.Controls.Add(this.txtEdad);
             this.groupBox1.Controls.Add(this.txtTelefono);
             this.groupBox1.Controls.Add(this.txtNombre);
             this.groupBox1.Controls.Add(this.txtCedula);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.lalDireccion);
+            this.groupBox1.Controls.Add(this.lblEdad);
+            this.groupBox1.Controls.Add(this.lblTelefono);
+            this.groupBox1.Controls.Add(this.lblNombre);
+            this.groupBox1.Controls.Add(this.lblCedula);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Left;
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
@@ -106,170 +110,196 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // textBox4
+            // btnSalir2
             // 
-            this.textBox4.Location = new System.Drawing.Point(154, 348);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(142, 20);
-            this.textBox4.TabIndex = 70;
+            this.btnSalir2.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSalir2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalir2.BackgroundImage")));
+            this.btnSalir2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSalir2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSalir2.Location = new System.Drawing.Point(46, 514);
+            this.btnSalir2.Name = "btnSalir2";
+            this.btnSalir2.Size = new System.Drawing.Size(59, 40);
+            this.btnSalir2.TabIndex = 71;
+            this.btnSalir2.UseVisualStyleBackColor = false;
             // 
-            // textBox3
+            // btnPdf
             // 
-            this.textBox3.Location = new System.Drawing.Point(154, 306);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(119, 20);
-            this.textBox3.TabIndex = 69;
+            this.btnPdf.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPdf.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPdf.BackgroundImage")));
+            this.btnPdf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPdf.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.btnPdf.Location = new System.Drawing.Point(134, 514);
+            this.btnPdf.Name = "btnPdf";
+            this.btnPdf.Size = new System.Drawing.Size(68, 43);
+            this.btnPdf.TabIndex = 52;
+            this.btnPdf.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.btnPdf.UseVisualStyleBackColor = false;
             // 
-            // textBox2
+            // txtFechaNacimiento
             // 
-            this.textBox2.Location = new System.Drawing.Point(154, 260);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(46, 20);
-            this.textBox2.TabIndex = 68;
+            this.txtFechaNacimiento.Location = new System.Drawing.Point(160, 452);
+            this.txtFechaNacimiento.Name = "txtFechaNacimiento";
+            this.txtFechaNacimiento.Size = new System.Drawing.Size(142, 20);
+            this.txtFechaNacimiento.TabIndex = 70;
             // 
-            // textBox1
+            // txtRegimen
             // 
-            this.textBox1.Location = new System.Drawing.Point(154, 220);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(46, 20);
-            this.textBox1.TabIndex = 67;
+            this.txtRegimen.Location = new System.Drawing.Point(160, 410);
+            this.txtRegimen.Name = "txtRegimen";
+            this.txtRegimen.Size = new System.Drawing.Size(119, 20);
+            this.txtRegimen.TabIndex = 69;
             // 
-            // label8
+            // txtEstrato
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 352);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(132, 16);
-            this.label8.TabIndex = 65;
-            this.label8.Text = "Fecha de nacimiento";
+            this.txtEstrato.Location = new System.Drawing.Point(160, 364);
+            this.txtEstrato.Name = "txtEstrato";
+            this.txtEstrato.Size = new System.Drawing.Size(46, 20);
+            this.txtEstrato.TabIndex = 68;
             // 
-            // label1
+            // txtSexo
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 264);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 16);
-            this.label1.TabIndex = 52;
-            this.label1.Text = "Estrato";
+            this.txtSexo.Location = new System.Drawing.Point(160, 324);
+            this.txtSexo.Name = "txtSexo";
+            this.txtSexo.Size = new System.Drawing.Size(46, 20);
+            this.txtSexo.TabIndex = 67;
             // 
-            // label7
+            // lblFechaNacimiento
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(6, 224);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(38, 16);
-            this.label7.TabIndex = 63;
-            this.label7.Text = "Sexo";
+            this.lblFechaNacimiento.AutoSize = true;
+            this.lblFechaNacimiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaNacimiento.Location = new System.Drawing.Point(12, 456);
+            this.lblFechaNacimiento.Name = "lblFechaNacimiento";
+            this.lblFechaNacimiento.Size = new System.Drawing.Size(132, 16);
+            this.lblFechaNacimiento.TabIndex = 65;
+            this.lblFechaNacimiento.Text = "Fecha de nacimiento";
+            // 
+            // lblEstrato
+            // 
+            this.lblEstrato.AutoSize = true;
+            this.lblEstrato.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEstrato.Location = new System.Drawing.Point(12, 368);
+            this.lblEstrato.Name = "lblEstrato";
+            this.lblEstrato.Size = new System.Drawing.Size(49, 16);
+            this.lblEstrato.TabIndex = 52;
+            this.lblEstrato.Text = "Estrato";
+            // 
+            // lblSexo
+            // 
+            this.lblSexo.AutoSize = true;
+            this.lblSexo.BackColor = System.Drawing.Color.Transparent;
+            this.lblSexo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSexo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblSexo.Location = new System.Drawing.Point(12, 328);
+            this.lblSexo.Name = "lblSexo";
+            this.lblSexo.Size = new System.Drawing.Size(38, 16);
+            this.lblSexo.TabIndex = 63;
+            this.lblSexo.Text = "Sexo";
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(154, 69);
+            this.txtDireccion.Location = new System.Drawing.Point(160, 173);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(167, 20);
             this.txtDireccion.TabIndex = 62;
             // 
-            // label16
+            // lblRegimen
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(8, 307);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(62, 16);
-            this.label16.TabIndex = 50;
-            this.label16.Text = "Regimen";
+            this.lblRegimen.AutoSize = true;
+            this.lblRegimen.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRegimen.Location = new System.Drawing.Point(14, 411);
+            this.lblRegimen.Name = "lblRegimen";
+            this.lblRegimen.Size = new System.Drawing.Size(62, 16);
+            this.lblRegimen.TabIndex = 50;
+            this.lblRegimen.Text = "Regimen";
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(154, 180);
+            this.txtEdad.Location = new System.Drawing.Point(160, 284);
             this.txtEdad.Name = "txtEdad";
             this.txtEdad.Size = new System.Drawing.Size(46, 20);
             this.txtEdad.TabIndex = 60;
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(154, 139);
+            this.txtTelefono.Location = new System.Drawing.Point(160, 243);
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(167, 20);
             this.txtTelefono.TabIndex = 58;
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(154, 100);
+            this.txtNombre.Location = new System.Drawing.Point(160, 204);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(259, 20);
             this.txtNombre.TabIndex = 56;
             // 
             // txtCedula
             // 
-            this.txtCedula.Location = new System.Drawing.Point(154, 27);
+            this.txtCedula.Location = new System.Drawing.Point(160, 131);
             this.txtCedula.Name = "txtCedula";
             this.txtCedula.Size = new System.Drawing.Size(167, 20);
             this.txtCedula.TabIndex = 54;
             // 
-            // label6
+            // lalDireccion
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(6, 69);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(64, 16);
-            this.label6.TabIndex = 61;
-            this.label6.Text = "Dirección";
+            this.lalDireccion.AutoSize = true;
+            this.lalDireccion.BackColor = System.Drawing.Color.Transparent;
+            this.lalDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lalDireccion.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lalDireccion.Location = new System.Drawing.Point(12, 173);
+            this.lalDireccion.Name = "lalDireccion";
+            this.lalDireccion.Size = new System.Drawing.Size(64, 16);
+            this.lalDireccion.TabIndex = 61;
+            this.lalDireccion.Text = "Dirección";
             // 
-            // label5
+            // lblEdad
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(6, 180);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 16);
-            this.label5.TabIndex = 59;
-            this.label5.Text = "Edad";
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.BackColor = System.Drawing.Color.Transparent;
+            this.lblEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEdad.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblEdad.Location = new System.Drawing.Point(12, 284);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(40, 16);
+            this.lblEdad.TabIndex = 59;
+            this.lblEdad.Text = "Edad";
             // 
-            // label4
+            // lblTelefono
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(6, 143);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 16);
-            this.label4.TabIndex = 57;
-            this.label4.Text = "Telefono";
+            this.lblTelefono.AutoSize = true;
+            this.lblTelefono.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefono.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefono.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTelefono.Location = new System.Drawing.Point(12, 247);
+            this.lblTelefono.Name = "lblTelefono";
+            this.lblTelefono.Size = new System.Drawing.Size(61, 16);
+            this.lblTelefono.TabIndex = 57;
+            this.lblTelefono.Text = "Telefono";
             // 
-            // label3
+            // lblNombre
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label3.Location = new System.Drawing.Point(6, 104);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 16);
-            this.label3.TabIndex = 55;
-            this.label3.Text = "Nombre";
+            this.lblNombre.AutoSize = true;
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblNombre.Location = new System.Drawing.Point(12, 208);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(56, 16);
+            this.lblNombre.TabIndex = 55;
+            this.lblNombre.Text = "Nombre";
             // 
-            // label2
+            // lblCedula
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label2.Location = new System.Drawing.Point(6, 31);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(50, 16);
-            this.label2.TabIndex = 53;
-            this.label2.Text = "Cédula";
+            this.lblCedula.AutoSize = true;
+            this.lblCedula.BackColor = System.Drawing.Color.Transparent;
+            this.lblCedula.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCedula.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblCedula.Location = new System.Drawing.Point(12, 135);
+            this.lblCedula.Name = "lblCedula";
+            this.lblCedula.Size = new System.Drawing.Size(50, 16);
+            this.lblCedula.TabIndex = 53;
+            this.lblCedula.Text = "Cédula";
             // 
             // groupBox2
             // 
@@ -278,7 +308,7 @@
             this.groupBox2.Controls.Add(this.lbMedico);
             this.groupBox2.Controls.Add(this.txtObservaciones);
             this.groupBox2.Controls.Add(this.lbObservaciones);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.txtFormaRealizacion);
             this.groupBox2.Controls.Add(this.txtDiagnostico);
             this.groupBox2.Controls.Add(this.lbDiagnostico);
             this.groupBox2.Controls.Add(this.lbRealizacion);
@@ -288,12 +318,12 @@
             this.groupBox2.Controls.Add(this.txtResultadoRevision);
             this.groupBox2.Controls.Add(this.txtMotivoIngreso);
             this.groupBox2.Controls.Add(this.lbProcedimiento);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txtEps);
+            this.groupBox2.Controls.Add(this.txtFechaIngreso);
             this.groupBox2.Controls.Add(this.txtNroIngreso);
-            this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.lblNumIngreso);
+            this.groupBox2.Controls.Add(this.lblEps);
+            this.groupBox2.Controls.Add(this.lblFechaIngreso);
             this.groupBox2.Location = new System.Drawing.Point(451, 0);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(807, 624);
@@ -336,13 +366,13 @@
             this.lbObservaciones.TabIndex = 66;
             this.lbObservaciones.Text = "Observaciones";
             // 
-            // textBox7
+            // txtFormaRealizacion
             // 
-            this.textBox7.Location = new System.Drawing.Point(167, 294);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(632, 72);
-            this.textBox7.TabIndex = 65;
+            this.txtFormaRealizacion.Location = new System.Drawing.Point(167, 294);
+            this.txtFormaRealizacion.Multiline = true;
+            this.txtFormaRealizacion.Name = "txtFormaRealizacion";
+            this.txtFormaRealizacion.Size = new System.Drawing.Size(632, 72);
+            this.txtFormaRealizacion.TabIndex = 65;
             // 
             // txtDiagnostico
             // 
@@ -426,19 +456,19 @@
             this.lbProcedimiento.TabIndex = 55;
             this.lbProcedimiento.Text = "Motivo de Ingreso";
             // 
-            // textBox6
+            // txtEps
             // 
-            this.textBox6.Location = new System.Drawing.Point(407, 34);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(183, 20);
-            this.textBox6.TabIndex = 54;
+            this.txtEps.Location = new System.Drawing.Point(407, 34);
+            this.txtEps.Name = "txtEps";
+            this.txtEps.Size = new System.Drawing.Size(183, 20);
+            this.txtEps.TabIndex = 54;
             // 
-            // textBox5
+            // txtFechaIngreso
             // 
-            this.textBox5.Location = new System.Drawing.Point(181, 31);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(166, 20);
-            this.textBox5.TabIndex = 53;
+            this.txtFechaIngreso.Location = new System.Drawing.Point(181, 31);
+            this.txtFechaIngreso.Name = "txtFechaIngreso";
+            this.txtFechaIngreso.Size = new System.Drawing.Size(166, 20);
+            this.txtFechaIngreso.TabIndex = 53;
             // 
             // txtNroIngreso
             // 
@@ -447,65 +477,58 @@
             this.txtNroIngreso.Size = new System.Drawing.Size(53, 20);
             this.txtNroIngreso.TabIndex = 52;
             // 
-            // label10
+            // lblNumIngreso
             // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(609, 38);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(122, 16);
-            this.label10.TabIndex = 51;
-            this.label10.Text = "Numero de ingreso";
+            this.lblNumIngreso.AutoSize = true;
+            this.lblNumIngreso.BackColor = System.Drawing.Color.Transparent;
+            this.lblNumIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumIngreso.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblNumIngreso.Location = new System.Drawing.Point(609, 38);
+            this.lblNumIngreso.Name = "lblNumIngreso";
+            this.lblNumIngreso.Size = new System.Drawing.Size(122, 16);
+            this.lblNumIngreso.TabIndex = 51;
+            this.lblNumIngreso.Text = "Numero de ingreso";
             // 
-            // label9
+            // lblEps
             // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.Transparent;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(370, 35);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 16);
-            this.label9.TabIndex = 49;
-            this.label9.Text = "Eps";
+            this.lblEps.AutoSize = true;
+            this.lblEps.BackColor = System.Drawing.Color.Transparent;
+            this.lblEps.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEps.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblEps.Location = new System.Drawing.Point(370, 35);
+            this.lblEps.Name = "lblEps";
+            this.lblEps.Size = new System.Drawing.Size(31, 16);
+            this.lblEps.TabIndex = 49;
+            this.lblEps.Text = "Eps";
             // 
-            // label15
+            // lblFechaIngreso
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(11, 35);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(152, 16);
-            this.label15.TabIndex = 48;
-            this.label15.Text = "Fecha y hora de ingreso";
+            this.lblFechaIngreso.AutoSize = true;
+            this.lblFechaIngreso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFechaIngreso.Location = new System.Drawing.Point(11, 35);
+            this.lblFechaIngreso.Name = "lblFechaIngreso";
+            this.lblFechaIngreso.Size = new System.Drawing.Size(152, 16);
+            this.lblFechaIngreso.TabIndex = 48;
+            this.lblFechaIngreso.Text = "Fecha y hora de ingreso";
             // 
-            // button2
+            // lblBuscar
             // 
-            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.button2.Location = new System.Drawing.Point(134, 514);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 43);
-            this.button2.TabIndex = 52;
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button2.UseVisualStyleBackColor = false;
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblBuscar.Location = new System.Drawing.Point(53, 45);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(52, 16);
+            this.lblBuscar.TabIndex = 72;
+            this.lblBuscar.Text = " Buscar";
             // 
-            // btnSalir2
+            // textBuscar
             // 
-            this.btnSalir2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSalir2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalir2.BackgroundImage")));
-            this.btnSalir2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSalir2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalir2.Location = new System.Drawing.Point(46, 514);
-            this.btnSalir2.Name = "btnSalir2";
-            this.btnSalir2.Size = new System.Drawing.Size(59, 40);
-            this.btnSalir2.TabIndex = 71;
-            this.btnSalir2.UseVisualStyleBackColor = false;
+            this.textBuscar.Location = new System.Drawing.Point(134, 41);
+            this.textBuscar.Name = "textBuscar";
+            this.textBuscar.Size = new System.Drawing.Size(195, 20);
+            this.textBuscar.TabIndex = 73;
             // 
             // FrmHistoriaClinica
             // 
@@ -532,32 +555,32 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblFechaNacimiento;
+        private System.Windows.Forms.Label lblEstrato;
+        private System.Windows.Forms.Label lblSexo;
         private System.Windows.Forms.TextBox txtDireccion;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblRegimen;
         private System.Windows.Forms.TextBox txtEdad;
         private System.Windows.Forms.TextBox txtTelefono;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCedula;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lalDireccion;
+        private System.Windows.Forms.Label lblEdad;
+        private System.Windows.Forms.Label lblTelefono;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblCedula;
+        private System.Windows.Forms.TextBox txtEstrato;
+        private System.Windows.Forms.TextBox txtSexo;
+        private System.Windows.Forms.TextBox txtFechaNacimiento;
+        private System.Windows.Forms.TextBox txtRegimen;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtEps;
+        private System.Windows.Forms.TextBox txtFechaIngreso;
         private System.Windows.Forms.TextBox txtNroIngreso;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label lblNumIngreso;
+        private System.Windows.Forms.Label lblEps;
+        private System.Windows.Forms.Label lblFechaIngreso;
+        private System.Windows.Forms.TextBox txtFormaRealizacion;
         private System.Windows.Forms.TextBox txtDiagnostico;
         private System.Windows.Forms.Label lbDiagnostico;
         private System.Windows.Forms.Label lbRealizacion;
@@ -571,7 +594,9 @@
         private System.Windows.Forms.Label lbMedico;
         private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Label lbObservaciones;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnPdf;
         private System.Windows.Forms.Button btnSalir2;
+        private System.Windows.Forms.TextBox textBuscar;
+        private System.Windows.Forms.Label lblBuscar;
     }
 }

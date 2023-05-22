@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPaciente));
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.btnActualizar = new System.Windows.Forms.Button();
             this.btnSalir2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnActualizar = new System.Windows.Forms.Button();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.btnDiagnostico = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.cbEstrato = new System.Windows.Forms.ComboBox();
             this.cbSexo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -92,14 +92,14 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tabPage3.Controls.Add(this.btnActualizar);
             this.tabPage3.Controls.Add(this.btnSalir2);
             this.tabPage3.Controls.Add(this.btnAgregar);
-            this.tabPage3.Controls.Add(this.btnActualizar);
             this.tabPage3.Controls.Add(this.dtpFechaNacimiento);
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Controls.Add(this.btnDiagnostico);
             this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Controls.Add(this.button6);
+            this.tabPage3.Controls.Add(this.btnEliminar);
             this.tabPage3.Controls.Add(this.cbEstrato);
             this.tabPage3.Controls.Add(this.cbSexo);
             this.tabPage3.Controls.Add(this.label7);
@@ -122,6 +122,16 @@
             this.tabPage3.Size = new System.Drawing.Size(1113, 665);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Paciente";
+            // 
+            // btnActualizar
+            // 
+            this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
+            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnActualizar.Location = new System.Drawing.Point(326, 594);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(57, 41);
+            this.btnActualizar.TabIndex = 52;
+            this.btnActualizar.UseVisualStyleBackColor = true;
             // 
             // btnSalir2
             // 
@@ -152,20 +162,6 @@
             this.btnAgregar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnAgregar.UseVisualStyleBackColor = false;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
-            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnActualizar.Cursor = System.Windows.Forms.Cursors.No;
-            this.btnActualizar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnActualizar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnActualizar.Location = new System.Drawing.Point(328, 595);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(56, 40);
-            this.btnActualizar.TabIndex = 49;
-            this.btnActualizar.UseVisualStyleBackColor = false;
             // 
             // dtpFechaNacimiento
             // 
@@ -209,17 +205,17 @@
             this.label1.TabIndex = 29;
             this.label1.Text = "Estrato";
             // 
-            // button6
+            // btnEliminar
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.button6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button6.BackgroundImage")));
-            this.button6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(418, 595);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(56, 40);
-            this.button6.TabIndex = 22;
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(418, 595);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(56, 40);
+            this.btnEliminar.TabIndex = 22;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // cbEstrato
             // 
@@ -612,6 +608,7 @@
             this.Name = "FrmPaciente";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paciente";
+            this.Load += new System.EventHandler(this.FrmPaciente_Load);
             this.tabControl2.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
@@ -638,7 +635,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnDiagnostico;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox txtMedicoCargo;
         private System.Windows.Forms.Label lbMedico;
         private System.Windows.Forms.TextBox txtObservaciones;
@@ -661,12 +658,12 @@
         private System.Windows.Forms.ComboBox cbRegimen;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.TextBox txtNroIngreso;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox txtEps;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnSalir2;
+        private System.Windows.Forms.Button btnActualizar;
     }
 }
