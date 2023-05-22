@@ -32,14 +32,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPaciente));
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.btnActualizar = new System.Windows.Forms.Button();
             this.btnSalir2 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.btnDiagnostico = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.cbEstrato = new System.Windows.Forms.ComboBox();
             this.cbSexo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -58,7 +56,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtNroIngreso = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.txtEps = new System.Windows.Forms.ComboBox();
+            this.cbEps = new System.Windows.Forms.ComboBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtMedicoCargo = new System.Windows.Forms.TextBox();
             this.lbMedico = new System.Windows.Forms.Label();
@@ -95,14 +93,12 @@
             // tabPage3
             // 
             this.tabPage3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tabPage3.Controls.Add(this.btnActualizar);
             this.tabPage3.Controls.Add(this.btnSalir2);
             this.tabPage3.Controls.Add(this.btnAgregar);
             this.tabPage3.Controls.Add(this.dtpFechaNacimiento);
             this.tabPage3.Controls.Add(this.label8);
             this.tabPage3.Controls.Add(this.btnDiagnostico);
             this.tabPage3.Controls.Add(this.label1);
-            this.tabPage3.Controls.Add(this.btnEliminar);
             this.tabPage3.Controls.Add(this.cbEstrato);
             this.tabPage3.Controls.Add(this.cbSexo);
             this.tabPage3.Controls.Add(this.label7);
@@ -125,16 +121,6 @@
             this.tabPage3.Size = new System.Drawing.Size(1113, 665);
             this.tabPage3.TabIndex = 0;
             this.tabPage3.Text = "Paciente";
-            // 
-            // btnActualizar
-            // 
-            this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
-            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnActualizar.Location = new System.Drawing.Point(326, 594);
-            this.btnActualizar.Name = "btnActualizar";
-            this.btnActualizar.Size = new System.Drawing.Size(57, 41);
-            this.btnActualizar.TabIndex = 52;
-            this.btnActualizar.UseVisualStyleBackColor = true;
             // 
             // btnSalir2
             // 
@@ -191,7 +177,7 @@
             this.btnDiagnostico.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnDiagnostico.BackgroundImage")));
             this.btnDiagnostico.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnDiagnostico.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDiagnostico.Location = new System.Drawing.Point(501, 595);
+            this.btnDiagnostico.Location = new System.Drawing.Point(341, 595);
             this.btnDiagnostico.Name = "btnDiagnostico";
             this.btnDiagnostico.Size = new System.Drawing.Size(57, 40);
             this.btnDiagnostico.TabIndex = 23;
@@ -207,18 +193,6 @@
             this.label1.Size = new System.Drawing.Size(49, 16);
             this.label1.TabIndex = 29;
             this.label1.Text = "Estrato";
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEliminar.Location = new System.Drawing.Point(418, 595);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(56, 40);
-            this.btnEliminar.TabIndex = 22;
-            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // cbEstrato
             // 
@@ -379,7 +353,7 @@
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.txtNroIngreso);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.txtEps);
+            this.groupBox1.Controls.Add(this.cbEps);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.txtMedicoCargo);
             this.groupBox1.Controls.Add(this.lbMedico);
@@ -423,11 +397,11 @@
             this.label10.TabIndex = 45;
             this.label10.Text = "Numero de ingreso";
             // 
-            // txtEps
+            // cbEps
             // 
-            this.txtEps.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEps.FormattingEnabled = true;
-            this.txtEps.Items.AddRange(new object[] {
+            this.cbEps.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbEps.FormattingEnabled = true;
+            this.cbEps.Items.AddRange(new object[] {
             "COMPENSAR E.P.S.",
             "E.P.S. FAMISANAR LTDA.",
             "E.P.S. SANITAS S.A.",
@@ -436,10 +410,10 @@
             "NUEVA EPS S.A.",
             "SALUD TOTAL S.A. E.P.S.",
             "SALUDVIDA S.A. E.P.S."});
-            this.txtEps.Location = new System.Drawing.Point(377, 15);
-            this.txtEps.Name = "txtEps";
-            this.txtEps.Size = new System.Drawing.Size(202, 21);
-            this.txtEps.TabIndex = 44;
+            this.cbEps.Location = new System.Drawing.Point(377, 15);
+            this.cbEps.Name = "cbEps";
+            this.cbEps.Size = new System.Drawing.Size(202, 21);
+            this.cbEps.TabIndex = 44;
             // 
             // label9
             // 
@@ -643,7 +617,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btnDiagnostico;
-        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.TextBox txtMedicoCargo;
         private System.Windows.Forms.Label lbMedico;
         private System.Windows.Forms.TextBox txtObservaciones;
@@ -668,11 +641,10 @@
         private System.Windows.Forms.DateTimePicker dtpFechaIngreso;
         private System.Windows.Forms.TextBox txtNroIngreso;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.ComboBox txtEps;
+        private System.Windows.Forms.ComboBox cbEps;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnSalir2;
-        private System.Windows.Forms.Button btnActualizar;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

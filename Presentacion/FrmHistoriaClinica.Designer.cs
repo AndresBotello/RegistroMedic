@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHistoriaClinica));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.btnSalir2 = new System.Windows.Forms.Button();
+            this.txtBuscar = new System.Windows.Forms.TextBox();
+            this.lblBuscar = new System.Windows.Forms.Label();
+            this.btnSalir3 = new System.Windows.Forms.Button();
             this.btnPdf = new System.Windows.Forms.Button();
             this.txtFechaNacimiento = new System.Windows.Forms.TextBox();
             this.txtRegimen = new System.Windows.Forms.TextBox();
@@ -71,8 +73,8 @@
             this.lblNumIngreso = new System.Windows.Forms.Label();
             this.lblEps = new System.Windows.Forms.Label();
             this.lblFechaIngreso = new System.Windows.Forms.Label();
-            this.lblBuscar = new System.Windows.Forms.Label();
-            this.textBuscar = new System.Windows.Forms.TextBox();
+            this.btnActualizar = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -80,9 +82,11 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.groupBox1.Controls.Add(this.textBuscar);
+            this.groupBox1.Controls.Add(this.btnEliminar);
+            this.groupBox1.Controls.Add(this.btnActualizar);
+            this.groupBox1.Controls.Add(this.txtBuscar);
             this.groupBox1.Controls.Add(this.lblBuscar);
-            this.groupBox1.Controls.Add(this.btnSalir2);
+            this.groupBox1.Controls.Add(this.btnSalir3);
             this.groupBox1.Controls.Add(this.btnPdf);
             this.groupBox1.Controls.Add(this.txtFechaNacimiento);
             this.groupBox1.Controls.Add(this.txtRegimen);
@@ -110,18 +114,39 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // btnSalir2
+            // txtBuscar
             // 
-            this.btnSalir2.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.btnSalir2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalir2.BackgroundImage")));
-            this.btnSalir2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnSalir2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir2.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnSalir2.Location = new System.Drawing.Point(46, 514);
-            this.btnSalir2.Name = "btnSalir2";
-            this.btnSalir2.Size = new System.Drawing.Size(59, 40);
-            this.btnSalir2.TabIndex = 71;
-            this.btnSalir2.UseVisualStyleBackColor = false;
+            this.txtBuscar.Location = new System.Drawing.Point(134, 41);
+            this.txtBuscar.Name = "txtBuscar";
+            this.txtBuscar.Size = new System.Drawing.Size(195, 20);
+            this.txtBuscar.TabIndex = 73;
+            this.txtBuscar.TextChanged += new System.EventHandler(this.txtBuscar_TextChanged);
+            // 
+            // lblBuscar
+            // 
+            this.lblBuscar.AutoSize = true;
+            this.lblBuscar.BackColor = System.Drawing.Color.Transparent;
+            this.lblBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblBuscar.Location = new System.Drawing.Point(53, 45);
+            this.lblBuscar.Name = "lblBuscar";
+            this.lblBuscar.Size = new System.Drawing.Size(52, 16);
+            this.lblBuscar.TabIndex = 72;
+            this.lblBuscar.Text = " Buscar";
+            // 
+            // btnSalir3
+            // 
+            this.btnSalir3.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnSalir3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnSalir3.BackgroundImage")));
+            this.btnSalir3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnSalir3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalir3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnSalir3.Location = new System.Drawing.Point(46, 514);
+            this.btnSalir3.Name = "btnSalir3";
+            this.btnSalir3.Size = new System.Drawing.Size(59, 40);
+            this.btnSalir3.TabIndex = 71;
+            this.btnSalir3.UseVisualStyleBackColor = false;
+            this.btnSalir3.Click += new System.EventHandler(this.btnSalir3_Click);
             // 
             // btnPdf
             // 
@@ -129,7 +154,7 @@
             this.btnPdf.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPdf.BackgroundImage")));
             this.btnPdf.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnPdf.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.btnPdf.Location = new System.Drawing.Point(134, 514);
+            this.btnPdf.Location = new System.Drawing.Point(312, 511);
             this.btnPdf.Name = "btnPdf";
             this.btnPdf.Size = new System.Drawing.Size(68, 43);
             this.btnPdf.TabIndex = 52;
@@ -511,24 +536,27 @@
             this.lblFechaIngreso.TabIndex = 48;
             this.lblFechaIngreso.Text = "Fecha y hora de ingreso";
             // 
-            // lblBuscar
+            // btnActualizar
             // 
-            this.lblBuscar.AutoSize = true;
-            this.lblBuscar.BackColor = System.Drawing.Color.Transparent;
-            this.lblBuscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBuscar.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblBuscar.Location = new System.Drawing.Point(53, 45);
-            this.lblBuscar.Name = "lblBuscar";
-            this.lblBuscar.Size = new System.Drawing.Size(52, 16);
-            this.lblBuscar.TabIndex = 72;
-            this.lblBuscar.Text = " Buscar";
+            this.btnActualizar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnActualizar.BackgroundImage")));
+            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnActualizar.Location = new System.Drawing.Point(149, 513);
+            this.btnActualizar.Name = "btnActualizar";
+            this.btnActualizar.Size = new System.Drawing.Size(57, 41);
+            this.btnActualizar.TabIndex = 74;
+            this.btnActualizar.UseVisualStyleBackColor = true;
             // 
-            // textBuscar
+            // btnEliminar
             // 
-            this.textBuscar.Location = new System.Drawing.Point(134, 41);
-            this.textBuscar.Name = "textBuscar";
-            this.textBuscar.Size = new System.Drawing.Size(195, 20);
-            this.textBuscar.TabIndex = 73;
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnEliminar.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.BackgroundImage")));
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Location = new System.Drawing.Point(234, 513);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(56, 40);
+            this.btnEliminar.TabIndex = 75;
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // FrmHistoriaClinica
             // 
@@ -595,8 +623,10 @@
         private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Label lbObservaciones;
         private System.Windows.Forms.Button btnPdf;
-        private System.Windows.Forms.Button btnSalir2;
-        private System.Windows.Forms.TextBox textBuscar;
+        private System.Windows.Forms.Button btnSalir3;
+        private System.Windows.Forms.TextBox txtBuscar;
         private System.Windows.Forms.Label lblBuscar;
+        private System.Windows.Forms.Button btnActualizar;
+        private System.Windows.Forms.Button btnEliminar;
     }
 }

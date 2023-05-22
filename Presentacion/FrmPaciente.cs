@@ -81,6 +81,8 @@ namespace Presentacion
             paciente.Regimen = cbRegimen.Text;
             paciente.FechaNacimiento = DateTime.Parse(dtpFechaNacimiento.Text);
             paciente.FechaIngreso = DateTime.Parse(dtpFechaIngreso.Text);
+            paciente.EPS = cbEps.Text;
+            paciente.NroIngreso = int.Parse(txtNroIngreso.Text);
             paciente.MotivoIngreso = txtMotivoIngreso.Text;
             paciente.ResultadoRevision = txtResultadoRevision.Text;
             paciente.TipoTratamiento = txtTipoTratamiento.Text;
@@ -110,6 +112,8 @@ namespace Presentacion
             cbRegimen.Text = string.Empty;
             dtpFechaNacimiento.Text = string.Empty;
             dtpFechaIngreso.Text = string.Empty;
+            cbEps.Text = string.Empty;
+            txtNroIngreso.Text = string.Empty;
             txtMotivoIngreso.Text = string.Empty;
             txtResultadoRevision.Text = string.Empty;
             txtTipoTratamiento.Text = string.Empty;
@@ -164,6 +168,16 @@ namespace Presentacion
                 ok = false;
                 errorProvider1.SetError(cbRegimen, " ");
             }
+            if (cbEps.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(cbEps, " ");
+            }
+            if (txtNroIngreso.Text == "")
+            {
+                ok = false;
+                errorProvider1.SetError(txtNroIngreso, " ");
+            }
             if (txtMotivoIngreso.Text == "")
             {
                 ok = false;
@@ -201,12 +215,19 @@ namespace Presentacion
             }
 
             return ok;
-            }
+        }
 
-            private void btnDiagnostico_Click(object sender, EventArgs e)
+        private void btnDiagnostico_Click(object sender, EventArgs e)
         {
-            FrmHistoriaClinica form = new FrmHistoriaClinica();
-            form.Show();
+            //FrmHistoriaClinica form = new FrmHistoriaClinica();
+            //form.Show();
+            AbrirFormularioHistoriaClinica(new FrmHistoriaClinica());
+        }
+
+        void AbrirFormularioHistoriaClinica(FrmHistoriaClinica f)
+        {
+            this.Hide();
+            f.ShowDialog(this);
         }
 
         private void btnSalir2_Click(object sender, EventArgs e)
@@ -220,14 +241,38 @@ namespace Presentacion
             this.Close();
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void FrmPaciente_Load(object sender, EventArgs e)
         {
 
         }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            int CedulaNueva = Convert.ToInt32(txtCedula.Text);
+            string NombreNuevo = txtNombre.Text;
+            int TelefonoNuevo = Convert.ToInt32(txtTelefono.Text);
+            int EdadNueva = Convert.ToInt32(txtEdad.Text);
+            string DireccionNueva = txtDireccion.Text;
+            char SexoNuevo = Convert.ToChar(cbSexo);
+            char EstartoNuevo = Convert.ToChar(cbEstrato.Text);
+            string RegimenNuevo = cbRegimen.Text;
+            DateTime FechaNacimientoNueva = Convert.ToDateTime(dtpFechaNacimiento.Text);
+            DateTime FehaIngresoNueva = Convert.ToDateTime(dtpFechaIngreso.Text);
+            string EpsNueva = cbEps.Text;
+            int NroIngresoNuevo = Convert.ToInt32(txtNroIngreso.Text);
+            string MotivoIngresoNuevo = txtMotivoIngreso.Text;
+            string ResultadoRevisionNueva = txtResultadoRevision.Text;
+            string TipoTratamientoNuevo = txtTipoTratamiento.Text;
+            string FormaRealizacionNueva = txtFormaRealizacion.Text;
+            string DiagnosticoNuevo = txtDiagnostico.Text;
+            MotivoIngresoNuevo = txtMotivoIngreso.Text;
+            MotivoIngresoNuevo = txtMotivoIngreso.Text;
+
+            MessageBox.Show("El registro se actualizo correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+       
     }
 }
