@@ -62,46 +62,49 @@ namespace Datos
 
             File.WriteAllText(rutaArchivo, datosActualizados);
         }
-        public Paciente BuscarPorCedula(String cedula)
-        {
-            string[] lineas = File.ReadAllLines("Registro medico.txt");
 
-            string lineaEncontrada = lineas.FirstOrDefault(linea => linea.StartsWith(cedula));
-
-            if (lineaEncontrada != null)
+      
+            public Paciente BuscarPorCedula(String cedula)
             {
-                // Dividir la línea en campos
-                string[] campos = lineaEncontrada.Split(',');
+                string[] lineas = File.ReadAllLines("Registro medico.txt");
 
-                // Crear un objeto Datos con los valores correspondientes
-                Paciente datos = new Paciente
+                string lineaEncontrada = lineas.FirstOrDefault(linea => linea.StartsWith(cedula));
+
+                if (lineaEncontrada != null)
                 {
-                    Cedula = Convert.ToInt32(campos[0]),
-                    Nombre = campos[1],
-                    Telefono = Convert.ToInt32(campos[2]),
-                    Edad = Convert.ToInt32(campos[3]),
-                    Direccion = campos[4],
-                    Sexo = Convert.ToChar(campos[5]),
-                    Estrato = Convert.ToChar(campos[6]),
-                    Regimen = campos[7],
-                    FechaNacimiento = Convert.ToDateTime(campos[8]),
-                    FechaIngreso = Convert.ToDateTime(campos[9]),
-                    MotivoIngreso = campos[10],
-                    ResultadoRevision = campos[11],
-                    TipoTratamiento = campos[12],
-                    FormaRealizacion = campos[13],
-                    Diagnostico = campos[14],
-                    MedicoCargo = campos[15],
-                    Observaciones = campos[16],
-                    
-                };
+                    // Dividir la línea en campos
+                    string[] campos = lineaEncontrada.Split(',');
 
-                return datos;
+                    // Crear un objeto Datos con los valores correspondientes
+                    Paciente datos = new Paciente
+                    {
+                        Cedula = Convert.ToInt32(campos[0]),
+                        Nombre = campos[1],
+                        Telefono = Convert.ToInt32(campos[2]),
+                        Edad = Convert.ToInt32(campos[3]),
+                        Direccion = campos[4],
+                        Sexo = Convert.ToChar(campos[5]),
+                        Estrato = Convert.ToChar(campos[6]),
+                        Regimen = campos[7],
+                        FechaNacimiento = Convert.ToDateTime(campos[8]),
+                        FechaIngreso = Convert.ToDateTime(campos[9]),
+                        MotivoIngreso = campos[10],
+                        ResultadoRevision = campos[11],
+                        TipoTratamiento = campos[12],
+                        FormaRealizacion = campos[13],
+                        Diagnostico = campos[14],
+                        MedicoCargo = campos[15],
+                        Observaciones = campos[16],
+
+                    };
+
+                    return datos;
+                }
+                else
+                {
+                    return null; // No se encontró la cédula
+                }
             }
-            else
-            {
-                return null; // No se encontró la cédula
-            }
-        }
+        
     }   
 }
