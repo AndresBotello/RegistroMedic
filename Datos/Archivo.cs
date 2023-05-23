@@ -20,11 +20,11 @@ namespace Datos
         public void GuardarPersona(Paciente paciente)
         {
             // Crea una cadena con el formato deseado para guardar los datos en el archivo
-            string datos = $"{paciente.Cedula},{paciente.Nombre},{paciente.Telefono},{paciente.Edad}" +
-                $"{paciente.Direccion},{paciente.Sexo},{paciente.Estrato},{paciente.Regimen}," +
-                $"{paciente.FechaNacimiento},{paciente.FechaIngreso},{paciente.EPS},{paciente.NroIngreso},{paciente.MotivoIngreso},{paciente.ResultadoRevision}," +
-                $"{paciente.TipoTratamiento},{paciente.FormaRealizacion},{paciente.Diagnostico},{paciente.MedicoCargo}," +
-                $"{paciente.Observaciones},";
+            string datos = $"{paciente.Cedula} - {paciente.Nombre} - {paciente.Telefono} - {paciente.Edad} - " +
+                $"{paciente.Direccion} - {paciente.Sexo} - {paciente.Estrato} - {paciente.Regimen} - " +
+                $"{paciente.FechaNacimiento} - {paciente.FechaIngreso} - {paciente.EPS}-{paciente.NroIngreso},{paciente.MotivoIngreso} - {paciente.ResultadoRevision}," +
+                $"{paciente.TipoTratamiento} - {paciente.FormaRealizacion} - {paciente.Diagnostico} - {paciente.MedicoCargo} - " +
+                $"{paciente.Observaciones} .";
 
             // Escribe los datos en el archivo de texto
             using (StreamWriter sw = new StreamWriter(rutaArchivo, true))
