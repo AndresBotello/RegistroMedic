@@ -73,7 +73,7 @@ namespace Presentacion
             ValidarCampos();
             paciente.Cedula = int.Parse(txtCedula.Text);
             paciente.Nombre = txtNombre.Text;
-            paciente.Telefono = int.Parse(txtTelefono.Text);
+            paciente.Telefono = (int)Convert.ToInt64(txtTelefono.Text);
             paciente.Edad = int.Parse(txtEdad.Text);
             paciente.Direccion = txtDireccion.Text;
             paciente.Sexo = char.Parse(cbSexo.Text);

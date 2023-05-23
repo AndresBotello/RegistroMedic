@@ -64,23 +64,23 @@ namespace Datos
         }
 
       
-            public Paciente BuscarPorCedula(String cedula)
+            public Paciente BuscarPorCedula(String Cedula)
             {
                 string[] lineas = File.ReadAllLines("Registro medico.txt");
 
-                string lineaEncontrada = lineas.FirstOrDefault(linea => linea.StartsWith(cedula));
+                string lineaEncontrada = lineas.FirstOrDefault(linea => linea.StartsWith(Cedula));
 
                 if (lineaEncontrada != null)
                 {
                     // Dividir la línea en campos
-                    string[] campos = lineaEncontrada.Split(',');
+                    string[] campos = lineaEncontrada.Split('-');
 
                     // Crear un objeto Datos con los valores correspondientes
                     Paciente datos = new Paciente
                     {
                         Cedula = Convert.ToInt32(campos[0]),
                         Nombre = campos[1],
-                        Telefono = Convert.ToInt32(campos[2]),
+                        Telefono = (int)Convert.ToInt64(campos[2]),
                         Edad = Convert.ToInt32(campos[3]),
                         Direccion = campos[4],
                         Sexo = Convert.ToChar(campos[5]),
