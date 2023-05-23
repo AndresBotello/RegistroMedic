@@ -55,34 +55,34 @@ namespace Presentacion
         private void btnBuscar_Click(object sender, EventArgs e)
         {
 
-            //string Cedula = txtCedula.Text;
+            string cedula = txtCedula.Text;
 
-            //Paciente pacienteEncontrado = Paciente.BuscarPorCedula(cedula);
+            Paciente pacienteEncontrado = registroPaciente.BuscarPorCedula(cedula);
 
-            //if (pacienteEncontrado != null)
-            //{
-            //    txtNombre.Text = pacienteEncontrado.Nombre;
-            //    txtTelefono.Text = pacienteEncontrado.Telefono.ToString();
-            //    txtEdad.Text = pacienteEncontrado.Edad.ToString();
-            //    txtDireccion.Text = pacienteEncontrado.Direccion;
-            //    txtSexo.Text = pacienteEncontrado.Sexo.ToString();
-            //    txtEstrato.Text = pacienteEncontrado.Estrato.ToString();
-            //    txtRegimen.Text = pacienteEncontrado.Regimen;
-            //    txtFechaNacimiento = pacienteEncontrado.FechaNacimiento.ToShortTimeString();
-            //    txtFechaIngreso.Text = pacienteEncontrado.FechaIngreso.ToShortTimeString();
-            //    txtEps.Text = pacienteEncontrado.EPS;
-            //    txtNroIngreso.Text = pacienteEncontrado.NroIngreso.ToString();
-            //    txtResultadoRevision.Text = pacienteEncontrado.ResultadoRevision;
-            //    txtTipoTratamiento.Text = pacienteEncontrado.TipoTratamiento;
-            //    txtFormaRealizacion.Text = pacienteEncontrado.FormaRealizacion;
-            //    txtDiagnostico.Text = pacienteEncontrado.Diagnostico;
-            //    txtMedicoCargo.Text = pacienteEncontrado.MedicoCargo;
-            //    txtObservaciones.Text = pacienteEncontrado.Observaciones;
-            //}
-            //else
-            //{
-            //    MessageBox.Show("No se encontró la cédula.");
-            //}
+            if (pacienteEncontrado != null)
+            {
+                txtNombre.Text = pacienteEncontrado.Nombre;
+                txtTelefono.Text = pacienteEncontrado.Telefono.ToString();
+                txtEdad.Text = pacienteEncontrado.Edad.ToString();
+                txtDireccion.Text = pacienteEncontrado.Direccion;
+                txtSexo.Text = pacienteEncontrado.Sexo.ToString();
+                txtEstrato.Text = pacienteEncontrado.Estrato.ToString();
+                txtRegimen.Text = pacienteEncontrado.Regimen;
+                txtFechaNacimiento.Text = pacienteEncontrado.FechaNacimiento.ToShortTimeString();
+                txtFechaIngreso.Text = pacienteEncontrado.FechaIngreso.ToShortTimeString();
+                txtEps.Text = pacienteEncontrado.EPS;
+                txtNroIngreso.Text = pacienteEncontrado.NroIngreso.ToString();
+                txtResultadoRevision.Text = pacienteEncontrado.ResultadoRevision;
+                txtTipoTratamiento.Text = pacienteEncontrado.TipoTratamiento;
+                txtFormaRealizacion.Text = pacienteEncontrado.FormaRealizacion;
+                txtDiagnostico.Text = pacienteEncontrado.Diagnostico;
+                txtMedicoCargo.Text = pacienteEncontrado.MedicoCargo;
+                txtObservaciones.Text = pacienteEncontrado.Observaciones;
+            }
+            else
+            {
+                MessageBox.Show("No se encontró la cédula.");
+            }
         }
     }
 }
