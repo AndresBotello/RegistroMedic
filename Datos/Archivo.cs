@@ -64,47 +64,54 @@ namespace Datos
         }
 
       
-            public Paciente BuscarPorCedula(String Cedula)
+        public Paciente BuscarPorCedula(String Cedula)
+        {
+            string ced = Cedula;
+            Paciente datos = new Paciente();
+            StreamReader Lectura;
+            string Cadena;
+            bool encontrado;
+            encontrado = false;
+            char[] separador = { '-' };
+            Lectura = File.OpenText("Registro medico.txt");
+            //string[] lineas = File.ReadAllLines(rutaArchivo);
+            Cadena = Lectura.ReadLine();
+            while (Cadena != null && encontrado == false)
             {
-                string[] lineas = File.ReadAllLines("Registro medico.txt");
-
-                string lineaEncontrada = lineas.FirstOrDefault(linea => linea.StartsWith(Cedula));
-
-                if (lineaEncontrada != null)
+                string[] campos = Cadena.Split(separador);
+                if (campos[0].Equals(Cedula))
                 {
-                    // Dividir la línea en campos
-                    string[] campos = lineaEncontrada.Split('-');
-
-                    // Crear un objeto Datos con los valores correspondientes
-                    Paciente datos = new Paciente
-                    {
-                        Cedula = Convert.ToInt32(campos[0]),
-                        Nombre = campos[1],
-                        Telefono = (int)Convert.ToInt64(campos[2]),
-                        Edad = Convert.ToInt32(campos[3]),
-                        Direccion = campos[4],
-                        Sexo = Convert.ToChar(campos[5]),
-                        Estrato = Convert.ToChar(campos[6]),
-                        Regimen = campos[7],
-                        FechaNacimiento = Convert.ToDateTime(campos[8]),
-                        FechaIngreso = Convert.ToDateTime(campos[9]),
-                        MotivoIngreso = campos[10],
-                        ResultadoRevision = campos[11],
-                        TipoTratamiento = campos[12],
-                        FormaRealizacion = campos[13],
-                        Diagnostico = campos[14],
-                        MedicoCargo = campos[15],
-                        Observaciones = campos[16],
-
-                    };
-
-                    return datos;
+                    Console.WriteLine(ced);
+                    datos.Cedula = Convert.ToInt32(campos[0]);
+                    datos.Nombre = campos[1];
+                    datos.Telefono = (int)Convert.ToInt64(campos[2]);
+                    datos.Edad = Convert.ToInt32(campos[3]);
+                    datos.Direccion = campos[4];
+                    datos.Sexo = Convert.ToChar(campos[5]);
+                    datos.Estrato = Convert.ToInt16(campos[6]);
+                    datos.Regimen = campos[7];
+                    datos.FechaNacimiento = Convert.ToDateTime(campos[8]);
+                    datos.FechaIngreso = Convert.ToDateTime(campos[9]);
+                    datos.EPS = campos[10];
+                    datos.NroIngreso = Convert.ToInt16(campos[11]);
+                    datos.MotivoIngreso = campos[12];
+                    datos.ResultadoRevision = campos[13];
+                    datos.TipoTratamiento = campos[14];
+                    datos.FormaRealizacion = campos[15];
+                    datos.Diagnostico = campos[16];
+                    datos.MedicoCargo = campos[17];
+                    datos.Observaciones = campos[18];
+                    encontrado = true;
                 }
                 else
                 {
-                    return null; // No se encontró la cédula
-                }
+                    Cadena = Lectura.ReadLine();
+                };
+
             }
-        
+               if (encontrado == true) { return datos; } else { return null; }
+
+        }
+
     }   
 }
