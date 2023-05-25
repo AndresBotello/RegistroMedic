@@ -55,6 +55,7 @@ namespace Presentacion
         private void btnBuscar_Click(object sender, EventArgs e)
         {
 
+
             string Cedula = txtBuscar.Text;
 
             Paciente pacienteEncontrado = registroPaciente.BuscarPorCedula(Cedula);
