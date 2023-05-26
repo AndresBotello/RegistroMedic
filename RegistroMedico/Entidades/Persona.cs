@@ -16,9 +16,6 @@ namespace Entidades
         public char Sexo { get; set; }
         public DateTime FechaNacimiento { get; set; }
 
-        int CalcularEdad()
-        {
-            return DateTime.Now.Year - FechaNacimiento.Year;
-        }
+      
     }
 }

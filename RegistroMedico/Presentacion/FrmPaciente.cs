@@ -23,22 +23,7 @@ namespace Presentacion
             registro = new RegistroPaciente("Registro medico.txt");
         }
         
-        private void button1_Click(object sender, EventArgs e)
-        {
-            //Registro logica = new Registro();
-
-            //if (logica.AgregarPaciente(textBox1.Text, textBox2.Text, textBox3.Text, textBox4.Text, textBox5.Text, comboBox1.Text))
-            //{
-            //    MessageBox.Show("El cliente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Debe ingresar todos los datos del cliente.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //}
-
-            //FrmHistoria form = new FrmHistoria();
-            //form.Show();
-        }
+      
 
         private void button2_Click(object sender, EventArgs e)
         {
@@ -70,7 +55,9 @@ namespace Presentacion
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Paciente paciente = new Paciente();
+           
             ValidarCampos();
+            BorrarMensajes();
             paciente.Cedula = txtCedula.Text;
             paciente.Nombre = txtNombre.Text;
             paciente.Telefono = txtTelefono.Text;
@@ -96,8 +83,8 @@ namespace Presentacion
             MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             LimpiarCampos();
-          
             txtCedula.Focus();
+
         }
 
         private void LimpiarCampos()
@@ -219,8 +206,7 @@ namespace Presentacion
 
         private void btnDiagnostico_Click(object sender, EventArgs e)
         {
-            //FrmHistoriaClinica form = new FrmHistoriaClinica();
-            //form.Show();
+          
             AbrirFormularioHistoriaClinica(new FrmHistoriaClinica());
         }
 
@@ -248,31 +234,40 @@ namespace Presentacion
 
         }
 
-        private void btnActualizar_Click(object sender, EventArgs e)
-        {
-            int CedulaNueva = Convert.ToInt32(txtCedula.Text);
-            string NombreNuevo = txtNombre.Text;
-            int TelefonoNuevo = Convert.ToInt32(txtTelefono.Text);
-            int EdadNueva = Convert.ToInt32(txtEdad.Text);
-            string DireccionNueva = txtDireccion.Text;
-            char SexoNuevo = Convert.ToChar(cbSexo);
-            char EstartoNuevo = Convert.ToChar(cbEstrato.Text);
-            string RegimenNuevo = cbRegimen.Text;
-            DateTime FechaNacimientoNueva = Convert.ToDateTime(dtpFechaNacimiento.Text);
-            DateTime FehaIngresoNueva = Convert.ToDateTime(dtpFechaIngreso.Text);
-            string EpsNueva = cbEps.Text;
-            int NroIngresoNuevo = Convert.ToInt32(txtNroIngreso.Text);
-            string MotivoIngresoNuevo = txtMotivoIngreso.Text;
-            string ResultadoRevisionNueva = txtResultadoRevision.Text;
-            string TipoTratamientoNuevo = txtTipoTratamiento.Text;
-            string FormaRealizacionNueva = txtFormaRealizacion.Text;
-            string DiagnosticoNuevo = txtDiagnostico.Text;
-            MotivoIngresoNuevo = txtMotivoIngreso.Text;
-            MotivoIngresoNuevo = txtMotivoIngreso.Text;
+        
 
-            MessageBox.Show("El registro se actualizo correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        private void dtpFechaNacimiento_ValueChanged(object sender, EventArgs e)
+        {
+            DateTime fechaActual = DateTime.Today;
+            int edad = fechaActual.Year - dtpFechaNacimiento.Value.Year;
+            if (fechaActual < dtpFechaNacimiento.Value.AddYears(edad)) ; edad--;
+            txtEdad.Text = edad.ToString();
         }
 
-       
+        private void tabPage3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BorrarMensajes()
+        {
+            errorProvider1.SetError(txtCedula, "");
+            errorProvider1.SetError(txtNombre, "");
+            errorProvider1.SetError(txtTelefono, "");
+            errorProvider1.SetError(txtEdad, "");
+            errorProvider1.SetError(txtDireccion, "");
+            errorProvider1.SetError(cbSexo, "");
+            errorProvider1.SetError(cbEstrato, "");
+            errorProvider1.SetError(cbRegimen, "");
+            errorProvider1.SetError(cbEps, "");
+            errorProvider1.SetError(txtNroIngreso, "");
+            errorProvider1.SetError(txtMotivoIngreso, "");
+            errorProvider1.SetError(txtResultadoRevision, "");
+            errorProvider1.SetError(txtTipoTratamiento, "");
+            errorProvider1.SetError(txtFormaRealizacion, "");
+            errorProvider1.SetError(txtDiagnostico, "");
+            errorProvider1.SetError(txtMedicoCargo, "");
+            errorProvider1.SetError(txtObservaciones, "");
+        }
     }
 }
