@@ -55,7 +55,7 @@ namespace Presentacion
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Paciente paciente = new Paciente();
-           
+
             ValidarCampos();
             BorrarMensajes();
             paciente.Cedula = txtCedula.Text;
@@ -67,7 +67,7 @@ namespace Presentacion
             paciente.Estrato = int.Parse(cbEstrato.Text);
             paciente.Regimen = cbRegimen.Text;
             paciente.FechaNacimiento = DateTime.Parse(dtpFechaNacimiento.Text);
-            paciente.FechaIngreso = DateTime.Parse(dtpFechaIngreso.Text);
+            paciente.FechaIngreso = DateTime.Now;
             paciente.EPS = cbEps.Text;
             paciente.NroIngreso = int.Parse(txtNroIngreso.Text);
             paciente.MotivoIngreso = txtMotivoIngreso.Text;
@@ -77,14 +77,20 @@ namespace Presentacion
             paciente.Diagnostico = txtDiagnostico.Text;
             paciente.MedicoCargo = txtMedicoCargo.Text;
             paciente.Observaciones = txtObservaciones.Text;
+            if (paciente.FechaNacimiento >= DateTime.Now)
+            {
+                MessageBox.Show("La Fecha de nacimiento es invalida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            registro.GuardarPaciente(paciente);
+            }
+            else
+            {
+                registro.GuardarPaciente(paciente);
 
-            MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            LimpiarCampos();
-            txtCedula.Focus();
-
+                LimpiarCampos();
+                txtCedula.Focus();
+            }
         }
 
         private void LimpiarCampos()
@@ -269,5 +275,6 @@ namespace Presentacion
             errorProvider1.SetError(txtMedicoCargo, "");
             errorProvider1.SetError(txtObservaciones, "");
         }
+
     }
 }

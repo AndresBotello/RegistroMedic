@@ -31,3 +31,14 @@ C:\Users\hp\Source\Repos\RegistroMedic\RegistroMedico\Logica\obj\Debug\Logica.cs
 C:\Users\hp\Source\Repos\RegistroMedic\RegistroMedico\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\hp\Source\Repos\RegistroMedic\RegistroMedico\Logica\obj\Debug\Logica.dll
 C:\Users\hp\Source\Repos\RegistroMedic\RegistroMedico\Logica\obj\Debug\Logica.pdb
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\bin\Debug\Logica.dll
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\bin\Debug\Logica.pdb
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\bin\Debug\Datos.dll
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\bin\Debug\Entidades.dll
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\bin\Debug\Datos.pdb
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\bin\Debug\Entidades.pdb
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\obj\Debug\Logica.dll
+C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\obj\Debug\Logica.pdb

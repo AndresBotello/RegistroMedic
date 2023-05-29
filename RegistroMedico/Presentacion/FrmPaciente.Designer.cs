@@ -519,6 +519,7 @@
             this.dtpFechaIngreso.Name = "dtpFechaIngreso";
             this.dtpFechaIngreso.Size = new System.Drawing.Size(100, 20);
             this.dtpFechaIngreso.TabIndex = 26;
+            
             // 
             // txtTipoTratamiento
             // 
