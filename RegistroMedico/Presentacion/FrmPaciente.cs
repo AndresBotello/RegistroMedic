@@ -54,6 +54,15 @@ namespace Presentacion
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            Usuario usuario = new Usuario();
+            usuario.Nombre = textBoxNombre.Text;
+            usuario.Email = textBoxEmail.Text;
+
+            usuarioService.AgregarUsuario(usuario);
+
+            CargarUsuarios();
+            LimpiarCampos();
+
             Paciente paciente = new Paciente();
 
             ValidarCampos();

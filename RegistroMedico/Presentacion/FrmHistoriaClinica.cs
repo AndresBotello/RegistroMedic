@@ -88,5 +88,56 @@ namespace Presentacion
             txtMedicoCargo.Text = pacienteEncontrado.MedicoCargo;
             txtObservaciones.Text = pacienteEncontrado.Observaciones;
         }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            int usuarioId = Convert.ToInt32(dataGridViewUsuarios.SelectedRows[0].Cells["Id"].Value);
+
+            usuarioService.EliminarUsuario(usuarioId);
+
+            CargarUsuarios();
+            LimpiarCampos();
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            int usuarioId = Convert.ToInt32(dataGridViewUsuarios.SelectedRows[0].Cells["Id"].Value);
+
+            Usuario usuario = new Usuario();
+            usuario.Id = usuarioId;
+            usuario.Nombre = textBoxNombre.Text;
+            usuario.Email = textBoxEmail.Text;
+
+            usuarioService.ActualizarUsuario(usuario);
+
+            CargarUsuarios();
+            LimpiarCampos();
+        }
+
+        private void LimpiarCampos()
+        {
+            txtCedula.Text = string.Empty;
+            txtNombre.Text = string.Empty;
+            txtTelefono.Text = string.Empty;
+            txtEdad.Text = string.Empty;
+            txtDireccion.Text = string.Empty;
+            cbSexo.Text = string.Empty;
+            cbEstrato.Text = string.Empty;
+            cbRegimen.Text = string.Empty;
+            dtpFechaNacimiento.Text = string.Empty;
+            dtpFechaIngreso.Text = string.Empty;
+            cbEps.Text = string.Empty;
+            txtNroIngreso.Text = string.Empty;
+            txtMotivoIngreso.Text = string.Empty;
+            txtResultadoRevision.Text = string.Empty;
+            txtTipoTratamiento.Text = string.Empty;
+            txtFormaRealizacion.Text = string.Empty;
+            txtDiagnostico.Text = string.Empty;
+            txtMedicoCargo.Text = string.Empty;
+            txtObservaciones.Text = string.Empty;
+
+
+
+        }
     }
 }

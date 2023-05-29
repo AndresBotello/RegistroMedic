@@ -143,6 +143,7 @@
             this.btnEliminar.Size = new System.Drawing.Size(56, 40);
             this.btnEliminar.TabIndex = 75;
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
@@ -153,6 +154,7 @@
             this.btnActualizar.Size = new System.Drawing.Size(57, 41);
             this.btnActualizar.TabIndex = 74;
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnSalir
             // 
