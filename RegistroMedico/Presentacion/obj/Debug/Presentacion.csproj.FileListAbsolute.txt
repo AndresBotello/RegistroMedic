@@ -118,3 +118,44 @@ C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Presentacion\obj
 C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
 C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Presentacion\obj\Debug\Presentacion.exe
 C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Presentacion\obj\Debug\Presentacion.pdb
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Presentacion.exe.config
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Presentacion.exe
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Presentacion.pdb
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Entidades.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Logica.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Datos.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Text.Json.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Memory.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Text.Encodings.Web.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.ValueTuple.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Numerics.Vectors.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Buffers.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Entidades.pdb
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Logica.pdb
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Logica.dll.config
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Datos.pdb
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Datos.dll.config
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Text.Json.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Memory.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Text.Encodings.Web.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.ValueTuple.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Numerics.Vectors.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Buffers.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.csproj.AssemblyReference.cache
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.csproj.SuggestedBindingRedirects.cache
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.FrmPrincipal.resources
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.FrmPaciente.resources
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.FrmHistoriaClinica.resources
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.Properties.Resources.resources
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.csproj.CoreCompileInputs.cache
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.exe
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Presentacion\obj\Debug\Presentacion.pdb

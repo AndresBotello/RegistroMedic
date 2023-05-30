@@ -12,28 +12,30 @@ namespace Logica
     {
         private Conexion conexion = new Conexion();
 
-        public List<Paciente> ObtenerTodos()
+        public Paciente BuscarPacientePorCedula(string cedula)
         {
-            return conexion.ObtenerTodos();
+           
+            return conexion.BuscarPorCedula(cedula);
         }
 
-        public void AgregarUsuario(Paciente paciente)
+
+        public void AgregarPaciente(Paciente paciente)
         {
-            // Realizar validaciones o lógica adicional antes de llamar al método en UsuarioDAO
+            
             conexion.Agregar(paciente);
         }
 
-        public void ActualizarUsuario(Paciente paciente)
+        public void ActualizarPaciente(Paciente paciente)
         {
-            // Realizar validaciones o lógica adicional antes de llamar al método en UsuarioDAO
+            
             conexion.Actualizar(paciente);
         }
 
-        public void EliminarUsuario(string cedula)
+        public void EliminarPaciente(string cedula)
         {
-            // Realizar validaciones o lógica adicional antes de llamar al método en UsuarioDAO
-            conexion.Eliminar(cedula);
+            
+            conexion.Eliminar(cedula/*, nro_ingreso*/);
         }
     }
 }
-}
+

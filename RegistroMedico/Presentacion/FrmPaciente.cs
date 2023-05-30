@@ -17,6 +17,8 @@ namespace Presentacion
     public partial class FrmPaciente : Form
     {
         private RegistroPaciente registro;
+
+        private RegistroBD registroBD = new RegistroBD();
         public FrmPaciente()
         {
             InitializeComponent();
@@ -54,28 +56,16 @@ namespace Presentacion
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            Usuario usuario = new Usuario();
-            usuario.Nombre = textBoxNombre.Text;
-            usuario.Email = textBoxEmail.Text;
-
-            usuarioService.AgregarUsuario(usuario);
-
-            CargarUsuarios();
-            LimpiarCampos();
-
             Paciente paciente = new Paciente();
-
-            ValidarCampos();
-            BorrarMensajes();
             paciente.Cedula = txtCedula.Text;
             paciente.Nombre = txtNombre.Text;
             paciente.Telefono = txtTelefono.Text;
+            paciente.FechaNacimiento = DateTime.Parse(dtpFechaNacimiento.Text);
             paciente.Edad = int.Parse(txtEdad.Text);
-            paciente.Direccion = txtDireccion.Text;
             paciente.Sexo = char.Parse(cbSexo.Text);
+            paciente.Direccion = txtDireccion.Text;
             paciente.Estrato = int.Parse(cbEstrato.Text);
             paciente.Regimen = cbRegimen.Text;
-            paciente.FechaNacimiento = DateTime.Parse(dtpFechaNacimiento.Text);
             paciente.FechaIngreso = DateTime.Now;
             paciente.EPS = cbEps.Text;
             paciente.NroIngreso = int.Parse(txtNroIngreso.Text);
@@ -86,20 +76,58 @@ namespace Presentacion
             paciente.Diagnostico = txtDiagnostico.Text;
             paciente.MedicoCargo = txtMedicoCargo.Text;
             paciente.Observaciones = txtObservaciones.Text;
-            if (paciente.FechaNacimiento >= DateTime.Now)
-            {
-                MessageBox.Show("La Fecha de nacimiento es invalida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            // Asignar otros valores a la persona
 
-            }
-            else
-            {
-                registro.GuardarPaciente(paciente);
+            registroBD.AgregarPaciente(paciente);
 
-                MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Paciente agregado correctamente.");
+            LimpiarCampos();
+            //Usuario usuario = new Usuario();
+            //usuario.Nombre = textBoxNombre.Text;
+            //usuario.Email = textBoxEmail.Text;
 
-                LimpiarCampos();
-                txtCedula.Focus();
-            }
+            //usuarioService.AgregarUsuario(usuario);
+
+            //CargarUsuarios();
+            //LimpiarCampos();
+
+            //Paciente paciente = new Paciente();
+
+            //ValidarCampos();
+            //BorrarMensajes();
+            //paciente.Cedula = txtCedula.Text;
+            //paciente.Nombre = txtNombre.Text;
+            //paciente.Telefono = txtTelefono.Text;
+            //paciente.Edad = int.Parse(txtEdad.Text);
+            //paciente.Direccion = txtDireccion.Text;
+            //paciente.Sexo = char.Parse(cbSexo.Text);
+            //paciente.Estrato = int.Parse(cbEstrato.Text);
+            //paciente.Regimen = cbRegimen.Text;
+            //paciente.FechaNacimiento = DateTime.Parse(dtpFechaNacimiento.Text);
+            //paciente.FechaIngreso = DateTime.Now;
+            //paciente.EPS = cbEps.Text;
+            //paciente.NroIngreso = int.Parse(txtNroIngreso.Text);
+            //paciente.MotivoIngreso = txtMotivoIngreso.Text;
+            //paciente.ResultadoRevision = txtResultadoRevision.Text;
+            //paciente.TipoTratamiento = txtTipoTratamiento.Text;
+            //paciente.FormaRealizacion = txtFormaRealizacion.Text;
+            //paciente.Diagnostico = txtDiagnostico.Text;
+            //paciente.MedicoCargo = txtMedicoCargo.Text;
+            //paciente.Observaciones = txtObservaciones.Text;
+            //if (paciente.FechaNacimiento >= DateTime.Now)
+            //{
+            //    MessageBox.Show("La Fecha de nacimiento es invalida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            //}
+            //else
+            //{
+            //    registro.GuardarPaciente(paciente);
+
+            //    MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //    LimpiarCampos();
+            //    txtCedula.Focus();
+            //}
         }
 
         private void LimpiarCampos()
@@ -255,7 +283,7 @@ namespace Presentacion
         {
             DateTime fechaActual = DateTime.Today;
             int edad = fechaActual.Year - dtpFechaNacimiento.Value.Year;
-            if (fechaActual < dtpFechaNacimiento.Value.AddYears(edad)) ; edad--;
+            if (fechaActual < dtpFechaNacimiento.Value.AddYears(edad)) edad--;
             txtEdad.Text = edad.ToString();
         }
 

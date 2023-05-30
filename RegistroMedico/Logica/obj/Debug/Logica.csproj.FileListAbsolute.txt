@@ -42,3 +42,35 @@ C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\obj\Debug
 C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\obj\Debug\Logica.csproj.CopyComplete
 C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\obj\Debug\Logica.dll
 C:\Users\ESTUDIANTES\Source\Repos\RegistroMedic-\RegistroMedico\Logica\obj\Debug\Logica.pdb
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Logica.dll.config
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Logica.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Logica.pdb
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Datos.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Entidades.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Oracle.ManagedDataAccess.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Text.Json.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Memory.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Text.Encodings.Web.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.ValueTuple.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Numerics.Vectors.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Buffers.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Datos.pdb
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Datos.dll.config
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Entidades.pdb
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Text.Json.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Memory.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Text.Encodings.Web.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.ValueTuple.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Numerics.Vectors.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Buffers.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\obj\Debug\Logica.csproj.CopyComplete
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\obj\Debug\Logica.dll
+D:\PROGRAMACIÓN III\PROYECTO2\RegistroMedico\Logica\obj\Debug\Logica.pdb

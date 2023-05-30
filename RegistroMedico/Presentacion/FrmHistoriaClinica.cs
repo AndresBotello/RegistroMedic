@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 
 namespace Presentacion
@@ -17,6 +18,7 @@ namespace Presentacion
     {
         private RegistroPaciente registroPaciente;
 
+        private RegistroBD registroBD = new RegistroBD();
         public FrmHistoriaClinica()
         {
             InitializeComponent();
@@ -51,18 +53,38 @@ namespace Presentacion
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
+            string cedula = txtBuscar.Text;
 
-            string Cedula = txtBuscar.Text;
+            Paciente paciente = registroBD.BuscarPacientePorCedula(cedula);
 
-            Paciente pacienteEncontrado = registroPaciente.BuscarPorCedula(Cedula);
-
-            if (pacienteEncontrado != null)
+            if (paciente != null)
             {
-                VerPaciente(pacienteEncontrado);
+                
+
+                txtCedula.Text = paciente.Cedula.ToString();
+                txtNombre.Text = paciente.Nombre;
+                txtDireccion.Text = paciente.Direccion;
+                txtTelefono.Text = paciente.Telefono.ToString();
+                txtEdad.Text = paciente.Edad.ToString();
+                txtSexo.Text = paciente.Sexo.ToString();
+                txtEstrato.Text = paciente.Estrato.ToString();
+                txtRegimen.Text = paciente.Regimen;
+                txtFechaNacimiento.Text = paciente.FechaNacimiento.ToString();
+                txtFechaIngreso.Text = paciente.FechaIngreso.ToString();
+                txtEps.Text = paciente.EPS;
+                txtNroIngreso.Text = paciente.NroIngreso.ToString();
+                txtMotivoIngreso.Text = paciente.MotivoIngreso;
+                txtResultadoRevision.Text = paciente.ResultadoRevision;
+                txtTipoTratamiento.Text = paciente.TipoTratamiento;
+                txtFormaRealizacion.Text = paciente.FormaRealizacion;
+                txtDiagnostico.Text = paciente.Diagnostico;
+                txtMedicoCargo.Text = paciente.MedicoCargo;
+                txtObservaciones.Text = paciente.Observaciones;
+
             }
             else
             {
-                MessageBox.Show("No se encontró la cédula.");
+                MessageBox.Show("No se encontro paciente con ese cedula.");
             }
         }
 
@@ -89,29 +111,69 @@ namespace Presentacion
             txtObservaciones.Text = pacienteEncontrado.Observaciones;
         }
 
+
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            int usuarioId = Convert.ToInt32(dataGridViewUsuarios.SelectedRows[0].Cells["Id"].Value);
+            string cedula = txtBuscar.Text;
+            Paciente paciente = registroBD.BuscarPacientePorCedula(cedula);
 
-            usuarioService.EliminarUsuario(usuarioId);
+            if (paciente != null)
+            {
+                DialogResult result = MessageBox.Show("¿Estás seguro de que deseas eliminar esta persona?", "Confirmación", MessageBoxButtons.YesNo);
 
-            CargarUsuarios();
-            LimpiarCampos();
+                if (result == DialogResult.Yes)
+                {
+                    registroBD.EliminarPaciente(cedula);
+
+                    MessageBox.Show("Persona eliminada correctamente.");
+                    LimpiarCampos();
+                }
+            }
+            else
+            {
+                MessageBox.Show("No se encontró ninguna persona con la cédula especificada.");
+                LimpiarCampos();
+            }
         }
 
         private void btnActualizar_Click(object sender, EventArgs e)
         {
-            int usuarioId = Convert.ToInt32(dataGridViewUsuarios.SelectedRows[0].Cells["Id"].Value);
+            string cedula = txtBuscar.Text;
+            Paciente paciente = registroBD.BuscarPacientePorCedula(cedula);
 
-            Usuario usuario = new Usuario();
-            usuario.Id = usuarioId;
-            usuario.Nombre = textBoxNombre.Text;
-            usuario.Email = textBoxEmail.Text;
+            if (paciente != null)
+            {
+                paciente.Cedula = txtCedula.Text;
+                paciente.Nombre = txtNombre.Text;
+                paciente.Direccion = txtDireccion.Text;
+                paciente.Telefono = txtTelefono.Text;
+                paciente.Edad = Convert.ToInt16(txtEdad.Text);
+                paciente.Sexo = Convert.ToChar(txtSexo.Text);
+                paciente.Estrato = Convert.ToInt16(txtEstrato.Text);
+                paciente.Regimen = txtRegimen.Text;
+                paciente.FechaNacimiento = Convert.ToDateTime(txtFechaNacimiento.Text);
+                paciente.FechaIngreso = Convert.ToDateTime(txtFechaIngreso.Text);
+                paciente.EPS = txtEps.Text;
+                paciente.NroIngreso = Convert.ToInt16(txtNroIngreso.Text);
+                paciente.MotivoIngreso = txtMotivoIngreso.Text;
+                paciente.ResultadoRevision = txtResultadoRevision.Text;
+                paciente.TipoTratamiento = txtTipoTratamiento.Text;
+                paciente.FormaRealizacion = txtFormaRealizacion.Text;
+                paciente.Diagnostico = txtDiagnostico.Text;
+                paciente.MedicoCargo = txtMedicoCargo.Text;
+                paciente.Observaciones = txtObservaciones.Text;
+                // Asignar otros valores a la persona
 
-            usuarioService.ActualizarUsuario(usuario);
+                registroBD.ActualizarPaciente (paciente);
 
-            CargarUsuarios();
-            LimpiarCampos();
+                MessageBox.Show("Persona actualizada correctamente.");
+                LimpiarCampos();
+            }
+            else
+            {
+                MessageBox.Show("No se encontró ninguna persona con la cédula especificada.");
+                LimpiarCampos();
+            }
         }
 
         private void LimpiarCampos()
@@ -121,12 +183,12 @@ namespace Presentacion
             txtTelefono.Text = string.Empty;
             txtEdad.Text = string.Empty;
             txtDireccion.Text = string.Empty;
-            cbSexo.Text = string.Empty;
-            cbEstrato.Text = string.Empty;
-            cbRegimen.Text = string.Empty;
-            dtpFechaNacimiento.Text = string.Empty;
-            dtpFechaIngreso.Text = string.Empty;
-            cbEps.Text = string.Empty;
+            txtSexo.Text = string.Empty;
+            txtEstrato.Text = string.Empty;
+            txtRegimen.Text = string.Empty;
+            txtFechaNacimiento.Text = string.Empty;
+            txtFechaIngreso.Text = string.Empty;
+            txtEps.Text = string.Empty;
             txtNroIngreso.Text = string.Empty;
             txtMotivoIngreso.Text = string.Empty;
             txtResultadoRevision.Text = string.Empty;
@@ -135,9 +197,6 @@ namespace Presentacion
             txtDiagnostico.Text = string.Empty;
             txtMedicoCargo.Text = string.Empty;
             txtObservaciones.Text = string.Empty;
-
-
-
         }
     }
 }

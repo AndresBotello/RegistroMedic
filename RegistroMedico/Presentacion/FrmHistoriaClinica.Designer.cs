@@ -245,7 +245,7 @@
             // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(160, 173);
+            this.txtDireccion.Location = new System.Drawing.Point(160, 204);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(167, 20);
             this.txtDireccion.TabIndex = 62;
@@ -276,7 +276,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(160, 204);
+            this.txtNombre.Location = new System.Drawing.Point(160, 170);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(259, 20);
             this.txtNombre.TabIndex = 56;
@@ -294,7 +294,7 @@
             this.lalDireccion.BackColor = System.Drawing.Color.Transparent;
             this.lalDireccion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lalDireccion.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lalDireccion.Location = new System.Drawing.Point(6, 177);
+            this.lalDireccion.Location = new System.Drawing.Point(6, 208);
             this.lalDireccion.Name = "lalDireccion";
             this.lalDireccion.Size = new System.Drawing.Size(73, 16);
             this.lalDireccion.TabIndex = 61;
@@ -330,7 +330,7 @@
             this.lblNombre.BackColor = System.Drawing.Color.Transparent;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.lblNombre.Location = new System.Drawing.Point(6, 208);
+            this.lblNombre.Location = new System.Drawing.Point(6, 174);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(62, 16);
             this.lblNombre.TabIndex = 55;
