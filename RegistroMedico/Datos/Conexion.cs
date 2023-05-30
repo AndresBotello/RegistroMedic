@@ -64,17 +64,17 @@ namespace Datos
 
         public void Agregar(Paciente paciente)
         {
+            
             using (OracleConnection connection = new OracleConnection(connectionString))
             {
-                connection.Open();
+                //connection.Open();
+                connection.CreateCommand();
+                
+               string query
 
-                string query = "INSERT INTO Pacientes (Cedula, Nombre, Telefono, Edad, Direccion, Sexo, Fecha_nacimiento, Estrato, Eps, Regimen) " +
-                                              "VALUES (:cedula, :nombre, :telefono, :edad, :direccion, :sexo, :fecha_nacimiento, :estrato, :eps, :regimen);" +
-
-                                "INSERT INTO Historias_clinicas (Nro_ingreso, Fecha_ingreso, Motivo_ingreso, Resultado_revision, Tipo_tratamiento, Forma_realizacion, Medico_cargo, Diagnostico, Observaciones, Cedula)" +
-                                                        "VALUES (:nro_ingreso, :fecha_ingreso, :motivo_ingreso, :resultado_revision, :tipo_tratamiento, :forma_realizacion, :medico_cargo, :diagnostico, :observaciones, :cedula);";
-
-                OracleCommand command = new OracleCommand(query, connection);
+                OracleCommand command = new OracleCommand(query,connection);
+                command.CommandText = "GUARDAR";
+                command.CommandType= System.Data.CommandType.StoredProcedure;
                 command.Parameters.Add(new OracleParameter(":cedula", paciente.Cedula));
                 command.Parameters.Add(new OracleParameter(":nombre", paciente.Nombre));
                 command.Parameters.Add(new OracleParameter(":telefono", paciente.Telefono));
@@ -95,6 +95,7 @@ namespace Datos
                 command.Parameters.Add(new OracleParameter(":observaciones", paciente.Observaciones));
                 command.Parameters.Add(new OracleParameter(":cedula", paciente.Cedula));
 
+                connection.Open();
                 command.ExecuteNonQuery();
 
                 connection.Close();
