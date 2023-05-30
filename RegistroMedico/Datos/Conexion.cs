@@ -69,10 +69,10 @@ namespace Datos
                 connection.Open();
 
                 string query = "INSERT INTO Pacientes (Cedula, Nombre, Telefono, Edad, Direccion, Sexo, Fecha_nacimiento, Estrato, Eps, Regimen) " +
-                                              "VALUES (:cedula, :nombre, :telefono, :edad, :direccion, :sexo, :fecha_nacimiento, :estrato, :eps, :regimen)" +
+                                              "VALUES (:cedula, :nombre, :telefono, :edad, :direccion, :sexo, :fecha_nacimiento, :estrato, :eps, :regimen);" +
 
                                 "INSERT INTO Historias_clinicas (Nro_ingreso, Fecha_ingreso, Motivo_ingreso, Resultado_revision, Tipo_tratamiento, Forma_realizacion, Medico_cargo, Diagnostico, Observaciones, Cedula)" +
-                                                        "VALUES (:nro_ingreso, :fecha_ingreso, :motivo_ingreso, :resultado_revision, :tipo_tratamiento, :forma_realizacion, :medico_cargo, :diagnostico, :observaciones, :cedula)";
+                                                        "VALUES (:nro_ingreso, :fecha_ingreso, :motivo_ingreso, :resultado_revision, :tipo_tratamiento, :forma_realizacion, :medico_cargo, :diagnostico, :observaciones, :cedula);";
 
                 OracleCommand command = new OracleCommand(query, connection);
                 command.Parameters.Add(new OracleParameter(":cedula", paciente.Cedula));
@@ -147,8 +147,8 @@ namespace Datos
                 
                 connection.Open();
 
-                string query = "DELETE FROM Pacientes WHERE Cedula = :cedula" +
-                               "DELETE FROM Historias_clinicas WHERE Cedula = :cedula";
+                string query = "DELETE FROM Pacientes WHERE Cedula = :cedula;" +
+                               "DELETE FROM Historias_clinicas WHERE Cedula = :cedula;";
                 OracleCommand command = new OracleCommand(query, connection);
                 command.Parameters.Add(new OracleParameter(":cedula", cedula));
                 command.Parameters.Add(new OracleParameter(":cedula", cedula));
