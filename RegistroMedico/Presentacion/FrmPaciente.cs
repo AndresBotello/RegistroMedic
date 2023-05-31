@@ -79,8 +79,9 @@ namespace Presentacion
             // Asignar otros valores a la persona
 
             registroBD.AgregarPaciente(paciente);
+            MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            MessageBox.Show("Paciente agregado correctamente.");
+            //MessageBox.Show("Paciente agregado correctamente.");
             LimpiarCampos();
             //Usuario usuario = new Usuario();
             //usuario.Nombre = textBoxNombre.Text;

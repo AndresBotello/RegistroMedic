@@ -31,10 +31,10 @@ namespace Logica
             conexion.Actualizar(paciente);
         }
 
-        public void EliminarPaciente(string cedula)
+        public void EliminarPaciente(Paciente paciente)
         {
             
-            conexion.Eliminar(cedula/*, nro_ingreso*/);
+            conexion.Eliminar(paciente);
         }
     }
 }

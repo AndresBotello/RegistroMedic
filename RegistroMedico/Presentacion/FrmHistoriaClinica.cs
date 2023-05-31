@@ -123,7 +123,7 @@ namespace Presentacion
 
                 if (result == DialogResult.Yes)
                 {
-                    registroBD.EliminarPaciente(cedula);
+                    registroBD.EliminarPaciente(paciente);
 
                     MessageBox.Show("Persona eliminada correctamente.");
                     LimpiarCampos();
