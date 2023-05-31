@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Oracle.ManagedDataAccess.Client;
+using System.Data;
 
 namespace Datos
 {
@@ -64,38 +65,59 @@ namespace Datos
 
         public void Agregar(Paciente paciente)
         {
-            
             using (OracleConnection connection = new OracleConnection(connectionString))
             {
                 //connection.Open();
-                connection.CreateCommand();
+                //connection.CreateCommand();
                 
-               string query
+               
 
-                OracleCommand command = new OracleCommand(query,connection);
-                command.CommandText = "GUARDAR";
-                command.CommandType= System.Data.CommandType.StoredProcedure;
-                command.Parameters.Add(new OracleParameter(":cedula", paciente.Cedula));
-                command.Parameters.Add(new OracleParameter(":nombre", paciente.Nombre));
-                command.Parameters.Add(new OracleParameter(":telefono", paciente.Telefono));
-                command.Parameters.Add(new OracleParameter(":edad", paciente.Edad));
-                command.Parameters.Add(new OracleParameter(":direccion", paciente.Direccion));
-                command.Parameters.Add(new OracleParameter(":sexo", paciente.Sexo));
-                command.Parameters.Add(new OracleParameter(":fecha_nacimiento", paciente.FechaNacimiento));
-                command.Parameters.Add(new OracleParameter(":estrato", paciente.Estrato));
-                command.Parameters.Add(new OracleParameter(":regimen", paciente.Regimen));
-                command.Parameters.Add(new OracleParameter(":nro_ingreso", paciente.NroIngreso));
-                command.Parameters.Add(new OracleParameter(":fecha_ingreso", paciente.FechaIngreso));
-                command.Parameters.Add(new OracleParameter(":motivo_ingreso", paciente.MotivoIngreso));
-                command.Parameters.Add(new OracleParameter(":resultado_revision", paciente.ResultadoRevision));
-                command.Parameters.Add(new OracleParameter(":tipo_tratamiento", paciente.TipoTratamiento));
-                command.Parameters.Add(new OracleParameter(":forma_realizacion", paciente.FormaRealizacion));
-                command.Parameters.Add(new OracleParameter(":medico_cargo", paciente.MedicoCargo));
-                command.Parameters.Add(new OracleParameter(":diagnostico", paciente.Diagnostico));
-                command.Parameters.Add(new OracleParameter(":observaciones", paciente.Observaciones));
-                command.Parameters.Add(new OracleParameter(":cedula", paciente.Cedula));
+                OracleCommand command = new OracleCommand("GUARDAR",connection);
+                command.CommandType = CommandType.StoredProcedure;
+
+                command.Parameters.Add("pCedula", OracleDbType.Varchar2).Value = paciente.Cedula;
+                command.Parameters.Add("pNombre", OracleDbType.Varchar2).Value = paciente.Nombre;
+                command.Parameters.Add("pTelefono", OracleDbType.Varchar2).Value = paciente.Telefono;
+                command.Parameters.Add("pEdad", OracleDbType.Varchar2).Value = paciente.Edad;
+                command.Parameters.Add("pDireccion", OracleDbType.Varchar2).Value = paciente.Direccion;
+                command.Parameters.Add("pSexo", OracleDbType.Char).Value = paciente.Sexo;
+                command.Parameters.Add("pEstrato", OracleDbType.Varchar2).Value = paciente.Estrato;
+                command.Parameters.Add("pFechaNacimiento", OracleDbType.Date).Value = paciente.FechaNacimiento;
+                command.Parameters.Add("hFechaIngreso", OracleDbType.Date).Value = paciente.FechaIngreso;
+                command.Parameters.Add("pEps", OracleDbType.Varchar2).Value = paciente.EPS;
+                command.Parameters.Add("hNroIngreso", OracleDbType.Varchar2).Value = paciente.NroIngreso;
+                command.Parameters.Add("hMotivoIngreso", OracleDbType.Varchar2).Value = paciente.MotivoIngreso;
+                command.Parameters.Add("hTipoTratamiento", OracleDbType.Varchar2).Value = paciente.TipoTratamiento;
+                command.Parameters.Add("hFormaRealizacion", OracleDbType.Varchar2).Value = paciente.FormaRealizacion;
+                command.Parameters.Add("hDiagnostico", OracleDbType.Varchar2).Value = paciente.Diagnostico;
+                command.Parameters.Add("hMedicoCargo", OracleDbType.Varchar2).Value = paciente.MedicoCargo;
+                command.Parameters.Add("hObservaciones", OracleDbType.Varchar2).Value = paciente.Observaciones;
+
+
+
+                //command.CommandType= System.Data.CommandType.StoredProcedure;
+                //command.Parameters.Add(new OracleParameter(":cedula", paciente.Cedula));
+                //command.Parameters.Add(new OracleParameter(":nombre", paciente.Nombre));
+                //command.Parameters.Add(new OracleParameter(":telefono", paciente.Telefono));
+                //command.Parameters.Add(new OracleParameter(":edad", paciente.Edad));
+                //command.Parameters.Add(new OracleParameter(":direccion", paciente.Direccion));
+                //command.Parameters.Add(new OracleParameter(":sexo", paciente.Sexo));
+                //command.Parameters.Add(new OracleParameter(":fecha_nacimiento", paciente.FechaNacimiento));
+                //command.Parameters.Add(new OracleParameter(":estrato", paciente.Estrato));
+                //command.Parameters.Add(new OracleParameter(":regimen", paciente.Regimen));
+                //command.Parameters.Add(new OracleParameter(":nro_ingreso", paciente.NroIngreso));
+                //command.Parameters.Add(new OracleParameter(":fecha_ingreso", paciente.FechaIngreso));
+                //command.Parameters.Add(new OracleParameter(":motivo_ingreso", paciente.MotivoIngreso));
+                //command.Parameters.Add(new OracleParameter(":resultado_revision", paciente.ResultadoRevision));
+                //command.Parameters.Add(new OracleParameter(":tipo_tratamiento", paciente.TipoTratamiento));
+                //command.Parameters.Add(new OracleParameter(":forma_realizacion", paciente.FormaRealizacion));
+                //command.Parameters.Add(new OracleParameter(":medico_cargo", paciente.MedicoCargo));
+                //command.Parameters.Add(new OracleParameter(":diagnostico", paciente.Diagnostico));
+                //command.Parameters.Add(new OracleParameter(":observaciones", paciente.Observaciones));
+                //command.Parameters.Add(new OracleParameter(":cedula", paciente.Cedula));
 
                 connection.Open();
+
                 command.ExecuteNonQuery();
 
                 connection.Close();
@@ -137,6 +159,8 @@ namespace Datos
                 command.Parameters.Add(new OracleParameter(":cedula", paciente.Cedula));
 
                 command.ExecuteNonQuery();
+
+                connection.Close();
             }
         }
 
@@ -156,6 +180,8 @@ namespace Datos
                 //command.Parameters.Add(new OracleParameter(":nro_ingreso", nro_ingreso));
 
                 command.ExecuteNonQuery();
+
+                connection.Close();
             }
         }
     }
