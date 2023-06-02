@@ -23,25 +23,16 @@ namespace Datos
             
                
 
-                //string query = "SELECT A.cedula, A.nombre, A.direccion, A.telefono, A.edad, A.sexo, A.estrato, A.regimen, " +
-                //                      "A.fecha_nacimiento, B.fecha_ingreso, A.eps, B.nro_ingreso, B.motivo_ingreso, " +
-                //                      "B.resultado_revision, B.tipo_tratamiento, B.forma_realizacion, B.diagnostico, B.medico_cargo, B.observaciones" +
-                //                " FROM pacientes A JOIN historias_clinicas B ON A.cedula = B.cedula" +
-                //                $" Where A.cedula='{cedula}';";
+               
 
                 string query = $"SELECT * FROM vistapacientes";
                 OracleCommand command = new OracleCommand(query, connection);
             command.CommandType = CommandType.Text;
-            //command.Parameters.Add(new OracleParameter(":cedula", cedula));
-
-            //using (
+            
             connection.Open();
             OracleDataReader reader;
              reader= command.ExecuteReader();
-                //    )
-                //{
-                //    while (reader.Read())
-                //    {
+               
                 reader.Read();
                         paciente = new Paciente();
                         paciente.Cedula = reader["Cedula"].ToString();
@@ -64,8 +55,6 @@ namespace Datos
                         paciente.MedicoCargo = reader["Medico_cargo"].ToString();
                         paciente.Observaciones = reader["Observaciones"].ToString();
 
-                //    }
-                //}
             
             connection.Close();
             return paciente;
@@ -113,15 +102,7 @@ namespace Datos
             {
                 connection.Open();
 
-                //string query = "UPDATE Pacientes SET Cedula = :cedula, Nombre = :nombre, Telefono = :telefono, Edad = :edad, Direccion = :direccion, Sexo = :sexo," +
-                //               "Fecha_nacimiento = :fecha_nacimiento, Estrato = :estrato, Regimen = :regimen WHERE Cedula = :cedula;" +
-
-                //               "UPDATE Histrorias_clinicas SET Nro_ingreso = :nro_ingreso, Fecha_ingreso = :fecha_ingreso, Motivo_ingreso = :motivo_ingreso," +
-                //               "Resultado_revision = :resultado_revision, Tipo_tratamiento = :tipo_tratamiento, Forma_realizacion = :forma_realizacion," +
-                //               "Medico_cargo = :medico_cargo, Diagnostico = :diagnostico, Observaciones = :observaciones, Cedula = :cedula WHERE Nro_ingreso = :nro_ingreso;";
-
-                //OracleCommand command = new OracleCommand(query, connection);
-
+               
                 OracleCommand command = new OracleCommand("ACTUALIZAR", connection);
                 command.CommandType = CommandType.StoredProcedure;
 
@@ -160,20 +141,14 @@ namespace Datos
                 
                 connection.Open();
 
-                OracleCommand command = new OracleCommand("ELIMINAR", connection);
+                OracleCommand command = new OracleCommand("ELIMINARDATOS", connection);
                 command.CommandType = CommandType.StoredProcedure;
 
                 command.Parameters.Add("pCedula", OracleDbType.Varchar2).Value = paciente.Cedula;
                 command.Parameters.Add("pCedula", OracleDbType.Varchar2).Value = paciente.Cedula;
 
 
-                //string query = "DELETE FROM Pacientes WHERE Cedula = :cedula;" +
-                //               "DELETE FROM Historias_clinicas WHERE Cedula = :cedula;";
-                //OracleCommand command = new OracleCommand(query, connection);
-                //command.Parameters.Add(new OracleParameter(":cedula", cedula));
-                //command.Parameters.Add(new OracleParameter(":cedula", cedula));
-                //command.Parameters.Add(new OracleParameter(":nro_ingreso", nro_ingreso));
-
+               
                 command.ExecuteNonQuery();
 
                 connection.Close();

@@ -11,6 +11,12 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using iTextSharp.tool.xml;
+using System.IO;
+
+
 
 namespace Presentacion
 {
@@ -36,7 +42,7 @@ namespace Presentacion
 
         }
 
-        
+
 
         private void btnSalir_Click(object sender, EventArgs e)
         {
@@ -49,7 +55,7 @@ namespace Presentacion
             this.Close();
         }
 
-       
+
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
@@ -59,7 +65,7 @@ namespace Presentacion
 
             if (paciente != null)
             {
-                
+
 
                 txtCedula.Text = paciente.Cedula.ToString();
                 txtNombre.Text = paciente.Nombre;
@@ -164,7 +170,7 @@ namespace Presentacion
                 paciente.Observaciones = txtObservaciones.Text;
                 // Asignar otros valores a la persona
 
-                registroBD.ActualizarPaciente (paciente);
+                registroBD.ActualizarPaciente(paciente);
 
                 MessageBox.Show("Persona actualizada correctamente.");
                 LimpiarCampos();
@@ -197,6 +203,57 @@ namespace Presentacion
             txtDiagnostico.Text = string.Empty;
             txtMedicoCargo.Text = string.Empty;
             txtObservaciones.Text = string.Empty;
+        }
+
+        private void btnPdf_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog savefile = new SaveFileDialog();
+            savefile.FileName = string.Format("{0}.pdf", DateTime.Now.ToString("ddMMyyyyHHmmss"));
+
+            string PaginaHTML_Texto = Properties.Resources.plantilla.ToString();
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@CEDULA", txtCedula.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@NOMBRE", txtNombre.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@DIRECCION", txtDireccion.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@TELEFONO", txtTelefono.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@EDAD", txtEdad.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@SEXO", txtSexo.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@ESTRATO", txtEstrato.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@REGIMEN", txtRegimen.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@FECHANACIMIENTO", txtFechaNacimiento.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@HORAINGRESO", txtFechaIngreso.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@EPS", txtEps.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@NINGRESO", txtNroIngreso.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@MOTIVOINGRESO", txtMotivoIngreso.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@RESULTADORE", txtResultadoRevision.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@TIPOTRA", txtTipoTratamiento.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@FORMADEREA", txtFormaRealizacion.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@DIAGNOSTICO", txtDiagnostico.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@MEDICO", txtMedicoCargo.Text);
+            PaginaHTML_Texto = PaginaHTML_Texto.Replace("@OBSERVACIONES", txtObservaciones.Text);
+
+            if (savefile.ShowDialog() == DialogResult.OK)
+            {
+                using (FileStream stream = new FileStream(savefile.FileName, FileMode.Create))
+                {
+                    //Creamos un nuevo documento y lo definimos como PDF
+                    Document pdfDoc = new Document(PageSize.A4, 25, 25, 25, 25);
+
+                    PdfWriter writer = PdfWriter.GetInstance(pdfDoc, stream);
+                    pdfDoc.Open();
+                    pdfDoc.Add(new Phrase(""));
+
+
+
+                    using (StringReader sr = new StringReader(PaginaHTML_Texto))
+                    {
+                        XMLWorkerHelper.GetInstance().ParseXHtml(writer, pdfDoc, sr);
+                    }
+
+                    pdfDoc.Close();
+                    stream.Close();
+                }
+
+            }
         }
     }
 }

@@ -182,6 +182,7 @@
             this.btnPdf.TabIndex = 52;
             this.btnPdf.TextAlign = System.Drawing.ContentAlignment.BottomLeft;
             this.btnPdf.UseVisualStyleBackColor = false;
+            this.btnPdf.Click += new System.EventHandler(this.btnPdf_Click);
             // 
             // txtFechaNacimiento
             // 
