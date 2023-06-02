@@ -83,52 +83,7 @@ namespace Presentacion
 
             //MessageBox.Show("Paciente agregado correctamente.");
             LimpiarCampos();
-            //Usuario usuario = new Usuario();
-            //usuario.Nombre = textBoxNombre.Text;
-            //usuario.Email = textBoxEmail.Text;
-
-            //usuarioService.AgregarUsuario(usuario);
-
-            //CargarUsuarios();
-            //LimpiarCampos();
-
-            //Paciente paciente = new Paciente();
-
-            //ValidarCampos();
-            //BorrarMensajes();
-            //paciente.Cedula = txtCedula.Text;
-            //paciente.Nombre = txtNombre.Text;
-            //paciente.Telefono = txtTelefono.Text;
-            //paciente.Edad = int.Parse(txtEdad.Text);
-            //paciente.Direccion = txtDireccion.Text;
-            //paciente.Sexo = char.Parse(cbSexo.Text);
-            //paciente.Estrato = int.Parse(cbEstrato.Text);
-            //paciente.Regimen = cbRegimen.Text;
-            //paciente.FechaNacimiento = DateTime.Parse(dtpFechaNacimiento.Text);
-            //paciente.FechaIngreso = DateTime.Now;
-            //paciente.EPS = cbEps.Text;
-            //paciente.NroIngreso = int.Parse(txtNroIngreso.Text);
-            //paciente.MotivoIngreso = txtMotivoIngreso.Text;
-            //paciente.ResultadoRevision = txtResultadoRevision.Text;
-            //paciente.TipoTratamiento = txtTipoTratamiento.Text;
-            //paciente.FormaRealizacion = txtFormaRealizacion.Text;
-            //paciente.Diagnostico = txtDiagnostico.Text;
-            //paciente.MedicoCargo = txtMedicoCargo.Text;
-            //paciente.Observaciones = txtObservaciones.Text;
-            //if (paciente.FechaNacimiento >= DateTime.Now)
-            //{
-            //    MessageBox.Show("La Fecha de nacimiento es invalida", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-            //}
-            //else
-            //{
-            //    registro.GuardarPaciente(paciente);
-
-            //    MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-            //    LimpiarCampos();
-            //    txtCedula.Focus();
-            //}
+           
         }
 
         private void LimpiarCampos()

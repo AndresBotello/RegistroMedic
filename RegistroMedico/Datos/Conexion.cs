@@ -135,20 +135,15 @@ namespace Datos
 
         public void Eliminar(Paciente paciente )
         {
-            
             using (OracleConnection connection = new OracleConnection(connectionString))
             {
-                
                 connection.Open();
 
-                OracleCommand command = new OracleCommand("ELIMINARDATOS", connection);
+                OracleCommand command = new OracleCommand("ELIMINARDATOSRELACIONADOS", connection);
                 command.CommandType = CommandType.StoredProcedure;
 
                 command.Parameters.Add("pCedula", OracleDbType.Varchar2).Value = paciente.Cedula;
-                command.Parameters.Add("pCedula", OracleDbType.Varchar2).Value = paciente.Cedula;
 
-
-               
                 command.ExecuteNonQuery();
 
                 connection.Close();
