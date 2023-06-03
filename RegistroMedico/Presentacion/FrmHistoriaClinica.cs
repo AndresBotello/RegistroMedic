@@ -129,7 +129,7 @@ namespace Presentacion
                 {
                     registroBD.EliminarPaciente(paciente);
 
-                    MessageBox.Show("Persona eliminada correctamente.");
+                    MessageBox.Show("Paciente eliminado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     LimpiarCampos();
                 }
             }
@@ -170,7 +170,7 @@ namespace Presentacion
 
                 registroBD.ActualizarPaciente(paciente);
 
-                MessageBox.Show("Persona actualizada correctamente.");
+                MessageBox.Show("Paciente actualizado correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 LimpiarCampos();
             }
             else
@@ -182,6 +182,7 @@ namespace Presentacion
 
         private void LimpiarCampos()
         {
+            txtBuscar.Text = string.Empty;
             txtCedula.Text = string.Empty;
             txtNombre.Text = string.Empty;
             txtTelefono.Text = string.Empty;
