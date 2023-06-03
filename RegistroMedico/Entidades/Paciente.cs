@@ -17,8 +17,8 @@ namespace Entidades
         public string ResultadoRevision { get; set; }
         public string TipoTratamiento { get; set; }
         public string FormaRealizacion { get; set; }
-        public string MedicoCargo { get; set; }
         public string Diagnostico { get; set; }
+        public string MedicoCargo { get; set; }
         public string Observaciones { get; set; }
 
     }

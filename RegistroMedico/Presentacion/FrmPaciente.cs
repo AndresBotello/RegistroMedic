@@ -19,14 +19,16 @@ namespace Presentacion
         private RegistroPaciente registro;
 
         private RegistroBD registroBD = new RegistroBD();
+     
         public FrmPaciente()
         {
             InitializeComponent();
             registro = new RegistroPaciente("Registro medico.txt");
+
         }
+
         
       
-
         private void button2_Click(object sender, EventArgs e)
         {
             Salir();
@@ -56,6 +58,7 @@ namespace Presentacion
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
+            ValidarCampos();
             Paciente paciente = new Paciente();
             paciente.Cedula = txtCedula.Text;
             paciente.Nombre = txtNombre.Text;
@@ -81,7 +84,7 @@ namespace Presentacion
             registroBD.AgregarPaciente(paciente);
             MessageBox.Show("El paciente se agregó correctamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            //MessageBox.Show("Paciente agregado correctamente.");
+            
             LimpiarCampos();
            
         }

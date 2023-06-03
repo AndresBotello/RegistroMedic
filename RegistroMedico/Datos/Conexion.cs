@@ -18,46 +18,46 @@ namespace Datos
         public Paciente BuscarPorCedula(string cedula)
         {
             Paciente paciente = null;
-
-            OracleConnection connection = new OracleConnection(connectionString);
             
-               
 
-               
-
-                string query = $"SELECT * FROM vistapacientes";
+            using (OracleConnection connection = new OracleConnection(connectionString))
+            {
+                string query = "SELECT * FROM vistapacientes WHERE Cedula = :cedula";
                 OracleCommand command = new OracleCommand(query, connection);
-            command.CommandType = CommandType.Text;
-            
-            connection.Open();
-            OracleDataReader reader;
-             reader= command.ExecuteReader();
-               
-                reader.Read();
-                        paciente = new Paciente();
-                        paciente.Cedula = reader["Cedula"].ToString();
-                        paciente.Nombre = reader["Nombre"].ToString();
-                        paciente.Telefono = reader["Telefono"].ToString();
-                        paciente.Direccion = reader["Direccion"].ToString();
-                        paciente.Edad = Convert.ToInt16(reader["Edad"]);
-                        paciente.Sexo = Convert.ToChar(reader["Sexo"]);
-                        paciente.Estrato = Convert.ToInt16(reader["Estrato"]);
-                        paciente.Regimen = reader["Regimen"].ToString();
-                        paciente.FechaNacimiento = Convert.ToDateTime(reader["Fecha_nacimiento"]);
-                        paciente.FechaIngreso = Convert.ToDateTime(reader["Fecha_ingreso"]);
-                        paciente.EPS = reader["Eps"].ToString();
-                        paciente.NroIngreso = Convert.ToInt16(reader["Nro_ingreso"]);
-                        paciente.MotivoIngreso = reader["Motivo_ingreso"].ToString();
-                        paciente.ResultadoRevision = reader["Resultado_revision"].ToString();
-                        paciente.TipoTratamiento = reader["Tipo_tratamiento"].ToString();
-                        paciente.FormaRealizacion = reader["Forma_realizacion"].ToString();
-                        paciente.Diagnostico = reader["Diagnostico"].ToString();
-                        paciente.MedicoCargo = reader["Medico_cargo"].ToString();
-                        paciente.Observaciones = reader["Observaciones"].ToString();
+                command.CommandType = CommandType.Text;
+                command.Parameters.Add(new OracleParameter(":cedula", cedula));
 
-            
-            connection.Close();
-            return paciente;
+                connection.Open();
+                OracleDataReader reader = command.ExecuteReader();
+
+                if (reader.Read())
+                {
+                    paciente = new Paciente();
+                    paciente.Cedula = reader["Cedula"].ToString();
+                    paciente.Nombre = reader["Nombre"].ToString();
+                    paciente.Telefono = reader["Telefono"].ToString();
+                    paciente.Direccion = reader["Direccion"].ToString();
+                    paciente.Edad = Convert.ToInt16(reader["Edad"]);
+                    paciente.Sexo = Convert.ToChar(reader["Sexo"]);
+                    paciente.Estrato = Convert.ToInt16(reader["Estrato"]);
+                    paciente.Regimen = reader["Regimen"].ToString();
+                    paciente.FechaNacimiento = Convert.ToDateTime(reader["Fecha_nacimiento"]);
+                    paciente.FechaIngreso = Convert.ToDateTime(reader["Fecha_ingreso"]);
+                    paciente.EPS = reader["Eps"].ToString();
+                    paciente.NroIngreso = Convert.ToInt16(reader["Nro_ingreso"]);
+                    paciente.MotivoIngreso = reader["Motivo_ingreso"].ToString();
+                    paciente.ResultadoRevision = reader["Resultado_revision"].ToString();
+                    paciente.TipoTratamiento = reader["Tipo_tratamiento"].ToString();
+                    paciente.FormaRealizacion = reader["Forma_realizacion"].ToString();
+                    paciente.Diagnostico = reader["Diagnostico"].ToString();
+                    paciente.MedicoCargo = reader["Medico_cargo"].ToString();
+                    paciente.Observaciones = reader["Observaciones"].ToString();
+                }
+
+                connection.Close();
+                return paciente;
+            }
+           
         }
 
         public void Agregar(Paciente paciente)
