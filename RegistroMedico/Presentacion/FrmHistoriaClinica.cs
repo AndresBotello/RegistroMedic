@@ -73,7 +73,7 @@ namespace Presentacion
                 txtSexo.Text = paciente.Sexo.ToString();
                 txtEstrato.Text = paciente.Estrato.ToString();
                 txtRegimen.Text = paciente.Regimen;
-                txtFechaNacimiento.Text = paciente.FechaNacimiento.ToString();
+                txtFechaNacimiento.Text = paciente.FechaNacimiento.ToString("d");
                 txtFechaIngreso.Text = paciente.FechaIngreso.ToString();
                 txtEps.Text = paciente.EPS;
                 txtNroIngreso.Text = paciente.NroIngreso.ToString();
@@ -102,7 +102,7 @@ namespace Presentacion
             txtSexo.Text = pacienteEncontrado.Sexo.ToString();
             txtEstrato.Text = pacienteEncontrado.Estrato.ToString();
             txtRegimen.Text = pacienteEncontrado.Regimen;
-            txtFechaNacimiento.Text = pacienteEncontrado.FechaNacimiento.ToShortDateString();
+            txtFechaNacimiento.Text = pacienteEncontrado.FechaNacimiento.ToString("d");
             txtFechaIngreso.Text = pacienteEncontrado.FechaIngreso.ToString("F");
             txtEps.Text = pacienteEncontrado.EPS;
             txtNroIngreso.Text = pacienteEncontrado.NroIngreso.ToString();

@@ -59,6 +59,7 @@ namespace Presentacion
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             ValidarCampos();
+            BorrarMensajes();
             Paciente paciente = new Paciente();
             paciente.Cedula = txtCedula.Text;
             paciente.Nombre = txtNombre.Text;

@@ -28,3 +28,9 @@ C:\Users\hp\Source\Repos\RegistroMedic2\RegistroMedico\Entidades\obj\Debug\Entid
 C:\Users\hp\Source\Repos\RegistroMedic2\RegistroMedico\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\hp\Source\Repos\RegistroMedic2\RegistroMedico\Entidades\obj\Debug\Entidades.dll
 C:\Users\hp\Source\Repos\RegistroMedic2\RegistroMedico\Entidades\obj\Debug\Entidades.pdb
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Entidades\bin\Debug\Entidades.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Entidades\bin\Debug\Entidades.pdb
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Entidades\obj\Debug\Entidades.csproj.AssemblyReference.cache
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Entidades\obj\Debug\Entidades.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Entidades\obj\Debug\Entidades.pdb

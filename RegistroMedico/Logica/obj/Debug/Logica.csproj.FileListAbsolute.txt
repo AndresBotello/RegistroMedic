@@ -159,3 +159,35 @@ D:\PROGRAMACIÓN III\PROYECTO\RegistroMedico\Logica\obj\Debug\Logica.csproj.Core
 D:\PROGRAMACIÓN III\PROYECTO\RegistroMedico\Logica\obj\Debug\Logica.csproj.CopyComplete
 D:\PROGRAMACIÓN III\PROYECTO\RegistroMedico\Logica\obj\Debug\Logica.dll
 D:\PROGRAMACIÓN III\PROYECTO\RegistroMedico\Logica\obj\Debug\Logica.pdb
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Logica.dll.config
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Logica.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Logica.pdb
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Datos.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Entidades.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Text.Json.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Memory.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.ValueTuple.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Buffers.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Datos.pdb
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Datos.dll.config
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Entidades.pdb
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Text.Json.xml
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Memory.xml
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.ValueTuple.xml
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Buffers.xml
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\obj\Debug\Logica.csproj.AssemblyReference.cache
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\obj\Debug\Logica.csproj.CoreCompileInputs.cache
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\obj\Debug\Logica.csproj.CopyComplete
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\obj\Debug\Logica.dll
+C:\Users\hp\Source\Repos\RegistroMedic4\RegistroMedico\Logica\obj\Debug\Logica.pdb
